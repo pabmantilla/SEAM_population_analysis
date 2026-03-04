@@ -1,0 +1,31 @@
+# Data files - too large for git
+*.npy
+*.npz
+*.feather
+*.tsv
+*.csv
+*.h5
+
+# Variant data directories
+variant_data/
+
+# Pipeline output
+SEAM_CLIPNET/LCL_variants_analysis/data/
+SEAM_CLIPNET/LCL_variants_analysis/DeepSHAP_maps/
+SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/
+
+# Slurm logs
+slurm_logs/
+*.out
+*.err
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Git repo clones
+alphagenome_research/
