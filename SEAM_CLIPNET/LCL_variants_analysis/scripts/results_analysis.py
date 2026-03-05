@@ -22,6 +22,7 @@ DATA_DIR = os.path.join(BASE_DIR, 'data')
 ATTRIBUTION_DIR = os.path.join(BASE_DIR, 'DeepSHAP_maps')
 RESULTS_DIR = os.path.join(BASE_DIR, 'SEAM_results')
 FINALS_DIR = os.path.join(RESULTS_DIR, 'results_finals')
+CAUSAL_FEATHER = '/grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/variant_data/Alphagenome_data/eqtl_variants/eqtl_variant_catalogue_causality_gene_balanced_human_predictions.feather'
 NUM_SEQS = 25000
 K = 100
 
@@ -30,14 +31,8 @@ from logomaker_batch.batch_logo import BatchLogo
 
 # ── Loci ──────────────────────────────────────────────────────────────
 LOCI_DF = pd.DataFrame({
-    'name':  ['IRF7', 'HLA-A', 'HLA-B', 'HLA-C', 'HLA-G',
-              'HOXA1', 'HOXA13', 'HOXC13', 'B-ACTIN', 'TBP', 'GAPDH',
-              'YAP1', 'TAZ', 'PIK3R3', 'MYC', 'TNF', 'BCL2',
-              'KRAS', 'EGFR', 'ERBB2', 'PIK3CA', 'CCND1', 'BRAF', 'VEGFA', 'MDM2'],
-    'tss':   [616000, 29942532, 31357179, 31272092, 29827825,
-              27095025, 27209044, 53976181, 5530601, 170554302, 6534512,
-              102110461, 149658025, 46132640, 127736231, 31575565, 63319769,
-              25250929, 55019017, 39700064, 179148357, 69641156, 140924929, 43770211, 68808177],
+    'name':  ['HLA-A', 'HLA-C'],
+    'tss':   [29942532, 31272092],
 })
 LOCI_DF['start'] = LOCI_DF['tss'] - 500
 LOCI = LOCI_DF['name'].tolist()
@@ -184,7 +179,7 @@ def plot_cluster_preds(name, k=K):
 
 
 # =========================================================================
-# 3. Cluster Attribution Logos (WT + top-2 most different eQTL clusters)
+# 3. Sequence-specific Attribution Logos (WT avg, each eQTL variant, most distant seq)
 # =========================================================================
 def plot_cluster_logos(name, k=K):
     locus_dir = os.path.join(RESULTS_DIR, name, f'k{k}')
@@ -214,304 +209,376 @@ def plot_cluster_logos(name, k=K):
     wt_cluster = labels[0]
     locus_start = int(LOCI_DF.loc[LOCI_DF['name'] == name, 'start'].values[0])
 
-    # Load eQTL variants per cluster
-    variant_by_cluster = {}
+    # Load eQTL variant metadata
+    variant_info = []
     if os.path.exists(meta_path):
         meta = pd.read_csv(meta_path)
         var_rows = meta[meta['source'] == VARIANT_SOURCE]
         for _, vrow in var_rows.iterrows():
             seq_idx = int(vrow['seq_idx'])
-            if seq_idx < len(labels):
-                c = labels[seq_idx]
+            if seq_idx < len(maps):
                 rel_pos = int(vrow['pos']) - locus_start
                 pred_score = float(vrow['prediction']) if pd.notna(vrow.get('prediction')) else 0.0
-                variant_by_cluster.setdefault(c, []).append({
+                variant_info.append({
                     'seq_idx': seq_idx,
+                    'variant_id': vrow.get('variant_id', ''),
                     'ref': vrow['ref'], 'alt': vrow['alt'],
                     'rel_pos': rel_pos, 'prediction': pred_score,
+                    'cluster': labels[seq_idx],
                 })
 
-    non_wt_variants = {c: v for c, v in variant_by_cluster.items() if c != wt_cluster}
-    if len(non_wt_variants) < 1:
-        print(f'{name}: no non-WT eQTL clusters, skipping logos')
+    if not variant_info:
+        print(f'{name}: no eQTL variants in maps, skipping logos')
         del maps
         gc.collect()
         return
 
+    # Compute cosine distance + activity change for all non-WT, non-eQTL seqs
     wt_avg_flat = maps[labels == wt_cluster].mean(axis=0).flatten()
-    most_diff_c = max(non_wt_variants.keys(),
-                      key=lambda c: np.linalg.norm(wt_avg_flat - maps[labels == c].mean(axis=0).flatten()))
+    wt_avg_norm = np.linalg.norm(wt_avg_flat)
+    wt_pred = float(preds[0]) if preds is not None else 0.0
+    eqtl_set = {v['seq_idx'] for v in variant_info}
 
-    if preds is not None:
-        cluster_mean_pred = {c: float(preds[labels == c].mean()) for c in non_wt_variants}
-        highest_act_c = max(cluster_mean_pred, key=cluster_mean_pred.get)
-        lowest_act_c = min(cluster_mean_pred, key=cluster_mean_pred.get)
-    else:
-        highest_act_c = most_diff_c
-        lowest_act_c = most_diff_c
+    n_seqs = maps.shape[0]
+    cos_dists = np.zeros(n_seqs, dtype=np.float64)
+    for i in range(n_seqs):
+        flat = maps[i].flatten()
+        norm_prod = np.linalg.norm(flat) * wt_avg_norm
+        if norm_prod > 0:
+            cos_dists[i] = 1.0 - np.dot(flat, wt_avg_flat) / norm_prod
 
-    panel_candidates = [('1. Most Different from WT', most_diff_c),
-                        ('2. Highest Activity', highest_act_c),
-                        ('3. Lowest Activity', lowest_act_c)]
-    seen = {}
-    panels = [('0. WT Cluster', wt_cluster)]
-    for label, c in panel_candidates:
-        if c in seen:
-            idx = seen[c]
-            old_label, old_c = panels[idx]
-            panels[idx] = (old_label + ' + ' + label, old_c)
-        else:
-            seen[c] = len(panels)
-            panels.append((label, c))
+    # Find most distant seq with negative activity change
+    best_neg_dist, most_diff_neg_idx = -1.0, 1
+    best_pos_dist, most_diff_pos_idx = -1.0, 1
+    for i in range(1, n_seqs):
+        if i in eqtl_set:
+            continue
+        d = cos_dists[i]
+        act_change = float(preds[i]) - wt_pred if preds is not None else 0.0
+        if act_change < 0 and d > best_neg_dist:
+            best_neg_dist = d
+            most_diff_neg_idx = i
+        if act_change > 0 and d > best_pos_dist:
+            best_pos_dist = d
+            most_diff_pos_idx = i
 
-    n_panels = len(panels)
-    fig, axes = plt.subplots(n_panels, 1, figsize=(50, 4 * n_panels))
-    if n_panels == 1:
-        axes = [axes]
+    def _normalize(m):
+        """L2 normalize a (1000, 4) map for visualization."""
+        l2 = np.linalg.norm(m.flatten())
+        return m / l2 if l2 > 0 else m
 
-    for i, (panel_label, cluster_id) in enumerate(panels):
-        members = labels == cluster_id
-        n_members = int(np.sum(members))
+    # Two-hot decoding: argmax of [A,C,G,T] channel
+    _IDX2BASE = {0: 'A', 1: 'C', 2: 'G', 3: 'T'}
 
-        cluster_avg = maps[members].mean(axis=0)
+    def _find_snps(wt_seq, mut_seq):
+        """Compare two (1000, 4) two-hot seqs, return list of (pos, ref, alt)."""
+        snps = []
+        for pos in range(wt_seq.shape[0]):
+            if not np.array_equal(wt_seq[pos], mut_seq[pos]):
+                ref_base = _IDX2BASE.get(int(np.argmax(wt_seq[pos])), '?')
+                alt_base = _IDX2BASE.get(int(np.argmax(mut_seq[pos])), '?')
+                snps.append((pos, ref_base, alt_base))
+        return snps
 
-        logo = BatchLogo(cluster_avg[np.newaxis, :, :],
-                         figsize=[50, 3], show_progress=False)
-        logo.process_all()
-        logo.draw_single(0, ax=axes[i], fixed_ylim=False, border=True)
-
-        n_eqtl = len(variant_by_cluster.get(cluster_id, []))
-        title = f'{panel_label} C{cluster_id} (n={n_members}'
-        if n_eqtl > 0:
-            title += f', {n_eqtl} eQTL LCL variants'
-        title += ')'
-
-        if preds is not None:
-            c_preds = preds[members]
-            title += (f'  |  Activity: mean={c_preds.mean():.2f}, '
-                      f'max={c_preds.max():.2f}, min={c_preds.min():.2f}')
-
-        axes[i].set_title(title, fontsize=11, fontweight='bold')
-        axes[i].set_ylabel('Attribution', fontsize=9)
-
-        variants = variant_by_cluster.get(cluster_id, [])
-        if variants:
-            pos_variants = {}
-            for v in variants:
-                rp = v['rel_pos']
-                if 0 <= rp < 1000:
-                    mut_str = f"{v['ref']}>{v['alt']}"
-                    pos_variants.setdefault(rp, []).append((mut_str, v['prediction']))
-
-            for pos in pos_variants:
-                axes[i].axvline(x=pos, color='darkorange', linestyle='-',
-                               linewidth=0.5, alpha=0.4, ymin=0.85, ymax=1.0)
-
-            sorted_pos = sorted(pos_variants.keys())
-            mut_strings = []
-            for pos in sorted_pos:
-                seen_m = {}
-                for m, pred_score in pos_variants[pos]:
-                    if m not in seen_m or abs(pred_score) > abs(seen_m[m]):
-                        seen_m[m] = pred_score
-                for m in sorted(seen_m):
-                    pred_score = seen_m[m]
-                    mut_strings.append(f'{pos}:{m} (pred={pred_score:.3f})')
-
-            if len(mut_strings) <= 15:
+    def _annotate_snps(ax, snps):
+        """Draw orange vlines and build annotation text for SNPs."""
+        mut_strings = []
+        for pos, ref, alt in snps:
+            ax.axvline(x=pos, color='darkorange', linestyle='-',
+                      linewidth=1.5, alpha=0.6, ymin=0.85, ymax=1.0)
+            mut_strings.append(f'{pos}: {ref}>{alt}')
+        if mut_strings:
+            if len(mut_strings) <= 20:
                 summary = '\n'.join(mut_strings)
             else:
-                summary = '\n'.join(mut_strings[:12]) + \
-                          f'\n... +{len(mut_strings)-12} more'
+                summary = '\n'.join(mut_strings[:17]) + f'\n... +{len(mut_strings)-17} more'
+            ax.text(1.005, 0.5, summary, transform=ax.transAxes,
+                   fontsize=8, fontfamily='monospace', va='center',
+                   color='darkorange', fontweight='bold')
 
-            axes[i].text(1.005, 0.5, summary, transform=axes[i].transAxes,
-                        fontsize=8, fontfamily='monospace', va='center',
-                        color='darkorange', fontweight='bold')
+    # Collect all normalized maps first to determine global ylim
+    all_norm_maps = []
 
-    fig.suptitle(f'{name} — Cluster Attribution Logos (k={k})', fontsize=14,
-                 fontweight='bold', y=1.01)
+    wt_members = labels == wt_cluster
+    wt_avg_normed = _normalize(maps[wt_members].mean(axis=0))
+    all_norm_maps.append(wt_avg_normed)
+
+    var_norm_maps = []
+    for vinfo in variant_info:
+        vm = _normalize(maps[vinfo['seq_idx']])
+        var_norm_maps.append(vm)
+        all_norm_maps.append(vm)
+
+    neg_norm = _normalize(maps[most_diff_neg_idx])
+    pos_norm = _normalize(maps[most_diff_pos_idx])
+    all_norm_maps.append(neg_norm)
+    all_norm_maps.append(pos_norm)
+
+    # Global ylim across all panels
+    global_min = min(m.min() for m in all_norm_maps)
+    global_max = max(m.max() for m in all_norm_maps)
+    pad = (global_max - global_min) * 0.05
+    ylim = (global_min - pad, global_max + pad)
+
+    # Panels: WT avg, each eQTL variant, most distant neg, most distant pos
+    n_panels = 1 + len(variant_info) + 2
+    fig, axes = plt.subplots(n_panels, 1, figsize=(50, 4 * n_panels))
+
+    # --- Panel 0: WT cluster average ---
+    logo = BatchLogo(wt_avg_normed[np.newaxis, :, :],
+                     figsize=[50, 3], show_progress=False)
+    logo.process_all()
+    logo.draw_single(0, ax=axes[0], fixed_ylim=False, border=True)
+    axes[0].set_ylim(ylim)
+
+    wt_title = f'WT Cluster C{wt_cluster} avg (n={int(wt_members.sum())})'
+    if preds is not None:
+        wt_preds = preds[wt_members]
+        wt_title += (f'  |  Activity: mean={wt_preds.mean():.2f}, '
+                     f'max={wt_preds.max():.2f}, min={wt_preds.min():.2f}')
+    axes[0].set_title(wt_title, fontsize=11, fontweight='bold')
+    axes[0].set_ylabel('Attribution', fontsize=9)
+
+    # --- Panels 1..N: individual eQTL variant DeepSHAP maps ---
+    for vi, vinfo in enumerate(variant_info):
+        ax_i = axes[1 + vi]
+        logo = BatchLogo(var_norm_maps[vi][np.newaxis, :, :],
+                         figsize=[50, 3], show_progress=False)
+        logo.process_all()
+        logo.draw_single(0, ax=ax_i, fixed_ylim=False, border=True)
+        ax_i.set_ylim(ylim)
+
+        rp = vinfo['rel_pos']
+        if 0 <= rp < 1000:
+            ax_i.axvline(x=rp, color='darkorange', linestyle='-',
+                        linewidth=1.5, alpha=0.6, ymin=0.85, ymax=1.0)
+
+        title = (f"eQTL: {vinfo['variant_id']}  ({vinfo['ref']}>{vinfo['alt']} @ pos {rp})"
+                 f"  |  Cluster C{vinfo['cluster']}")
+        if preds is not None:
+            seq_idx = vinfo['seq_idx']
+            title += f"  |  Activity={float(preds[seq_idx]):.3f}"
+        title += f"  |  AlphaGenome pred={vinfo['prediction']:.4f}"
+
+        ax_i.set_title(title, fontsize=11, fontweight='bold')
+        ax_i.set_ylabel('Attribution', fontsize=9)
+
+        annot = (f"pos={rp}: {vinfo['ref']}>{vinfo['alt']}\n"
+                 f"pred={vinfo['prediction']:.4f}")
+        ax_i.text(1.005, 0.5, annot, transform=ax_i.transAxes,
+                 fontsize=9, fontfamily='monospace', va='center',
+                 color='darkorange', fontweight='bold')
+
+    # Get WT sequence for SNP comparison
+    wt_seq = seqs[0] if seqs is not None else None
+
+    # --- Most distant seq with negative activity change ---
+    ax_neg = axes[-2]
+    logo = BatchLogo(neg_norm[np.newaxis, :, :],
+                     figsize=[50, 3], show_progress=False)
+    logo.process_all()
+    logo.draw_single(0, ax=ax_neg, fixed_ylim=False, border=True)
+    ax_neg.set_ylim(ylim)
+
+    neg_act = float(preds[most_diff_neg_idx]) if preds is not None else 0.0
+    neg_snps = _find_snps(wt_seq, seqs[most_diff_neg_idx]) if seqs is not None else []
+    neg_title = (f'Most Distant Seq (neg activity change)  idx={most_diff_neg_idx}'
+                 f'  |  cos_dist={best_neg_dist:.4f}  |  Activity={neg_act:.3f}'
+                 f'  |  delta={neg_act - wt_pred:.3f}  |  {len(neg_snps)} SNPs')
+    ax_neg.set_title(neg_title, fontsize=11, fontweight='bold', color='purple')
+    ax_neg.set_ylabel('Attribution', fontsize=9)
+    _annotate_snps(ax_neg, neg_snps)
+
+    # --- Most distant seq with positive activity change ---
+    ax_pos = axes[-1]
+    logo = BatchLogo(pos_norm[np.newaxis, :, :],
+                     figsize=[50, 3], show_progress=False)
+    logo.process_all()
+    logo.draw_single(0, ax=ax_pos, fixed_ylim=False, border=True)
+    ax_pos.set_ylim(ylim)
+
+    pos_act = float(preds[most_diff_pos_idx]) if preds is not None else 0.0
+    pos_snps = _find_snps(wt_seq, seqs[most_diff_pos_idx]) if seqs is not None else []
+    pos_title = (f'Most Distant Seq (pos activity change)  idx={most_diff_pos_idx}'
+                 f'  |  cos_dist={best_pos_dist:.4f}  |  Activity={pos_act:.3f}'
+                 f'  |  delta={pos_act - wt_pred:+.3f}  |  {len(pos_snps)} SNPs')
+    ax_pos.set_title(pos_title, fontsize=11, fontweight='bold', color='darkgreen')
+    ax_pos.set_ylabel('Attribution', fontsize=9)
+    _annotate_snps(ax_pos, pos_snps)
+
+    fig.suptitle(f'{name} — Normalized DeepSHAP: WT Avg, eQTL Variants, Most Distant Seqs (k={k})',
+                 fontsize=14, fontweight='bold', y=1.01)
     plt.tight_layout()
     out_path = os.path.join(locus_dir, f'cluster_logos_eqtl_k{k}.png')
     plt.savefig(out_path, dpi=100, bbox_inches='tight')
     plt.close()
 
-    print(f'{name}: saved {out_path}')
+    print(f'{name}: saved {out_path} ({len(variant_info)} variant panels + 2 distant seqs)')
     del maps
     gc.collect()
 
 
 # =========================================================================
-# 4. Summary: eQTL Alignment vs Prediction Score (all loci)
+# 4. Volcano: Activity vs Mechanistic Diversity (per-sequence)
 # =========================================================================
-def plot_eqtl_alignment_summary(k=K):
-    """For each cluster containing eQTL variants across all loci:
-    - Binary mask: 1 at eQTL variant positions, 0 elsewhere
-    - eQTL alignment = sum(CSM_mismatch_row * mask) / cluster_size
-    - Mean AlphaGenome prediction score of eQTL variants in that cluster
-    Scatter plot alignment vs mean prediction, colored by locus category.
+def plot_volcano(name, k=K):
+    """For every sequence in a locus mutagenesis library:
+    - x-axis: CLIPNET activity prediction
+    - y-axis: cosine distance from WT cluster average DeepSHAP map
+    Highlights eQTL variants.
     """
-    from scipy import stats
+    maps_path = os.path.join(ATTRIBUTION_DIR, f'maps_quantity_{name}_{NUM_SEQS}.npy')
+    preds_path = os.path.join(ATTRIBUTION_DIR, f'preds_quantity_{name}_{NUM_SEQS}.npy')
+    labels_path = os.path.join(RESULTS_DIR, name, f'k{k}', 'cluster_labels.npy')
+    meta_path = os.path.join(DATA_DIR, f'x_mut_{name}_{NUM_SEQS}_metadata.csv')
+    seqs_path = os.path.join(DATA_DIR, f'x_mut_{name}_{NUM_SEQS}.npy')
 
-    records = []
-
-    cat_map = {
-        'IRF7': 'Oncogene', 'HLA-A': 'HLA', 'HLA-B': 'HLA', 'HLA-C': 'HLA', 'HLA-G': 'HLA',
-        'HOXA1': 'Hox', 'HOXA13': 'Hox', 'HOXC13': 'Hox',
-        'B-ACTIN': 'Housekeeping', 'TBP': 'Housekeeping', 'GAPDH': 'Housekeeping',
-        'YAP1': 'Oncogene', 'TAZ': 'Oncogene', 'PIK3R3': 'Oncogene',
-        'MYC': 'Oncogene', 'TNF': 'Oncogene', 'BCL2': 'Oncogene',
-        'KRAS': 'Oncogene', 'EGFR': 'Oncogene', 'ERBB2': 'Oncogene',
-        'PIK3CA': 'Oncogene', 'CCND1': 'Oncogene', 'BRAF': 'Oncogene',
-        'VEGFA': 'Oncogene', 'MDM2': 'Oncogene',
-    }
-
-    for name in LOCI:
-        locus_dir = os.path.join(RESULTS_DIR, name, f'k{k}')
-        csm_path = os.path.join(locus_dir, 'csm_matrix.npy')
-        labels_path = os.path.join(locus_dir, 'cluster_labels.npy')
-        meta_path = os.path.join(DATA_DIR, f'x_mut_{name}_{NUM_SEQS}_metadata.csv')
-
-        if not os.path.exists(csm_path) or not os.path.exists(meta_path):
-            continue
-
-        csm = np.load(csm_path)
-        labels = np.load(labels_path)
-        cluster_ids = sorted(np.unique(labels))
-        locus_start = int(LOCI_DF.loc[LOCI_DF['name'] == name, 'start'].values[0])
-        category = cat_map.get(name, 'Other')
-
-        meta = pd.read_csv(meta_path)
-        var_rows = meta[meta['source'] == VARIANT_SOURCE]
-
-        cluster_variants = {}
-        for _, vrow in var_rows.iterrows():
-            seq_idx = int(vrow['seq_idx'])
-            if seq_idx >= len(labels):
-                continue
-            c = labels[seq_idx]
-            rel_pos = int(vrow['pos']) - locus_start
-            pred_score = float(vrow['prediction']) if pd.notna(vrow.get('prediction')) else 0.0
-            cluster_variants.setdefault(c, []).append((rel_pos, pred_score))
-
-        wt_cluster = labels[0]
-        for c, var_list in cluster_variants.items():
-            if c == wt_cluster:
-                continue
-            ci = cluster_ids.index(c)
-            csm_row = csm[ci]
-
-            mask = np.zeros(1000, dtype=np.float32)
-            pred_scores = []
-            for rel_pos, pred_score in var_list:
-                if 0 <= rel_pos < 1000:
-                    mask[rel_pos] = 1.0
-                    pred_scores.append(pred_score)
-
-            if mask.sum() == 0 or len(pred_scores) == 0:
-                continue
-
-            eqtl_alignment_raw = float(np.sum(csm_row * mask))
-            n_seqs_in_cluster = int(np.sum(labels == c))
-            eqtl_alignment = eqtl_alignment_raw / n_seqs_in_cluster
-            mean_pred = float(np.mean(pred_scores))
-
-            records.append({
-                'locus': name,
-                'cluster': int(c),
-                'eqtl_alignment': eqtl_alignment,
-                'eqtl_alignment_raw': eqtl_alignment_raw,
-                'n_seqs': n_seqs_in_cluster,
-                'mean_prediction': mean_pred,
-                'category': category,
-                'n_variants': len(var_list),
-            })
-
-    if not records:
-        print('No eQTL alignment data to plot')
+    if not os.path.exists(maps_path) or not os.path.exists(preds_path):
+        print(f'{name}: missing maps/preds for volcano, skipping')
         return
 
-    df = pd.DataFrame(records)
+    maps = np.load(maps_path)
+    if maps.ndim == 3 and maps.shape[0] == 4 and maps.shape[2] != 4:
+        maps = maps.transpose(1, 2, 0)
 
-    cat_colors = {
-        'Oncogene': '#e74c3c',
-        'HLA': '#3498db',
-        'Hox': '#2ecc71',
-        'Housekeeping': '#9b59b6',
-    }
-    cat_order = ['Oncogene', 'HLA', 'Hox', 'Housekeeping']
+    seqs = np.load(seqs_path) if os.path.exists(seqs_path) else None
+    if seqs is not None:
+        if seqs.ndim == 3 and seqs.shape[0] == 4 and seqs.shape[2] != 4:
+            seqs = seqs.transpose(1, 2, 0)
+        maps = maps * (seqs > 0).astype(np.float32)
 
-    fig = plt.figure(figsize=(12, 10))
-    gs = gridspec.GridSpec(2, 2, width_ratios=[3, 1], height_ratios=[1, 3],
-                           hspace=0.05, wspace=0.05)
-    ax = fig.add_subplot(gs[1, 0])
-    ax_histx = fig.add_subplot(gs[0, 0])
-    ax_histy = fig.add_subplot(gs[1, 1], sharey=ax)
+    preds = np.load(preds_path)
+    labels = np.load(labels_path)
 
-    plt.setp(ax_histx.get_xticklabels(), visible=False)
-    plt.setp(ax_histy.get_yticklabels(), visible=False)
+    # WT cluster average (flattened)
+    wt_cluster = labels[0]
+    wt_avg = maps[labels == wt_cluster].mean(axis=0).flatten()
 
-    from scipy.stats import gaussian_kde
-    x_vals = df['mean_prediction'].values
-    x_grid = np.linspace(x_vals.min() - 0.1, x_vals.max() + 0.1, 200)
-    y_grid = np.linspace(df['eqtl_alignment'].min() - 0.1,
-                         df['eqtl_alignment'].max() * 1.1, 200)
+    # Load metadata to identify eQTL variants
+    meta = pd.read_csv(meta_path)
+    eqtl_idx = set()
+    eqtl_labels = {}
+    for _, vrow in meta[meta['source'] == VARIANT_SOURCE].iterrows():
+        si = int(vrow['seq_idx'])
+        eqtl_idx.add(si)
+        eqtl_labels[si] = vrow.get('variant_id', '')
 
-    for cat in cat_order:
-        sub = df[df['category'] == cat]
-        if len(sub) < 2:
-            continue
-        color = cat_colors[cat]
+    # Load causal fine-mapped variant IDs
+    causal_df = pd.read_feather(CAUSAL_FEATHER)
+    causal_lcl = causal_df[causal_df['tissue'] == 'Cells_EBV-transformed_lymphocytes']
+    causal_ids = set(causal_lcl['variant_id'].values)
+    del causal_df, causal_lcl
 
-        ax.scatter(sub['mean_prediction'], sub['eqtl_alignment'],
-                   c=color, label=cat, alpha=0.5, s=20, edgecolors='none')
+    # Split eQTL into causal vs non-causal
+    causal_eqtl = set()
+    noncausal_eqtl = set()
+    for si in eqtl_idx:
+        vid = eqtl_labels.get(si, '')
+        if vid in causal_ids:
+            causal_eqtl.add(si)
+        else:
+            noncausal_eqtl.add(si)
 
-        kde_x = gaussian_kde(sub['mean_prediction'].values)
-        ax_histx.fill_between(x_grid, kde_x(x_grid), alpha=0.25, color=color)
-        ax_histx.plot(x_grid, kde_x(x_grid), color=color, linewidth=2)
+    # Compute cosine distance for each sequence vs WT cluster avg
+    n_seqs = maps.shape[0]
+    cos_dists = np.zeros(n_seqs, dtype=np.float64)
+    for i in range(n_seqs):
+        flat = maps[i].flatten()
+        norm_prod = np.linalg.norm(flat) * np.linalg.norm(wt_avg)
+        if norm_prod > 0:
+            cos_dists[i] = 1.0 - np.dot(flat, wt_avg) / norm_prod
+        else:
+            cos_dists[i] = 0.0
 
-        kde_y = gaussian_kde(sub['eqtl_alignment'].values)
-        ax_histy.fill_betweenx(y_grid, kde_y(y_grid), alpha=0.25, color=color)
-        ax_histy.plot(kde_y(y_grid), y_grid, color=color, linewidth=2)
+    # Separate into background vs eQTL
+    bg_mask = np.ones(n_seqs, dtype=bool)
+    bg_mask[0] = False  # exclude WT itself
+    eqtl_mask = np.zeros(n_seqs, dtype=bool)
+    for si in eqtl_idx:
+        if si < n_seqs:
+            bg_mask[si] = False
+            eqtl_mask[si] = True
 
-    ax.set_xlabel('Mean AlphaGenome Prediction Score (eQTL LCL variants)', fontsize=12)
-    ax.set_ylabel('eQTL Alignment Score\n(sum of CSM % mismatch at variant positions / cluster size)', fontsize=12)
+    # --- Plot ---
+    fig, ax = plt.subplots(figsize=(24, 8))
 
-    ax_histx.spines['top'].set_visible(False)
-    ax_histx.spines['right'].set_visible(False)
-    ax_histx.spines['left'].set_visible(False)
-    ax_histx.tick_params(left=False, labelleft=False)
-    ax_histy.spines['top'].set_visible(False)
-    ax_histy.spines['right'].set_visible(False)
-    ax_histy.spines['bottom'].set_visible(False)
-    ax_histy.tick_params(bottom=False, labelbottom=False)
+    # Background (random mutagenesis)
+    ax.scatter(preds[bg_mask], cos_dists[bg_mask],
+               c='#cccccc', s=3, alpha=0.15, label='Random mutagenesis', rasterized=True)
 
-    valid = df[['mean_prediction', 'eqtl_alignment']].dropna()
-    if len(valid) > 2:
-        r_pearson, p_pearson = stats.pearsonr(valid['mean_prediction'], valid['eqtl_alignment'])
-        r_spearman, p_spearman = stats.spearmanr(valid['mean_prediction'], valid['eqtl_alignment'])
-        ax_histx.set_title(
-            f'eQTL Alignment vs AlphaGenome Prediction (all 25 loci, k={k})\n'
-            f'Pearson r={r_pearson:.3f} (p={p_pearson:.2e}), '
-            f'Spearman r={r_spearman:.3f} (p={p_spearman:.2e})\n'
-            f'n={len(df)} clusters with eQTL LCL variants',
-            fontsize=13)
-    else:
-        ax_histx.set_title(f'eQTL Alignment vs AlphaGenome Prediction (all 25 loci, k={k})',
-                     fontsize=13)
+    # WT mean activity vertical line
+    wt_mean_activity = float(preds[labels == wt_cluster].mean())
+    ax.axvline(x=wt_mean_activity, color='red', linestyle='--', linewidth=1.5,
+               alpha=0.8, label=f'WT cluster mean = {wt_mean_activity:.2f}')
 
-    ax.legend(fontsize=10, markerscale=2)
+    # WT
+    ax.scatter(preds[0], cos_dists[0],
+               c='red', s=120, marker='*', zorder=10, label='WT sequence')
+
+    # eQTL variants: causal (green) vs non-causal (orange)
+    causal_mask = np.zeros(n_seqs, dtype=bool)
+    noncausal_mask = np.zeros(n_seqs, dtype=bool)
+    for si in causal_eqtl:
+        if si < n_seqs:
+            causal_mask[si] = True
+    for si in noncausal_eqtl:
+        if si < n_seqs:
+            noncausal_mask[si] = True
+
+    if noncausal_mask.any():
+        ax.scatter(preds[noncausal_mask], cos_dists[noncausal_mask],
+                   c='darkorange', s=80, edgecolors='black', linewidths=0.8,
+                   zorder=10, label=f'eQTL non-causal (n={int(noncausal_mask.sum())})')
+    if causal_mask.any():
+        ax.scatter(preds[causal_mask], cos_dists[causal_mask],
+                   c='#2ecc71', s=80, edgecolors='black', linewidths=0.8,
+                   zorder=10, label=f'eQTL causal/fine-mapped (n={int(causal_mask.sum())})')
+
+    # Label each eQTL variant with staggered offsets to avoid overlap
+    eqtl_indices = sorted(eqtl_idx)
+    for vi, si in enumerate(eqtl_indices):
+        if si < n_seqs:
+            vid = eqtl_labels.get(si, '')
+            short = vid.replace('chr6_', '').replace('_', ' ') if vid else f'idx{si}'
+            color = '#2ecc71' if si in causal_eqtl else 'darkorange'
+            y_offset = 8 + (vi % 3) * 14
+            x_offset = 10 if vi % 2 == 0 else -60
+            ax.annotate(short, (preds[si], cos_dists[si]),
+                       textcoords='offset points', xytext=(x_offset, y_offset),
+                       fontsize=8, fontweight='bold', color=color,
+                       arrowprops=dict(arrowstyle='->', color=color, lw=0.8))
+
+    ax.set_xlabel('CLIPNET Activity Prediction', fontsize=13)
+    ax.set_ylabel('Mechanistic Diversity\n(Cosine Distance from WT Cluster Avg DeepSHAP)', fontsize=13)
+    ax.set_title(f'{name} — Activity vs Mechanistic Diversity (k={k})\n'
+                 f'eQTL variants are mechanistically robust (low diversity) despite functional effects',
+                 fontsize=14)
+    ax.legend(fontsize=10, markerscale=1.5)
     ax.grid(True, alpha=0.3)
 
-    out_path = os.path.join(FINALS_DIR, f'eqtl_alignment_vs_prediction_k{k}.png')
+    plt.tight_layout()
+    out_path = os.path.join(FINALS_DIR, f'{name}_volcano_activity_vs_mech_diversity_k{k}.png')
     plt.savefig(out_path, dpi=150, bbox_inches='tight')
     plt.close()
 
-    csv_path = os.path.join(FINALS_DIR, f'eqtl_alignment_vs_prediction_k{k}.csv')
-    df.to_csv(csv_path, index=False)
+    # Save data
+    df_out = pd.DataFrame({
+        'seq_idx': np.arange(n_seqs),
+        'activity': preds,
+        'cos_dist_from_wt': cos_dists,
+        'source': meta['source'].values[:n_seqs],
+    })
+    csv_path = os.path.join(FINALS_DIR, f'{name}_volcano_data_k{k}.csv')
+    df_out.to_csv(csv_path, index=False)
 
-    print(f'Summary: saved {out_path}')
-    print(f'  {len(df)} total cluster-points across {df["locus"].nunique()} loci')
+    print(f'{name}: saved volcano {out_path}')
+    print(f'  eQTL variants cosine dist: {cos_dists[eqtl_mask]}')
+    print(f'  eQTL variants activity: {preds[eqtl_mask]}')
+    print(f'  Background median cosine dist: {np.median(cos_dists[bg_mask]):.4f}')
     print(f'  Data: {csv_path}')
+
+    del maps
+    gc.collect()
 
 
 # =========================================================================
@@ -525,7 +592,8 @@ def main():
         plot_cluster_preds(name)
         plot_cluster_logos(name)
 
-    plot_eqtl_alignment_summary()
+    for name in LOCI:
+        plot_volcano(name)
 
     print(f'\nAll plots saved to {FINALS_DIR}')
 

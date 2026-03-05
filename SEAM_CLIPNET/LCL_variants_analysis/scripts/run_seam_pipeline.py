@@ -44,22 +44,10 @@ EQTL_DATA_DIR = '/grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_populati
 
 # ── Loci ───────────────────────────────────────────────────────────────────
 LOCI = pd.DataFrame({
-    'name':     ['IRF7', 'HLA-A', 'HLA-B', 'HLA-C', 'HLA-G',
-                 'HOXA1', 'HOXA13', 'HOXC13', 'B-ACTIN', 'TBP', 'GAPDH',
-                 'YAP1', 'TAZ', 'PIK3R3', 'MYC', 'TNF', 'BCL2',
-                 'KRAS', 'EGFR', 'ERBB2', 'PIK3CA', 'CCND1', 'BRAF', 'VEGFA', 'MDM2'],
-    'chrom':    ['chr11', 'chr6', 'chr6', 'chr6', 'chr6',
-                 'chr7', 'chr7', 'chr12', 'chr7', 'chr6', 'chr12',
-                 'chr11', 'chr3', 'chr1', 'chr8', 'chr6', 'chr18',
-                 'chr12', 'chr7', 'chr17', 'chr3', 'chr11', 'chr7', 'chr6', 'chr12'],
-    'tss':      [616000, 29942532, 31357179, 31272092, 29827825,
-                 27095025, 27209044, 53976181, 5530601, 170554302, 6534512,
-                 102110461, 149658025, 46132640, 127736231, 31575565, 63319769,
-                 25250929, 55019017, 39700064, 179148357, 69641156, 140924929, 43770211, 68808177],
-    'category': ['Oncogene', 'HLA', 'HLA', 'HLA', 'HLA',
-                 'Hox', 'Hox', 'Hox', 'Housekeeping', 'Housekeeping', 'Housekeeping',
-                 'Oncogene', 'Oncogene', 'Oncogene', 'Oncogene', 'Oncogene', 'Oncogene',
-                 'Oncogene', 'Oncogene', 'Oncogene', 'Oncogene', 'Oncogene', 'Oncogene', 'Oncogene', 'Oncogene'],
+    'name':     ['HLA-A', 'HLA-C'],
+    'chrom':    ['chr6', 'chr6'],
+    'tss':      [29942532, 31272092],
+    'category': ['HLA', 'HLA'],
 })
 LOCI['start'] = LOCI['tss'] - 500
 LOCI['end']   = LOCI['tss'] + 500
@@ -629,8 +617,8 @@ def main():
                         help='Pipeline step to run')
     parser.add_argument('--locus', default=None,
                         help='Comma-separated locus names (default: all 25)')
-    parser.add_argument('--k', type=int, default=5,
-                        help='Number of clusters for k-means (default: 5)')
+    parser.add_argument('--k', type=int, default=100,
+                        help='Number of clusters for k-means (default: 100)')
     args = parser.parse_args()
 
     loci = LOCI
