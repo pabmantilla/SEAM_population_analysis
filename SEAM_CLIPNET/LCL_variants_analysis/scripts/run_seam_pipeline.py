@@ -300,7 +300,7 @@ def step_mutagenize(loci):
             parts.append(snv_seqs)
         if n_random_actual > 0:
             parts.append(x_random)
-        x_mut = np.concatenate(parts, axis=0)
+        x_mut = np.concatenate(parts, axis=0).astype(np.int8)
 
         np.save(outpath, x_mut)
         meta_df = pd.DataFrame(meta_rows)
