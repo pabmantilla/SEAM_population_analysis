@@ -36,6 +36,7 @@ LOCI_TSV = os.path.join(BASE_DIR, 'variant_data', 'GnomAD_data', 'loci_backup_al
 
 MUTLIB_DIR = os.path.join(LCL_DIR, 'Mutagenisis_lib')
 DEEPSHAP_DIR = os.path.join(LCL_DIR, 'DeepSHAP_lib')
+VARIANT_LIBS_DIR = os.path.join(LCL_DIR, 'variant_libs')
 CLUSTER_DIR = os.path.join(LCL_DIR, 'cluster_results')
 SEQ_RESULTS_DIR = os.path.join(LCL_DIR, 'results', 'seq_results')
 FINAL_RESULTS_DIR = os.path.join(LCL_DIR, 'results', 'results_final')
@@ -110,26 +111,98 @@ class CountWrapper(torch.nn.Module):
         return counts
 
 
-def step_attribute(loci, device='cuda'):
-    """Compute DeepLIFT/SHAP attributions for all sequences in mutagenesis library."""
+def _attribute_one_library(mut_path, maps_path, preds_path, model, count_model, device):
+    """Run predictions + DeepLIFT/SHAP on a single mutagenesis library file."""
     import torch
     from tangermeme.deep_lift_shap import deep_lift_shap
 
-    os.makedirs(DEEPSHAP_DIR, exist_ok=True)
+    x_mut = np.load(mut_path)  # (N, 2114, 4)
+    x_mut_t = np.transpose(x_mut, (0, 2, 1))  # (N, 4, 2114)
 
+    # --- Predictions ---
+    if not os.path.exists(preds_path):
+        print(f'  Computing predictions for {x_mut_t.shape[0]} sequences...')
+        from tangermeme.predict import predict
+        X = torch.tensor(x_mut_t, dtype=torch.float32)
+        profile_preds, count_preds = predict(model, X, batch_size=PRED_BATCH_SIZE, device=device)
+        counts = count_preds.numpy().squeeze()  # (N,)
+        np.save(preds_path, counts)
+        print(f'  Saved predictions {counts.shape} to {preds_path}')
+        del X, profile_preds, count_preds
+        gc.collect()
+        torch.cuda.empty_cache()
+
+    # --- Attribution maps ---
+    if not os.path.exists(maps_path):
+        from tangermeme.ersatz import dinucleotide_shuffle
+
+        X = torch.tensor(x_mut_t, dtype=torch.float32)
+
+        CHUNK_SIZE = 256
+        all_attrs = []
+        for i in range(0, X.shape[0], CHUNK_SIZE):
+            chunk = X[i:i + CHUNK_SIZE]
+
+            print(f'  Chunk [{i}:{min(i+CHUNK_SIZE, X.shape[0])}] '
+                  f'pre-computing {NUM_SHUFS} dinuc shuffles...')
+            refs = dinucleotide_shuffle(chunk, n=NUM_SHUFS, random_state=42)
+
+            print(f'  Chunk [{i}:{min(i+CHUNK_SIZE, X.shape[0])}] '
+                  f'running DeepLIFT/SHAP (batch_size={ATTR_BATCH_SIZE})...')
+            attrs = deep_lift_shap(
+                count_model, chunk,
+                references=refs,
+                batch_size=ATTR_BATCH_SIZE,
+                device=device,
+                hypothetical=True,
+            )
+            projected = (attrs * chunk.numpy()).numpy()  # (chunk, 4, 2114)
+            all_attrs.append(projected)
+
+            done = min(i + CHUNK_SIZE, X.shape[0])
+            print(f'    {done}/{X.shape[0]} sequences attributed')
+            del refs
+            gc.collect()
+            torch.cuda.empty_cache()
+
+        maps = np.concatenate(all_attrs, axis=0)  # (N, 4, 2114)
+        maps = np.transpose(maps, (0, 2, 1))  # (N, 2114, 4)
+        np.save(maps_path, maps)
+        print(f'  Saved attribution maps {maps.shape} to {maps_path}')
+        del X, all_attrs, maps
+        gc.collect()
+        torch.cuda.empty_cache()
+
+    gc.collect()
+
+
+def step_attribute(loci, device='cuda', source=None):
+    """Compute DeepLIFT/SHAP attributions.
+
+    Args:
+        source: If None, uses default Mutagenisis_lib/DeepSHAP_lib paths (original pipeline).
+                If 'gnomad', 'caqtl_eur', or 'caqtl_afr', uses variant_libs/{source}/
+                with x_var_{name}.npy files (WT + variant one-hot sequences).
+    """
     model = load_chrombpnet_model(device)
     count_model = CountWrapper(model).to(device)
 
-    ref_data = np.load(os.path.join(MUTLIB_DIR, 'x_onehot_ref_2114bp.npz'))
-
     for _, row in loci.iterrows():
         name = row['name']
-        maps_path = os.path.join(DEEPSHAP_DIR, f'maps_{name}_{NUM_SEQS}.npy')
-        preds_path = os.path.join(DEEPSHAP_DIR, f'preds_{name}_{NUM_SEQS}.npy')
 
-        mut_path = os.path.join(MUTLIB_DIR, f'x_mut_{name}_{NUM_SEQS}.npy')
+        if source:
+            src_dir = os.path.join(VARIANT_LIBS_DIR, source)
+            mut_path = os.path.join(src_dir, f'x_var_{name}.npy')
+            maps_path = os.path.join(src_dir, f'maps_{name}.npy')
+            preds_path = os.path.join(src_dir, f'preds_{name}.npy')
+        else:
+            mut_path = os.path.join(MUTLIB_DIR, f'x_mut_{name}_{NUM_SEQS}.npy')
+            maps_path = os.path.join(DEEPSHAP_DIR, f'maps_{name}_{NUM_SEQS}.npy')
+            preds_path = os.path.join(DEEPSHAP_DIR, f'preds_{name}_{NUM_SEQS}.npy')
+            os.makedirs(DEEPSHAP_DIR, exist_ok=True)
+
         if not os.path.exists(mut_path):
-            print(f'{name}: mutagenesis library not found at {mut_path}, skipping')
+            print(f'{name}: library not found at {mut_path}, skipping')
             continue
 
         if os.path.exists(maps_path) and os.path.exists(preds_path):
@@ -137,80 +210,26 @@ def step_attribute(loci, device='cuda'):
             continue
 
         print(f'\n{"="*50}')
-        print(f'{name}: DeepLIFT/SHAP attributions')
+        print(f'{name}: DeepLIFT/SHAP attributions{" (" + source + ")" if source else ""}')
         print(f'{"="*50}')
 
-        # Load mutagenesis library: (N, L, 4) -> need (N, 4, L) for bpnet-lite
-        x_mut = np.load(mut_path)  # (N, 2114, 4)
-        x_mut_t = np.transpose(x_mut, (0, 2, 1))  # (N, 4, 2114)
-
-        # --- Predictions ---
-        if not os.path.exists(preds_path):
-            print(f'  Computing predictions for {x_mut_t.shape[0]} sequences...')
-            from tangermeme.predict import predict
-            X = torch.tensor(x_mut_t, dtype=torch.float32)
-            profile_preds, count_preds = predict(model, X, batch_size=PRED_BATCH_SIZE, device=device)
-            counts = count_preds.numpy().squeeze()  # (N,)
-            np.save(preds_path, counts)
-            print(f'  Saved predictions {counts.shape} to {preds_path}')
-            del X, profile_preds, count_preds
-            gc.collect()
-            torch.cuda.empty_cache()
-
-        # --- Attribution maps ---
-        if not os.path.exists(maps_path):
-            from tangermeme.ersatz import dinucleotide_shuffle
-
-            X = torch.tensor(x_mut_t, dtype=torch.float32)
-
-            # Pre-compute all dinucleotide shuffles in parallel (avoids
-            # the sequential per-sequence loop inside deep_lift_shap)
-            CHUNK_SIZE = 256
-            all_attrs = []
-            for i in range(0, X.shape[0], CHUNK_SIZE):
-                chunk = X[i:i + CHUNK_SIZE]
-
-                print(f'  Chunk [{i}:{min(i+CHUNK_SIZE, X.shape[0])}] '
-                      f'pre-computing {NUM_SHUFS} dinuc shuffles...')
-                refs = dinucleotide_shuffle(chunk, n=NUM_SHUFS, random_state=42)
-                # refs shape: (chunk_size, n_shuffles, 4, 2114)
-
-                print(f'  Chunk [{i}:{min(i+CHUNK_SIZE, X.shape[0])}] '
-                      f'running DeepLIFT/SHAP (batch_size={ATTR_BATCH_SIZE})...')
-                attrs = deep_lift_shap(
-                    count_model, chunk,
-                    references=refs,  # pre-computed tensor, no sequential loop
-                    batch_size=ATTR_BATCH_SIZE,
-                    device=device,
-                    hypothetical=True,
-                )
-                # attrs: (chunk, 4, 2114) -> project by input
-                projected = (attrs * chunk.numpy()).numpy()  # (chunk, 4, 2114)
-                all_attrs.append(projected)
-
-                done = min(i + CHUNK_SIZE, X.shape[0])
-                print(f'    {done}/{X.shape[0]} sequences attributed')
-                del refs
-                gc.collect()
-                torch.cuda.empty_cache()
-
-            maps = np.concatenate(all_attrs, axis=0)  # (N, 4, 2114)
-            # Transpose to (N, 2114, 4) for consistency with CLIPNET pipeline
-            maps = np.transpose(maps, (0, 2, 1))
-            np.save(maps_path, maps)
-            print(f'  Saved attribution maps {maps.shape} to {maps_path}')
-            del X, all_attrs, maps
-            gc.collect()
-            torch.cuda.empty_cache()
-
-        gc.collect()
+        _attribute_one_library(mut_path, maps_path, preds_path, model, count_model, device)
 
 
 # =========================================================================
 # Step 2: K-means Clustering + CSM
 # =========================================================================
+def _cosine_similarity(a, b):
+    """Cosine similarity between two flat vectors."""
+    dot = np.dot(a, b)
+    norm = np.linalg.norm(a) * np.linalg.norm(b)
+    if norm < 1e-12:
+        return 0.0
+    return float(dot / norm)
+
+
 def step_cluster(loci, k):
-    """Cluster attribution maps and compute CSM (% mismatch from WT)."""
+    """Cluster attribution maps, compute CSM, mechanistic diversity, and functional evolvability."""
     from sklearn.cluster import KMeans
 
     os.makedirs(CLUSTER_DIR, exist_ok=True)
@@ -256,12 +275,25 @@ def step_cluster(loci, k):
             if np.sum(members) > 0:
                 pct_mismatch[ci] = mismatch_mask[members].mean(axis=0) * 100
 
+        # Mechanistic diversity: 1 - cos_sim(cluster_avg_map, wt_cluster_avg_map)
+        wt_cluster = labels[0]
+        wt_members = labels == wt_cluster
+        wt_avg_map = maps_flat[wt_members].mean(axis=0)  # flat avg
+
+        cluster_cos_sim = {}
+        cluster_mech_div = {}
+        for c in cluster_ids:
+            members = labels == c
+            cluster_avg = maps_flat[members].mean(axis=0)
+            cs = _cosine_similarity(cluster_avg, wt_avg_map)
+            cluster_cos_sim[c] = cs
+            cluster_mech_div[c] = 1.0 - cs
+
         # Save
         np.save(labels_path, labels)
         np.save(os.path.join(locus_dir, 'csm_matrix.npy'), pct_mismatch)
 
-        # Cluster info CSV
-        wt_cluster = labels[0]
+        # Cluster info CSV with mechanistic diversity + functional evolvability
         info_rows = []
         preds = np.load(preds_path) if os.path.exists(preds_path) else None
         for ci, c in enumerate(cluster_ids):
@@ -273,6 +305,8 @@ def step_cluster(loci, k):
                 'pct_of_total': round(100 * n / len(labels), 2),
                 'has_wt': c == wt_cluster,
                 'mean_mismatch_pct': round(float(pct_mismatch[ci].mean()), 2),
+                'cos_sim_to_wt': round(cluster_cos_sim[c], 6),
+                'mech_diversity': round(cluster_mech_div[c], 6),
             }
             if preds is not None:
                 r['mean_pred'] = round(float(preds[members].mean()), 6)
@@ -321,30 +355,56 @@ def step_seq_results(loci, k):
         wt_cluster = labels[0]
         cluster_sizes = {c: int(np.sum(labels == c)) for c in cluster_ids}
 
-        # ── 1. CSM Heatmap ──
-        fig_height = max(6, len(cluster_ids) * 0.18)
-        fig, ax = plt.subplots(figsize=(20, fig_height))
-        im = ax.pcolormesh(csm, cmap='viridis', vmin=0, vmax=100)
+        # ── 1. Mechanistic Diversity vs Functional Evolvability Scatter ──
+        if os.path.exists(maps_path) and os.path.exists(preds_path):
+            maps = np.load(maps_path)  # (N, 2114, 4)
+            maps_flat = maps.reshape(maps.shape[0], -1)
+            preds_all = np.load(preds_path)
 
-        wt_idx = cluster_ids.index(wt_cluster)
-        ax.axhline(y=wt_idx + 0.5, color='red', linestyle=':', linewidth=2, alpha=0.9)
+            wt_members = labels == wt_cluster
+            wt_avg = maps_flat[wt_members].mean(axis=0)
 
-        ytick_labels = []
-        for ci, c in enumerate(cluster_ids):
-            lbl = f'C{c} (n={cluster_sizes[c]})'
-            if c == wt_cluster:
-                lbl += '  *WT*'
-            ytick_labels.append(lbl)
+            mech_div = []
+            mean_pred = []
+            n_seqs = []
+            is_wt = []
+            for c in cluster_ids:
+                members = labels == c
+                cluster_avg = maps_flat[members].mean(axis=0)
+                cs = _cosine_similarity(cluster_avg, wt_avg)
+                mech_div.append(1.0 - cs)
+                mean_pred.append(float(preds_all[members].mean()))
+                n_seqs.append(int(members.sum()))
+                is_wt.append(c == wt_cluster)
 
-        ax.set_yticks(np.arange(len(cluster_ids)) + 0.5)
-        ax.set_yticklabels(ytick_labels, fontsize=5)
-        ax.set_xlabel('Position', fontsize=11)
-        ax.set_ylabel('Cluster', fontsize=11)
-        ax.set_title(f'{name} — CSM % Mismatch from WT (k={k})', fontsize=13)
-        plt.colorbar(im, ax=ax, label='% Mismatch', shrink=0.6)
-        plt.tight_layout()
-        plt.savefig(os.path.join(locus_out_dir, f'csm_mismatch_k{k}.png'), dpi=100, bbox_inches='tight')
-        plt.close()
+            del maps, maps_flat
+
+            fig, ax = plt.subplots(figsize=(8, 6))
+            md = np.array(mech_div)
+            mp = np.array(mean_pred)
+            ns = np.array(n_seqs)
+            iw = np.array(is_wt)
+
+            # Center x-axis on WT activity
+            wt_pred_val = float(mp[iw][0]) if iw.any() else float(mp.mean())
+            mp_centered = mp - wt_pred_val
+
+            ax.scatter(mp_centered[~iw], md[~iw], s=8, alpha=0.5, c='steelblue',
+                      edgecolors='k', linewidth=0.2, label='Non-WT clusters')
+            if iw.any():
+                ax.scatter(mp_centered[iw], md[iw], s=40, c='red', marker='*',
+                          edgecolors='k', linewidth=0.3, zorder=5, label='WT cluster')
+
+            ax.axvline(x=0, color='red', linestyle='--', linewidth=0.8, alpha=0.4)
+            ax.set_xlabel('Functional Evolvability (pred. activity - WT)', fontsize=12)
+            ax.set_ylabel('Mechanistic Diversity (1 - cos sim to WT)', fontsize=12)
+            ax.set_title(f'{name} — Func. Evolvability vs Mech. Diversity (k={k})', fontsize=13)
+            ax.legend(fontsize=9)
+            ax.grid(True, alpha=0.3)
+            plt.tight_layout()
+            plt.savefig(os.path.join(locus_out_dir, f'diversity_evolvability_k{k}.png'),
+                        dpi=150, bbox_inches='tight')
+            plt.close()
 
         # ── 2. Cluster Predictions Boxplot (sorted by mean pred) ──
         if os.path.exists(preds_path):
@@ -385,19 +445,18 @@ def step_seq_results(loci, k):
 
         # ── 3. WT Attribution Logo + CSM ──
         if os.path.exists(maps_path):
+            import logomaker
+
             maps = np.load(maps_path, mmap_mode='r')
             wt_map = maps[0]  # (2114, 4)
 
-            fig = plt.figure(figsize=(20, max(5, 2.5 + k * 0.005)))
+            fig = plt.figure(figsize=(40, max(5, 2.5 + k * 0.005)))
             gs = gridspec.GridSpec(2, 1, height_ratios=[1, 1.5], hspace=0.35)
 
-            # WT logo
+            # WT logo (sequence logo from attribution scores)
             ax_wt = fig.add_subplot(gs[0])
-            # Plot as heatmap-style for 2114bp (too wide for sequence logo)
-            contrib = wt_map  # (2114, 4)
-            contrib_max = np.max(np.abs(contrib)) + 1e-8
-            ax_wt.plot(np.arange(SEQ_LENGTH), contrib.sum(axis=1), color='steelblue', linewidth=0.5)
-            ax_wt.fill_between(np.arange(SEQ_LENGTH), contrib.sum(axis=1), alpha=0.3, color='steelblue')
+            logo_df = pd.DataFrame(wt_map, columns=['A', 'C', 'G', 'T'])
+            logomaker.Logo(logo_df, ax=ax_wt, color_scheme='classic')
             ax_wt.axvline(x=SEQ_LENGTH // 2, color='red', linestyle='--', linewidth=1, alpha=0.5, label='TSS')
             ax_wt.set_ylabel('Attribution')
             ax_wt.set_title(f'WT DeepSHAP - {name} (log counts)')
@@ -478,26 +537,79 @@ def step_final_results(k):
                     dpi=150, bbox_inches='tight')
         plt.close()
 
-    # ── Mean mismatch distribution ──
-    fig, ax = plt.subplots(figsize=(10, 6))
+    # ── Mechanistic Diversity vs Functional Evolvability (all loci) ──
+    scatter_rows = []
     for _, row in all_loci.iterrows():
         name = row['name']
-        csm_path = os.path.join(CLUSTER_DIR, name, f'k{k}', 'csm_matrix.npy')
-        if not os.path.exists(csm_path):
+        maps_path = os.path.join(DEEPSHAP_DIR, f'maps_{name}_{NUM_SEQS}.npy')
+        preds_path = os.path.join(DEEPSHAP_DIR, f'preds_{name}_{NUM_SEQS}.npy')
+        labels_path = os.path.join(CLUSTER_DIR, name, f'k{k}', 'cluster_labels.npy')
+        if not all(os.path.exists(p) for p in [maps_path, preds_path, labels_path]):
             continue
-        csm = np.load(csm_path)
-        mean_per_cluster = csm.mean(axis=1)
-        ax.hist(mean_per_cluster, bins=30, alpha=0.3, label=name)
 
-    ax.set_xlabel('Mean % Mismatch from WT')
-    ax.set_ylabel('Count (clusters)')
-    ax.set_title(f'CSM Mean Mismatch Distribution Across Loci (k={k})')
-    if len(all_loci) <= 10:
-        ax.legend(fontsize=7)
-    plt.tight_layout()
-    plt.savefig(os.path.join(FINAL_RESULTS_DIR, f'csm_mismatch_distribution_k{k}.png'),
-                dpi=150, bbox_inches='tight')
-    plt.close()
+        maps = np.load(maps_path)
+        maps_flat = maps.reshape(maps.shape[0], -1)
+        preds = np.load(preds_path)
+        labels = np.load(labels_path)
+        cluster_ids = sorted(np.unique(labels))
+        wt_cluster = labels[0]
+        wt_avg = maps_flat[labels == wt_cluster].mean(axis=0)
+
+        for c in cluster_ids:
+            members = labels == c
+            cluster_avg = maps_flat[members].mean(axis=0)
+            cs = _cosine_similarity(cluster_avg, wt_avg)
+            scatter_rows.append({
+                'locus': name,
+                'cluster': c,
+                'mech_diversity': 1.0 - cs,
+                'mean_pred': float(preds[members].mean()),
+                'n_seqs': int(members.sum()),
+                'is_wt': c == wt_cluster,
+            })
+        del maps, maps_flat
+        gc.collect()
+
+    if scatter_rows:
+        sdf = pd.DataFrame(scatter_rows)
+        sdf.to_csv(os.path.join(FINAL_RESULTS_DIR, f'diversity_evolvability_k{k}.csv'), index=False)
+
+        locus_names = sdf['locus'].unique()
+        cmap = plt.cm.get_cmap('tab20', len(locus_names))
+        locus_colors = {n: cmap(i) for i, n in enumerate(locus_names)}
+
+        # Center each locus's predictions on its WT activity
+        sdf['pred_centered'] = 0.0
+        for locus_name in locus_names:
+            mask = sdf['locus'] == locus_name
+            wt_mask = mask & (sdf['is_wt'] == True)
+            wt_val = sdf.loc[wt_mask, 'mean_pred'].values[0] if wt_mask.any() else sdf.loc[mask, 'mean_pred'].mean()
+            sdf.loc[mask, 'pred_centered'] = sdf.loc[mask, 'mean_pred'] - wt_val
+
+        fig, ax = plt.subplots(figsize=(10, 8))
+        for locus_name in locus_names:
+            ld = sdf[sdf['locus'] == locus_name]
+            color = locus_colors[locus_name]
+            non_wt = ld[ld['is_wt'] == False]
+            wt = ld[ld['is_wt'] == True]
+
+            ax.scatter(non_wt['pred_centered'], non_wt['mech_diversity'],
+                      s=6, alpha=0.4, c=[color],
+                      edgecolors='none', label=locus_name)
+            if not wt.empty:
+                ax.scatter(wt['pred_centered'].values, wt['mech_diversity'].values,
+                          s=30, c=[color], marker='*', edgecolors='k', linewidth=0.3, zorder=5)
+
+        ax.axvline(x=0, color='red', linestyle='--', linewidth=0.8, alpha=0.4)
+        ax.set_xlabel('Functional Evolvability (pred. activity - WT)', fontsize=12)
+        ax.set_ylabel('Mechanistic Diversity (1 - cos sim to WT)', fontsize=12)
+        ax.set_title(f'Func. Evolvability vs Mech. Diversity — All Loci (k={k})', fontsize=13)
+        ax.legend(fontsize=6, ncol=3, loc='best', markerscale=0.5)
+        ax.grid(True, alpha=0.3)
+        plt.tight_layout()
+        plt.savefig(os.path.join(FINAL_RESULTS_DIR, f'diversity_evolvability_all_loci_k{k}.png'),
+                    dpi=150, bbox_inches='tight')
+        plt.close()
 
     print(f'Final results saved to {FINAL_RESULTS_DIR}')
 
@@ -514,6 +626,9 @@ def main():
                         help='Comma-separated locus names (default: all 34)')
     parser.add_argument('--k', type=int, default=K_DEFAULT,
                         help=f'Number of clusters for k-means (default: {K_DEFAULT})')
+    parser.add_argument('--source', default=None,
+                        choices=['gnomad', 'caqtl_eur', 'caqtl_afr'],
+                        help='Variant source for attribute step (uses variant_libs/{source}/)')
     parser.add_argument('--device', default='cuda',
                         help='Device for PyTorch (default: cuda)')
     args = parser.parse_args()
@@ -528,7 +643,7 @@ def main():
 
     if args.step in ('all', 'attribute'):
         print('\n>>> Step 1: DeepSHAP Attribution Maps <<<')
-        step_attribute(loci, device=args.device)
+        step_attribute(loci, device=args.device, source=args.source)
 
     if args.step in ('all', 'cluster'):
         print(f'\n>>> Step 2: K-means Clustering + CSM (k={args.k}) <<<')
