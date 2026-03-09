@@ -14,6 +14,7 @@ Usage:
   python run_seam_pipeline.py --step attribute --locus IRF7
   python run_seam_pipeline.py --step cluster --k 100
   python run_seam_pipeline.py --step results
+  python run_seam_pipeline.py --step inject --inject gnomad caqtl_eur caqtl_afr
 
 Run with chrombpnet_torch_env:
   source .../SEAM_ChromBPNet/chrombpnet_torch_env/bin/activate
@@ -38,8 +39,17 @@ MUTLIB_DIR = os.path.join(LCL_DIR, 'Mutagenisis_lib')
 DEEPSHAP_DIR = os.path.join(LCL_DIR, 'DeepSHAP_lib')
 VARIANT_LIBS_DIR = os.path.join(LCL_DIR, 'variant_libs')
 CLUSTER_DIR = os.path.join(LCL_DIR, 'cluster_results')
+INJECT_CLUSTER_DIR = os.path.join(LCL_DIR, 'cluster_results', 'variant_inject')
 SEQ_RESULTS_DIR = os.path.join(LCL_DIR, 'results', 'seq_results')
 FINAL_RESULTS_DIR = os.path.join(LCL_DIR, 'results', 'results_final')
+INJECT_RESULTS_DIR = os.path.join(LCL_DIR, 'results', 'results_final', 'variant_inject')
+
+# caQTL coefficient feather files (AlphaGenome predictions vs measured)
+CAQTL_COEFF_DIR = os.path.join(BASE_DIR, 'variant_data', 'Alphagenome_data', 'chromatin_accessibility_qtl')
+CAQTL_COEFF_FILES = {
+    'caqtl_eur': os.path.join(CAQTL_COEFF_DIR, 'caqtl_european_variant_coefficient_human_predictions.feather'),
+    'caqtl_afr': os.path.join(CAQTL_COEFF_DIR, 'caqtl_african_variant_coefficient_human_predictions.feather'),
+}
 
 # ChromBPNet model
 MODEL_DIR = os.path.join(BASE_DIR, 'SEAM_ChromBPNet', 'models')
@@ -395,6 +405,8 @@ def step_seq_results(loci, k):
                 ax.scatter(mp_centered[iw], md[iw], s=40, c='red', marker='*',
                           edgecolors='k', linewidth=0.3, zorder=5, label='WT cluster')
 
+            xlim = max(abs(mp_centered.min()), abs(mp_centered.max())) * 1.1
+            ax.set_xlim(-xlim, xlim)
             ax.axvline(x=0, color='red', linestyle='--', linewidth=0.8, alpha=0.4)
             ax.set_xlabel('Functional Evolvability (pred. activity - WT)', fontsize=12)
             ax.set_ylabel('Mechanistic Diversity (1 - cos sim to WT)', fontsize=12)
@@ -600,6 +612,8 @@ def step_final_results(k):
                 ax.scatter(wt['pred_centered'].values, wt['mech_diversity'].values,
                           s=30, c=[color], marker='*', edgecolors='k', linewidth=0.3, zorder=5)
 
+        xlim = max(abs(sdf['pred_centered'].min()), abs(sdf['pred_centered'].max())) * 1.1
+        ax.set_xlim(-xlim, xlim)
         ax.axvline(x=0, color='red', linestyle='--', linewidth=0.8, alpha=0.4)
         ax.set_xlabel('Functional Evolvability (pred. activity - WT)', fontsize=12)
         ax.set_ylabel('Mechanistic Diversity (1 - cos sim to WT)', fontsize=12)
@@ -615,12 +629,394 @@ def step_final_results(k):
 
 
 # =========================================================================
+# Step 5: Variant Injection — merge variant maps/preds into the 25k SEAM
+#         library, replacing random non-WT sequences, then cluster + plot
+# =========================================================================
+def step_inject(loci, k, source, seed=42):
+    """Inject variant attribution maps into the 25k mutagenesis library.
+
+    For each locus with both a mutagenesis library and variant_libs/{source}/ data:
+      - Load the 25k maps, preds, and x_mut arrays
+      - Load the variant maps, preds from variant_libs/{source}/
+      - Replace randomly-chosen non-WT sequences with variant sequences
+      - Save injected arrays and a mapping CSV to cluster_results/variant_inject/{source}/{name}/k{k}/
+      - Run k-means clustering + CSM on the injected library
+    """
+    from sklearn.cluster import KMeans
+
+    rng = np.random.default_rng(seed)
+    src_dir = os.path.join(VARIANT_LIBS_DIR, source)
+    inject_base = os.path.join(INJECT_CLUSTER_DIR, source)
+    os.makedirs(inject_base, exist_ok=True)
+
+    for _, row in loci.iterrows():
+        name = row['name']
+
+        # Paths for the 25k mutagenesis library
+        maps_path = os.path.join(DEEPSHAP_DIR, f'maps_{name}_{NUM_SEQS}.npy')
+        preds_path = os.path.join(DEEPSHAP_DIR, f'preds_{name}_{NUM_SEQS}.npy')
+        mut_path = os.path.join(MUTLIB_DIR, f'x_mut_{name}_{NUM_SEQS}.npy')
+
+        # Paths for variant library
+        var_maps_path = os.path.join(src_dir, f'maps_{name}.npy')
+        var_preds_path = os.path.join(src_dir, f'preds_{name}.npy')
+        var_meta_path = os.path.join(src_dir, f'x_var_{name}_metadata.csv')
+
+        # Check all inputs exist
+        missing = []
+        for p, desc in [(maps_path, '25k maps'), (preds_path, '25k preds'),
+                        (mut_path, '25k x_mut'), (var_maps_path, 'variant maps'),
+                        (var_preds_path, 'variant preds'), (var_meta_path, 'variant metadata')]:
+            if not os.path.exists(p):
+                missing.append(desc)
+        if missing:
+            print(f'{name}: missing {", ".join(missing)}, skipping')
+            continue
+
+        locus_dir = os.path.join(inject_base, name, f'k{k}')
+        labels_path = os.path.join(locus_dir, 'cluster_labels.npy')
+        if os.path.exists(labels_path):
+            print(f'{name}: injected cluster results exist ({source}, k={k}), skipping')
+            continue
+
+        print(f'\n{"="*50}')
+        print(f'{name}: variant injection ({source}, k={k})')
+        print(f'{"="*50}')
+
+        os.makedirs(locus_dir, exist_ok=True)
+
+        # Load data
+        maps_25k = np.load(maps_path)      # (25000, 2114, 4)
+        preds_25k = np.load(preds_path)     # (25000,)
+        x_mut_25k = np.load(mut_path)       # (25000, 2114, 4)
+
+        var_maps = np.load(var_maps_path)   # (V, 2114, 4)
+        var_preds = np.load(var_preds_path) # (V,)
+        var_meta = pd.read_csv(var_meta_path)
+
+        # Variant sequences start at index 1 (index 0 is WT in variant lib)
+        n_variants = var_maps.shape[0] - 1  # exclude WT row
+        if n_variants <= 0:
+            print(f'{name}: no variant sequences found, skipping')
+            continue
+
+        var_maps_only = var_maps[1:]        # (n_variants, 2114, 4)
+        var_preds_only = var_preds[1:]      # (n_variants,)
+
+        # Choose random non-WT indices to replace (indices 1..24999)
+        available_indices = np.arange(1, maps_25k.shape[0])
+        replace_indices = rng.choice(available_indices, size=n_variants, replace=False)
+        replace_indices.sort()
+
+        # Create injected copies
+        inj_maps = maps_25k.copy()
+        inj_preds = preds_25k.copy()
+        inj_xmut = x_mut_25k.copy()
+
+        inj_maps[replace_indices] = var_maps_only
+        inj_preds[replace_indices] = var_preds_only
+        # For x_mut, use the variant one-hot sequences (from x_var file)
+        var_xmut = np.load(os.path.join(src_dir, f'x_var_{name}.npy'))
+        inj_xmut[replace_indices] = var_xmut[1:]  # skip WT
+
+        print(f'  Injected {n_variants} variants at indices (first 5): {replace_indices[:5]}')
+
+        # Save injection mapping
+        inject_meta = var_meta[var_meta['source'] == 'variant'].copy()
+        inject_meta['injected_idx'] = replace_indices
+        inject_meta.to_csv(os.path.join(locus_dir, 'inject_mapping.csv'), index=False)
+
+        # --- K-means clustering on injected library ---
+        maps_flat = inj_maps.reshape(inj_maps.shape[0], -1)
+        print(f'  Clustering {maps_flat.shape[0]} maps into {k} clusters...')
+        km = KMeans(n_clusters=k, init='k-means++', n_init=10, max_iter=300, random_state=42)
+        labels = km.fit_predict(maps_flat)
+
+        # CSM: percent mismatch from WT
+        x_ref = inj_xmut[0]  # WT is index 0
+        mismatch_mask = np.any(inj_xmut != x_ref[np.newaxis, :, :], axis=2)  # (N, 2114)
+        cluster_ids = sorted(np.unique(labels))
+        pct_mismatch = np.zeros((len(cluster_ids), SEQ_LENGTH))
+        for ci, c in enumerate(cluster_ids):
+            members = labels == c
+            if np.sum(members) > 0:
+                pct_mismatch[ci] = mismatch_mask[members].mean(axis=0) * 100
+
+        # Mechanistic diversity
+        wt_cluster = labels[0]
+        wt_members = labels == wt_cluster
+        wt_avg_map = maps_flat[wt_members].mean(axis=0)
+
+        cluster_cos_sim = {}
+        cluster_mech_div = {}
+        for c in cluster_ids:
+            members = labels == c
+            cluster_avg = maps_flat[members].mean(axis=0)
+            cs = _cosine_similarity(cluster_avg, wt_avg_map)
+            cluster_cos_sim[c] = cs
+            cluster_mech_div[c] = 1.0 - cs
+
+        # Save cluster results
+        np.save(labels_path, labels)
+        np.save(os.path.join(locus_dir, 'csm_matrix.npy'), pct_mismatch)
+
+        # Cluster info CSV
+        info_rows = []
+        for ci, c in enumerate(cluster_ids):
+            members = labels == c
+            n = int(np.sum(members))
+            r = {
+                'cluster': int(c),
+                'n_seqs': n,
+                'pct_of_total': round(100 * n / len(labels), 2),
+                'has_wt': c == wt_cluster,
+                'mean_mismatch_pct': round(float(pct_mismatch[ci].mean()), 2),
+                'cos_sim_to_wt': round(cluster_cos_sim[c], 6),
+                'mech_diversity': round(cluster_mech_div[c], 6),
+                'mean_pred': round(float(inj_preds[members].mean()), 6),
+                'std_pred': round(float(inj_preds[members].std()), 6),
+            }
+            info_rows.append(r)
+
+        pd.DataFrame(info_rows).to_csv(os.path.join(locus_dir, 'cluster_info.csv'), index=False)
+
+        # Build a cluster-index lookup for CSM rows
+        cluster_to_ci = {c: ci for ci, c in enumerate(cluster_ids)}
+
+        # Per-variant results: which cluster each variant landed in
+        # Compute SNP masks for all variants (where variant differs from WT)
+        x_wt = inj_xmut[0]  # (2114, 4)
+        variant_rows = []
+        for i, idx in enumerate(replace_indices):
+            c = int(labels[idx])
+            # SNP mask: positions where this variant differs from WT
+            snp_mask = np.any(inj_xmut[idx] != x_wt, axis=1).astype(float)  # (2114,)
+            # Mechanistic causality: CSM (as fraction 0-1) dotted with SNP mask
+            ci = cluster_to_ci[c]
+            mech_causality = float(np.sum((pct_mismatch[ci] / 100.0) * snp_mask))
+            variant_rows.append({
+                'variant_idx': int(idx),
+                'cluster': c,
+                'mech_diversity': cluster_mech_div[c],
+                'mech_causality': mech_causality,
+                'pred': float(inj_preds[idx]),
+                'wt_pred': float(inj_preds[0]),
+                'log2fc': float((inj_preds[idx] - inj_preds[0]) / np.log(2)),
+            })
+        var_results = pd.DataFrame(variant_rows)
+        # Merge with variant metadata
+        inject_meta_reset = inject_meta.reset_index(drop=True)
+        var_results = pd.concat([inject_meta_reset, var_results], axis=1)
+        var_results.to_csv(os.path.join(locus_dir, 'variant_results.csv'), index=False)
+
+        print(f'  WT cluster={wt_cluster}, variants span {len(set(labels[replace_indices]))} clusters')
+        print(f'  Saved to {locus_dir}')
+
+        del inj_maps, inj_preds, inj_xmut, maps_flat, maps_25k, preds_25k, x_mut_25k
+        gc.collect()
+
+
+def step_inject_final_plots(k, sources=None):
+    """Generate cross-locus plots for variant injection results.
+
+    - GnomAD: Mechanistic Diversity vs Allele Frequency
+    - caQTL: ChromBPNet predicted effect vs measured caQTL coefficient (target)
+    """
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+
+    os.makedirs(INJECT_RESULTS_DIR, exist_ok=True)
+
+    if sources is None:
+        sources = ['gnomad', 'caqtl_eur', 'caqtl_afr']
+
+    # ── GnomAD: Mechanistic Diversity vs Allele Frequency ──
+    if 'gnomad' in sources:
+        _plot_gnomad_mech_vs_af(k)
+
+    # ── caQTL: Predicted vs Actual ──
+    for src in ['caqtl_eur', 'caqtl_afr']:
+        if src in sources:
+            _plot_caqtl_pred_vs_actual(k, src)
+
+
+def _plot_gnomad_mech_vs_af(k):
+    """Mechanistic Diversity vs Allele Frequency for GnomAD variants."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+
+    inject_base = os.path.join(INJECT_CLUSTER_DIR, 'gnomad')
+    all_loci = load_loci()
+    rows = []
+
+    for _, row in all_loci.iterrows():
+        name = row['name']
+        vr_path = os.path.join(inject_base, name, f'k{k}', 'variant_results.csv')
+        if not os.path.exists(vr_path):
+            continue
+        vr = pd.read_csv(vr_path)
+        vr['locus'] = name
+        rows.append(vr)
+
+    if not rows:
+        print('GnomAD: no variant injection results found')
+        return
+
+    df = pd.concat(rows, ignore_index=True)
+    # Filter to variants with valid AF
+    df = df[df['AF'].notna() & (df['AF'] > 0)].copy()
+    if df.empty:
+        print('GnomAD: no variants with valid AF > 0')
+        return
+
+    locus_names = df['locus'].unique()
+    cmap = plt.cm.get_cmap('tab20', max(len(locus_names), 1))
+    locus_colors = {n: cmap(i) for i, n in enumerate(locus_names)}
+
+    fig, ax = plt.subplots(figsize=(10, 7))
+    for locus_name in locus_names:
+        ld = df[df['locus'] == locus_name]
+        ax.scatter(ld['AF'], ld['mech_diversity'],
+                   s=12, alpha=0.6, c=[locus_colors[locus_name]],
+                   edgecolors='k', linewidth=0.2, label=locus_name)
+
+    # Use linear scale but show 1/X style tick labels
+    ax.set_xscale('log')
+    af_ticks = [1, 1e-1, 1e-2, 1e-3, 1e-4, 1e-5, 1e-6]
+    af_tick_labels = ['1', '1/10', '1/100', '1/1K', '1/10K', '1/100K', '1/1M']
+    ax.set_xticks(af_ticks)
+    ax.set_xticklabels(af_tick_labels)
+    ax.set_xlabel('Allele Frequency', fontsize=12)
+    ax.set_ylabel('Mechanistic Diversity (1 - cos sim to WT)', fontsize=12)
+    ax.set_title(f'Mechanistic Diversity vs Allele Frequency — GnomAD (k={k})', fontsize=13)
+    ax.legend(fontsize=7, ncol=3, loc='best', markerscale=1.5)
+    ax.grid(True, alpha=0.3)
+    plt.tight_layout()
+    out_path = os.path.join(INJECT_RESULTS_DIR, f'gnomad_mech_diversity_vs_AF_k{k}.png')
+    plt.savefig(out_path, dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f'  Saved GnomAD plot to {out_path}')
+
+    # ── Mechanistic Causality vs Allele Frequency ──
+    if 'mech_causality' in df.columns:
+        fig, ax = plt.subplots(figsize=(10, 7))
+        for locus_name in locus_names:
+            ld = df[df['locus'] == locus_name]
+            ax.scatter(ld['AF'], ld['mech_causality'],
+                       s=12, alpha=0.6, c=[locus_colors[locus_name]],
+                       edgecolors='k', linewidth=0.2, label=locus_name)
+
+        ax.set_xscale('log')
+        ax.set_xticks(af_ticks)
+        ax.set_xticklabels(af_tick_labels)
+        ax.set_xlabel('Allele Frequency', fontsize=12)
+        ax.set_ylabel('Mechanistic Causality (CSM · SNP mask)', fontsize=12)
+        ax.set_title(f'Mechanistic Causality vs Allele Frequency — GnomAD (k={k})', fontsize=13)
+        ax.legend(fontsize=7, ncol=3, loc='best', markerscale=1.5)
+        ax.grid(True, alpha=0.3)
+        plt.tight_layout()
+        out_path2 = os.path.join(INJECT_RESULTS_DIR, f'gnomad_mech_causality_vs_AF_k{k}.png')
+        plt.savefig(out_path2, dpi=150, bbox_inches='tight')
+        plt.close()
+        print(f'  Saved GnomAD causality plot to {out_path2}')
+
+    # Save data
+    df.to_csv(os.path.join(INJECT_RESULTS_DIR, f'gnomad_variant_results_k{k}.csv'), index=False)
+
+
+def _plot_caqtl_pred_vs_actual(k, source):
+    """ChromBPNet predicted effect vs measured caQTL coefficient."""
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+
+    inject_base = os.path.join(INJECT_CLUSTER_DIR, source)
+    all_loci = load_loci()
+
+    # Load coefficient data
+    coeff_path = CAQTL_COEFF_FILES.get(source)
+    if not coeff_path or not os.path.exists(coeff_path):
+        print(f'{source}: coefficient file not found at {coeff_path}')
+        return
+    coeff_df = pd.read_feather(coeff_path)
+    coeff_lookup = coeff_df.set_index('variant_id')['target'].to_dict()
+
+    rows = []
+    for _, row in all_loci.iterrows():
+        name = row['name']
+        vr_path = os.path.join(inject_base, name, f'k{k}', 'variant_results.csv')
+        if not os.path.exists(vr_path):
+            continue
+        vr = pd.read_csv(vr_path)
+        vr['locus'] = name
+        # Match variant_id to coefficient target
+        vr['target'] = vr['variant_id'].map(coeff_lookup)
+        rows.append(vr)
+
+    if not rows:
+        print(f'{source}: no variant injection results found')
+        return
+
+    df = pd.concat(rows, ignore_index=True)
+    df_valid = df[df['target'].notna()].copy()
+    if df_valid.empty:
+        print(f'{source}: no variants matched coefficient data')
+        return
+
+    locus_names = df_valid['locus'].unique()
+    cmap = plt.cm.get_cmap('tab20', max(len(locus_names), 1))
+    locus_colors = {n: cmap(i) for i, n in enumerate(locus_names)}
+
+    # log2fc = ChromBPNet predicted effect (variant - WT)
+    # target = measured caQTL coefficient
+    fig, ax = plt.subplots(figsize=(8, 8))
+    for locus_name in locus_names:
+        ld = df_valid[df_valid['locus'] == locus_name]
+        ax.scatter(ld['target'], ld['log2fc'],
+                   s=15, alpha=0.6, c=[locus_colors[locus_name]],
+                   edgecolors='k', linewidth=0.2, label=locus_name)
+
+    # Add identity line
+    all_vals = np.concatenate([df_valid['target'].values, df_valid['log2fc'].values])
+    vmin, vmax = all_vals.min(), all_vals.max()
+    margin = (vmax - vmin) * 0.05
+    ax.plot([vmin - margin, vmax + margin], [vmin - margin, vmax + margin],
+            'r--', linewidth=1, alpha=0.5, label='y=x')
+
+    # Compute correlation
+    from scipy.stats import pearsonr, spearmanr
+    r_pearson, p_pearson = pearsonr(df_valid['target'], df_valid['log2fc'])
+    r_spearman, p_spearman = spearmanr(df_valid['target'], df_valid['log2fc'])
+    ax.text(0.05, 0.95,
+            f'Pearson r={r_pearson:.3f} (p={p_pearson:.2e})\nSpearman ρ={r_spearman:.3f} (p={p_spearman:.2e})',
+            transform=ax.transAxes, fontsize=9, verticalalignment='top',
+            bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.5))
+
+    label = 'EUR' if source == 'caqtl_eur' else 'AFR'
+    ax.set_xlabel(f'Measured caQTL Coefficient ({label})', fontsize=12)
+    ax.set_ylabel('ChromBPNet log2FC', fontsize=12)
+    ax.set_title(f'Predicted vs Actual caQTL Effect — {label} (k={k})', fontsize=13)
+    ax.legend(fontsize=7, ncol=2, loc='best', markerscale=1.5)
+    ax.grid(True, alpha=0.3)
+    plt.tight_layout()
+    out_path = os.path.join(INJECT_RESULTS_DIR, f'{source}_pred_vs_actual_k{k}.png')
+    plt.savefig(out_path, dpi=150, bbox_inches='tight')
+    plt.close()
+    print(f'  Saved {source} plot to {out_path}')
+
+    # Save data
+    df_valid.to_csv(os.path.join(INJECT_RESULTS_DIR, f'{source}_variant_results_k{k}.csv'), index=False)
+
+
+# =========================================================================
 # Main
 # =========================================================================
 def main():
     parser = argparse.ArgumentParser(description='SEAM pipeline for ChromBPNet LCL population analysis')
     parser.add_argument('--step', required=True,
-                        choices=['all', 'attribute', 'cluster', 'results', 'final'],
+                        choices=['all', 'attribute', 'cluster', 'results', 'final', 'inject'],
                         help='Pipeline step to run')
     parser.add_argument('--locus', default=None,
                         help='Comma-separated locus names (default: all 34)')
@@ -629,6 +1025,10 @@ def main():
     parser.add_argument('--source', default=None,
                         choices=['gnomad', 'caqtl_eur', 'caqtl_afr'],
                         help='Variant source for attribute step (uses variant_libs/{source}/)')
+    parser.add_argument('--inject', default=None, nargs='+',
+                        choices=['gnomad', 'caqtl_eur', 'caqtl_afr'],
+                        help='Inject variant maps into 25k SEAM library before clustering. '
+                             'Specify one or more sources (e.g. --inject gnomad caqtl_eur)')
     parser.add_argument('--device', default='cuda',
                         help='Device for PyTorch (default: cuda)')
     args = parser.parse_args()
@@ -656,6 +1056,14 @@ def main():
     if args.step in ('all', 'final'):
         print(f'\n>>> Step 4: Cross-locus Final Results <<<')
         step_final_results(args.k)
+
+    if args.step == 'inject' or args.inject:
+        inject_sources = args.inject if args.inject else ['gnomad', 'caqtl_eur', 'caqtl_afr']
+        for src in inject_sources:
+            print(f'\n>>> Variant Injection: {src} (k={args.k}) <<<')
+            step_inject(loci, args.k, src)
+        print(f'\n>>> Variant Injection Final Plots <<<')
+        step_inject_final_plots(args.k, sources=inject_sources)
 
     print('\nPipeline complete.')
 
