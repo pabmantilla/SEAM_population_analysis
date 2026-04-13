@@ -360,43 +360,98 @@ def plot_inject_diversity_evolvability(k, source='gnomad'):
         plt.close()
         print(f'  {name}: saved {out_path}')
 
-    # --- Cross-locus summary ---
+    # --- Cross-locus summary with marginal histograms by gene category ---
     if not all_scatter_rows:
         print(f'  No inject diversity data for {source}')
         return
 
     sdf = pd.DataFrame(all_scatter_rows)
-    locus_names = sdf['locus'].unique()
-    cmap = plt.cm.get_cmap('tab20', max(len(locus_names), 1))
-    locus_colors = {n: cmap(i) for i, n in enumerate(locus_names)}
 
-    fig, ax = plt.subplots(figsize=(10, 8))
-    for locus_name in locus_names:
-        ld = sdf[sdf['locus'] == locus_name]
-        color = locus_colors[locus_name]
+    # Gene category mapping
+    GENE_CATEGORIES = {
+        'HLA': ['HLA-A', 'HLA-B', 'HLA-C', 'HLA-G', 'HLA-DRA', 'HLA-DRB1',
+                 'HLA-DRB5', 'HLA-DQB1', 'B2M', 'TNF'],
+        'Oncogene': ['MYC', 'BCL2', 'NOTCH1', 'ABL1', 'PIK3R3', 'YAP1', 'TAZ', 'IRF7'],
+        'Housekeeping': ['GAPDH', 'B-ACTIN', 'TBP', 'RPL10A', 'RPL35', 'NXF1'],
+        'Hox': ['HOXA1', 'HOXA13', 'HOXC13'],
+    }
+    locus_to_cat = {}
+    for cat, genes in GENE_CATEGORIES.items():
+        for g in genes:
+            locus_to_cat[g] = cat
+    # Anything not in above gets 'Other'
+    sdf['category'] = sdf['locus'].map(lambda x: locus_to_cat.get(x, 'Other'))
 
-        regular = ld[(ld['is_wt'] == False) & (ld['has_variant'] == False)]
-        var_clusters = ld[(ld['has_variant'] == True) & (ld['is_wt'] == False)]
-        wt = ld[ld['is_wt'] == True]
+    CAT_COLORS = {
+        'HLA': '#377eb8',
+        'Oncogene': '#e41a1c',
+        'Housekeeping': '#4daf4a',
+        'Hox': '#7b3294',
+        'Other': '#999999',
+    }
+    categories_present = [c for c in ['HLA', 'Oncogene', 'Housekeeping', 'Hox', 'Other']
+                          if c in sdf['category'].values]
 
-        ax.scatter(regular['pred_centered'], regular['mech_diversity'],
-                   s=6, alpha=0.3, c=[color], edgecolors='none', label=locus_name)
-        if not var_clusters.empty:
-            ax.scatter(var_clusters['pred_centered'], var_clusters['mech_diversity'],
-                       s=18, alpha=0.7, c=[color], edgecolors='k', linewidth=0.3, marker='D', zorder=4)
+    # Build figure with marginal histograms
+    fig = plt.figure(figsize=(12, 10))
+    gs = fig.add_gridspec(2, 2, width_ratios=[4, 1], height_ratios=[1, 4],
+                          hspace=0.05, wspace=0.05)
+    ax_main = fig.add_subplot(gs[1, 0])
+    ax_histx = fig.add_subplot(gs[0, 0], sharex=ax_main)
+    ax_histy = fig.add_subplot(gs[1, 1], sharey=ax_main)
+
+    # Main scatter
+    for cat in categories_present:
+        cd = sdf[sdf['category'] == cat]
+        color = CAT_COLORS[cat]
+
+        regular = cd[(cd['is_wt'] == False) & (cd['has_variant'] == False)]
+        var_cl = cd[(cd['has_variant'] == True) & (cd['is_wt'] == False)]
+        wt = cd[cd['is_wt'] == True]
+
+        ax_main.scatter(regular['pred_centered'], regular['mech_diversity'],
+                        s=6, alpha=0.3, c=color, edgecolors='none', label=cat)
+        if not var_cl.empty:
+            ax_main.scatter(var_cl['pred_centered'], var_cl['mech_diversity'],
+                            s=18, alpha=0.7, c=color, edgecolors='k', linewidth=0.3,
+                            marker='D', zorder=4)
         if not wt.empty:
-            ax.scatter(wt['pred_centered'].values, wt['mech_diversity'].values,
-                       s=30, c=[color], marker='*', edgecolors='k', linewidth=0.3, zorder=5)
+            ax_main.scatter(wt['pred_centered'].values, wt['mech_diversity'].values,
+                            s=30, c=color, marker='*', edgecolors='k', linewidth=0.3, zorder=5)
 
     xlim = max(abs(sdf['pred_centered'].min()), abs(sdf['pred_centered'].max())) * 1.1
-    ax.set_xlim(-xlim, xlim)
-    ax.axvline(x=0, color='red', linestyle='--', linewidth=0.8, alpha=0.4)
-    ax.set_xlabel('Functional Evolvability (pred. activity - WT)', fontsize=12)
-    ax.set_ylabel('Mechanistic Diversity (1 - cos sim to WT)', fontsize=12)
-    ax.set_title(f'Inject {source} — Diversity vs Evolvability — All Loci (k={k})', fontsize=13)
-    ax.legend(fontsize=6, ncol=3, loc='best', markerscale=1.5)
-    ax.grid(True, alpha=0.3)
-    plt.tight_layout()
+    ax_main.set_xlim(-xlim, xlim)
+    ax_main.axvline(x=0, color='red', linestyle='--', linewidth=0.8, alpha=0.4)
+    ax_main.set_xlabel('Functional Evolvability (pred. activity - WT)', fontsize=12)
+    ax_main.set_ylabel('Mechanistic Diversity (1 - cos sim to WT)', fontsize=12)
+    ax_main.legend(fontsize=9, loc='upper right', markerscale=2)
+    ax_main.grid(True, alpha=0.3)
+
+    # Marginal KDE curves by category
+    from scipy.stats import gaussian_kde
+
+    x_grid = np.linspace(-xlim, xlim, 300)
+    y_grid = np.linspace(sdf['mech_diversity'].min(), sdf['mech_diversity'].max() * 1.05, 300)
+
+    for cat in categories_present:
+        cd = sdf[sdf['category'] == cat]
+        color = CAT_COLORS[cat]
+        if len(cd) > 2:
+            kde_x = gaussian_kde(cd['pred_centered'], bw_method=0.3)
+            ax_histx.fill_between(x_grid, kde_x(x_grid), color=color, alpha=0.3)
+            ax_histx.plot(x_grid, kde_x(x_grid), color=color, linewidth=1.5, label=cat)
+
+            kde_y = gaussian_kde(cd['mech_diversity'], bw_method=0.3)
+            ax_histy.fill_betweenx(y_grid, kde_y(y_grid), color=color, alpha=0.3)
+            ax_histy.plot(kde_y(y_grid), y_grid, color=color, linewidth=1.5)
+
+    ax_histx.set_ylabel('Count', fontsize=10)
+    ax_histx.tick_params(labelbottom=False)
+    ax_histx.set_title(f'Inject {source} — Diversity vs Evolvability — All Loci (k={k})', fontsize=13)
+
+    ax_histy.set_xlabel('Count', fontsize=10)
+    ax_histy.tick_params(labelleft=False)
+
     out_path = os.path.join(INJECT_RESULTS_DIR, f'{source}_diversity_evolvability_all_loci_k{k}.png')
     plt.savefig(out_path, dpi=150, bbox_inches='tight')
     plt.close()
