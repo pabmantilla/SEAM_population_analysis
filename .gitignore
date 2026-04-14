@@ -16,3 +16,7 @@ SEAM_ChromBPNet/bpnet-lite/
 
 # Large model files
 SEAM_ChromBPNet/models/
+
+# Large data files (>50MB)
+*.npy
+*.feather
