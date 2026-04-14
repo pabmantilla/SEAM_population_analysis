@@ -1,0 +1,23 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829257
+Array:     4/34
+Locus:     PRSS1
+Args:      
+Node:      bam27
+Start:     Fri Mar  6 22:57:31 EST 2026
+==============================================
+Processing 1 loci: ['PRSS1']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+
+==================================================
+PRSS1: clustering (k=100)
+==================================================
+  Clustering 25000 maps into 100 clusters...
+  Saved cluster results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/PRSS1/k100
+  WT cluster=96, sizes: min=1, max=1504
+
+Pipeline complete.
+
+Done: Sat Mar  7 02:54:56 EST 2026

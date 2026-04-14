@@ -1,0 +1,40 @@
+==============================================
+Variant Attributions: gnomAD
+Job ID:    829507
+Array:     11/34
+Locus:     PIK3R3
+Node:      bamgpu19
+GPU:       0
+Start:     Sat Mar  7 10:31:29 EST 2026
+==============================================
+Processing 1 loci: ['PIK3R3']
+
+>>> Step 1: DeepSHAP Attribution Maps <<<
+Loading ChromBPNet model from /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/models/ENCFF673TIN.tar.gz (fold_0)...
+Model loaded: ./fold_0/model.chrombpnet_nobias.fold_0.ENCSR000EMT.h5
+
+==================================================
+PIK3R3: DeepLIFT/SHAP attributions (gnomad)
+==================================================
+  Computing predictions for 1266 sequences...
+  Saved predictions (1266,) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad/preds_PIK3R3.npy
+  Chunk [0:256] pre-computing 50 dinuc shuffles...
+  Chunk [0:256] running DeepLIFT/SHAP (batch_size=8)...
+    256/1266 sequences attributed
+  Chunk [256:512] pre-computing 50 dinuc shuffles...
+  Chunk [256:512] running DeepLIFT/SHAP (batch_size=8)...
+    512/1266 sequences attributed
+  Chunk [512:768] pre-computing 50 dinuc shuffles...
+  Chunk [512:768] running DeepLIFT/SHAP (batch_size=8)...
+    768/1266 sequences attributed
+  Chunk [768:1024] pre-computing 50 dinuc shuffles...
+  Chunk [768:1024] running DeepLIFT/SHAP (batch_size=8)...
+    1024/1266 sequences attributed
+  Chunk [1024:1266] pre-computing 50 dinuc shuffles...
+  Chunk [1024:1266] running DeepLIFT/SHAP (batch_size=8)...
+    1266/1266 sequences attributed
+  Saved attribution maps (1266, 2114, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad/maps_PIK3R3.npy
+
+Pipeline complete.
+
+Done: Sat Mar  7 10:43:45 EST 2026

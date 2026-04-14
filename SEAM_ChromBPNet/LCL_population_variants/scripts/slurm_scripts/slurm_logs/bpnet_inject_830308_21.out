@@ -1,0 +1,35 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    830330
+Array:     21/34
+Locus:     MYC
+Node:      bam23
+Start:     Sun Mar  8 15:53:43 EDT 2026
+==============================================
+Processing 1 loci: ['MYC']
+
+>>> Variant Injection: gnomad (k=100) <<<
+
+==================================================
+MYC: variant injection (gnomad, k=100)
+==================================================
+  Injected 361 variants at indices (first 5): [183 248 486 539 564]
+  Clustering 25000 maps into 100 clusters...
+  WT cluster=39, variants span 16 clusters
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/variant_inject/gnomad/MYC/k100
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+MYC: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+MYC: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection Final Plots <<<
+  Saved GnomAD plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/gnomad_mech_diversity_vs_AF_k100.png
+  Saved GnomAD causality plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/gnomad_mech_causality_vs_AF_k100.png
+  Saved caqtl_eur plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/caqtl_eur_pred_vs_actual_k100.png
+  Saved caqtl_afr plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/caqtl_afr_pred_vs_actual_k100.png
+
+Pipeline complete.
+
+Done: Sun Mar  8 16:07:02 EDT 2026

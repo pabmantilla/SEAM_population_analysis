@@ -1,0 +1,16 @@
+==============================================
+Variant Library: gnomAD
+Job ID:    829401
+Array:     13/34
+Locus:     HLA-B
+Node:      bam31
+Start:     Sat Mar  7 09:34:44 EST 2026
+==============================================
+Source: gnomad
+Processing 1 loci
+Output: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad
+HLA-B: 1241 variants -> (1242, 2114, 4) saved
+
+Done.
+
+Done: Sat Mar  7 09:34:46 EST 2026

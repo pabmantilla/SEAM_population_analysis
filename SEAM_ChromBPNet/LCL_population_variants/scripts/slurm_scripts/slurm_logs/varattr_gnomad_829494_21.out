@@ -1,0 +1,31 @@
+==============================================
+Variant Attributions: gnomAD
+Job ID:    829518
+Array:     21/34
+Locus:     MYC
+Node:      bamgpu18
+GPU:       0
+Start:     Sat Mar  7 10:32:26 EST 2026
+==============================================
+Processing 1 loci: ['MYC']
+
+>>> Step 1: DeepSHAP Attribution Maps <<<
+Loading ChromBPNet model from /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/models/ENCFF673TIN.tar.gz (fold_0)...
+Model loaded: ./fold_0/model.chrombpnet_nobias.fold_0.ENCSR000EMT.h5
+
+==================================================
+MYC: DeepLIFT/SHAP attributions (gnomad)
+==================================================
+  Computing predictions for 362 sequences...
+  Saved predictions (362,) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad/preds_MYC.npy
+  Chunk [0:256] pre-computing 50 dinuc shuffles...
+  Chunk [0:256] running DeepLIFT/SHAP (batch_size=8)...
+    256/362 sequences attributed
+  Chunk [256:362] pre-computing 50 dinuc shuffles...
+  Chunk [256:362] running DeepLIFT/SHAP (batch_size=8)...
+    362/362 sequences attributed
+  Saved attribution maps (362, 2114, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad/maps_MYC.npy
+
+Pipeline complete.
+
+Done: Sat Mar  7 10:34:11 EST 2026

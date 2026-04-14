@@ -1,0 +1,68 @@
+==============================================
+ChromBPNet SEAM Results
+Job ID:    829384
+Args:      
+Node:      bam32
+Start:     Sat Mar  7 08:40:54 EST 2026
+==============================================
+
+>>> Step 3: Per-locus Results <<<
+IRF7: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/IRF7
+EH38E3485200: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/EH38E3485200
+RPL10A: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/RPL10A
+RPL35: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/RPL35
+PRSS1: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/PRSS1
+CD40: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/CD40
+CRTAM: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/CRTAM
+PDCD1LG2: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/PDCD1LG2
+SETD9: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/SETD9
+DYNLRB2-AS1: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/DYNLRB2-AS1
+NXF1: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/NXF1
+PIK3R3: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/PIK3R3
+HLA-DQB1: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/HLA-DQB1
+HLA-B: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/HLA-B
+HLA-C: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/HLA-C
+HLA-DRB1: generating seq results...
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/seq_results/HLA-DRB1
+HLA-DRB5: cluster results not found, skipping
+TNF: cluster results not found, skipping
+HLA-G: cluster results not found, skipping
+HLA-DRA: cluster results not found, skipping
+HLA-A: cluster results not found, skipping
+MYC: cluster results not found, skipping
+BCL2: cluster results not found, skipping
+NOTCH1: cluster results not found, skipping
+ABL1: cluster results not found, skipping
+B-ACTIN: cluster results not found, skipping
+GAPDH: cluster results not found, skipping
+B2M: cluster results not found, skipping
+TBP: cluster results not found, skipping
+HOXA1: cluster results not found, skipping
+HOXA13: cluster results not found, skipping
+HOXC13: cluster results not found, skipping
+YAP1: cluster results not found, skipping
+TAZ: cluster results not found, skipping
+
+Pipeline complete.
+
+>>> Step 4: Cross-locus Final Results <<<
+Final results saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final
+
+Pipeline complete.
+
+Done: Sat Mar  7 08:45:55 EST 2026

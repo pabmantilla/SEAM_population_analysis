@@ -1,0 +1,20 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829938
+Array:     12/34
+Locus:     HLA-DQB1
+Node:      bam18
+Start:     Sat Mar  7 15:38:14 EST 2026
+==============================================
+Processing 1 loci: ['HLA-DQB1']
+
+>>> Variant Injection: gnomad (k=100) <<<
+HLA-DQB1: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+
+==================================================
+HLA-DQB1: variant injection (caqtl_eur, k=100)
+==================================================
+  Injected 20 variants at indices (first 5): [2148 2230 2354 3203 5035]
+  Clustering 25000 maps into 100 clusters...

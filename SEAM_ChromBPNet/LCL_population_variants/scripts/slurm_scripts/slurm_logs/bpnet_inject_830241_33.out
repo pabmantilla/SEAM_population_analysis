@@ -1,0 +1,17 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    830241
+Array:     33/34
+Locus:     TAZ
+Node:      bam25
+Start:     Sun Mar  8 14:21:13 EDT 2026
+==============================================
+Processing 1 loci: ['TAZ']
+
+>>> Variant Injection: gnomad (k=100) <<<
+
+==================================================
+TAZ: variant injection (gnomad, k=100)
+==================================================
+  Injected 1344 variants at indices (first 5): [106 107 112 119 131]
+  Clustering 25000 maps into 100 clusters...

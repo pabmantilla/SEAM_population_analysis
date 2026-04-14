@@ -1,0 +1,16 @@
+==============================================
+Variant Library: caQTL African
+Job ID:    829483
+Array:     27/34
+Locus:     B2M
+Node:      bam31
+Start:     Sat Mar  7 09:35:27 EST 2026
+==============================================
+Source: caqtl_afr
+Processing 1 loci
+Output: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/caqtl_afr
+B2M: no variants found, skipping
+
+Done.
+
+Done: Sat Mar  7 09:35:28 EST 2026

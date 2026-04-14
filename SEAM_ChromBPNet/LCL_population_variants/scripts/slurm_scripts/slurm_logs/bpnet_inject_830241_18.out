@@ -1,0 +1,17 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    830260
+Array:     18/34
+Locus:     HLA-G
+Node:      bam23
+Start:     Sun Mar  8 14:20:48 EDT 2026
+==============================================
+Processing 1 loci: ['HLA-G']
+
+>>> Variant Injection: gnomad (k=100) <<<
+
+==================================================
+HLA-G: variant injection (gnomad, k=100)
+==================================================
+  Injected 981 variants at indices (first 5): [106 119 131 132 133]
+  Clustering 25000 maps into 100 clusters...

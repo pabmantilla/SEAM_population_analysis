@@ -1,0 +1,49 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    830335
+Array:     26/34
+Locus:     GAPDH
+Node:      bam25
+Start:     Sun Mar  8 15:53:44 EDT 2026
+==============================================
+Processing 1 loci: ['GAPDH']
+
+>>> Variant Injection: gnomad (k=100) <<<
+
+==================================================
+GAPDH: variant injection (gnomad, k=100)
+==================================================
+  Injected 723 variants at indices (first 5): [131 160 173 184 191]
+  Clustering 25000 maps into 100 clusters...
+  WT cluster=81, variants span 28 clusters
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/variant_inject/gnomad/GAPDH/k100
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+
+==================================================
+GAPDH: variant injection (caqtl_eur, k=100)
+==================================================
+  Injected 3 variants at indices (first 5): [ 2232 16364 19348]
+  Clustering 25000 maps into 100 clusters...
+  WT cluster=38, variants span 2 clusters
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/variant_inject/caqtl_eur/GAPDH/k100
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+
+==================================================
+GAPDH: variant injection (caqtl_afr, k=100)
+==================================================
+  Injected 7 variants at indices (first 5): [ 2149  2231 10825 10971 16362]
+  Clustering 25000 maps into 100 clusters...
+  WT cluster=95, variants span 3 clusters
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/variant_inject/caqtl_afr/GAPDH/k100
+
+>>> Variant Injection Final Plots <<<
+  Saved GnomAD plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/gnomad_mech_diversity_vs_AF_k100.png
+  Saved GnomAD causality plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/gnomad_mech_causality_vs_AF_k100.png
+  Saved caqtl_eur plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/caqtl_eur_pred_vs_actual_k100.png
+  Saved caqtl_afr plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/caqtl_afr_pred_vs_actual_k100.png
+
+Pipeline complete.
+
+Done: Sun Mar  8 16:29:22 EDT 2026

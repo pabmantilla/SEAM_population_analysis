@@ -1,0 +1,17 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829279
+Array:     23/34
+Locus:     NOTCH1
+Args:      
+Node:      bam20
+Start:     Fri Mar  6 22:58:33 EST 2026
+==============================================
+Processing 1 loci: ['NOTCH1']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+NOTCH1: attribution maps not found, skipping
+
+Pipeline complete.
+
+Done: Fri Mar  6 22:59:13 EST 2026

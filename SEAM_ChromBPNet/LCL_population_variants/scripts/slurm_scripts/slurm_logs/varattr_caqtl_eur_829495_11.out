@@ -1,0 +1,19 @@
+==============================================
+Variant Attributions: caQTL European
+Job ID:    829541
+Array:     11/34
+Locus:     PIK3R3
+Node:      bamgpu19
+GPU:       0
+Start:     Sat Mar  7 10:42:39 EST 2026
+==============================================
+Processing 1 loci: ['PIK3R3']
+
+>>> Step 1: DeepSHAP Attribution Maps <<<
+Loading ChromBPNet model from /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/models/ENCFF673TIN.tar.gz (fold_0)...
+Model loaded: ./fold_0/model.chrombpnet_nobias.fold_0.ENCSR000EMT.h5
+PIK3R3: library not found at /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/caqtl_eur/x_var_PIK3R3.npy, skipping
+
+Pipeline complete.
+
+Done: Sat Mar  7 10:42:59 EST 2026

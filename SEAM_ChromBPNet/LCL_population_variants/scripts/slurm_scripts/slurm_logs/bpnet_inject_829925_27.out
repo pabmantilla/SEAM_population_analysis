@@ -1,0 +1,27 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829953
+Array:     27/34
+Locus:     B2M
+Node:      bam20
+Start:     Sat Mar  7 15:38:31 EST 2026
+==============================================
+Processing 1 loci: ['B2M']
+
+>>> Variant Injection: gnomad (k=100) <<<
+B2M: missing 25k maps, 25k preds, variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+B2M: missing 25k maps, 25k preds, variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+B2M: missing 25k maps, 25k preds, variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection Final Plots <<<
+GnomAD: no variant injection results found
+caqtl_eur: no variant injection results found
+caqtl_afr: no variant injection results found
+
+Pipeline complete.
+
+Done: Sat Mar  7 15:38:37 EST 2026

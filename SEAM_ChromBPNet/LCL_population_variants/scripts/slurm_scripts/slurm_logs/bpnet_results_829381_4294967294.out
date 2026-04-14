@@ -1,0 +1,17 @@
+==============================================
+ChromBPNet SEAM Results
+Job ID:    829381
+Args:      
+Node:      bam32
+Start:     Sat Mar  7 08:37:04 EST 2026
+==============================================
+
+>>> Step 3: Per-locus Results <<<
+IRF7: generating seq results...
+
+>>> Step 4: Cross-locus Final Results <<<
+Final results saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final
+
+Pipeline complete.
+
+Done: Sat Mar  7 08:37:30 EST 2026

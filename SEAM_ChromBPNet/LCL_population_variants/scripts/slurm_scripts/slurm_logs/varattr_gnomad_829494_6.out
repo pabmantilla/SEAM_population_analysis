@@ -1,0 +1,19 @@
+==============================================
+Variant Attributions: gnomAD
+Job ID:    829502
+Array:     6/34
+Locus:     CRTAM
+Node:      bamgpu20
+GPU:       0
+Start:     Sat Mar  7 10:31:06 EST 2026
+==============================================
+Processing 1 loci: ['CRTAM']
+
+>>> Step 1: DeepSHAP Attribution Maps <<<
+Loading ChromBPNet model from /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/models/ENCFF673TIN.tar.gz (fold_0)...
+Model loaded: ./fold_0/model.chrombpnet_nobias.fold_0.ENCSR000EMT.h5
+CRTAM: library not found at /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad/x_var_CRTAM.npy, skipping
+
+Pipeline complete.
+
+Done: Sat Mar  7 10:31:35 EST 2026

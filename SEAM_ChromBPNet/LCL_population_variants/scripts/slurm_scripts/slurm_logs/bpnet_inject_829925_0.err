@@ -1,0 +1,4 @@
+slurmstepd: error: Unable to create TMPDIR [/tmp/slurm_tmp/829914]: Permission denied
+slurmstepd: error: Setting TMPDIR to /tmp
+/grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/scripts/run_seam_pipeline.py:862: MatplotlibDeprecationWarning: The get_cmap function was deprecated in Matplotlib 3.7 and will be removed in 3.11. Use ``matplotlib.colormaps[name]`` or ``matplotlib.colormaps.get_cmap()`` or ``pyplot.get_cmap()`` instead.
+  cmap = plt.cm.get_cmap('tab20', max(len(locus_names), 1))

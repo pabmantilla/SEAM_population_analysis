@@ -1,0 +1,17 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829278
+Array:     22/34
+Locus:     BCL2
+Args:      
+Node:      bam20
+Start:     Fri Mar  6 22:58:33 EST 2026
+==============================================
+Processing 1 loci: ['BCL2']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+BCL2: attribution maps not found, skipping
+
+Pipeline complete.
+
+Done: Fri Mar  6 22:59:13 EST 2026

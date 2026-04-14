@@ -1,0 +1,17 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829284
+Array:     28/34
+Locus:     TBP
+Args:      
+Node:      bam21
+Start:     Fri Mar  6 22:59:28 EST 2026
+==============================================
+Processing 1 loci: ['TBP']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+TBP: attribution maps not found, skipping
+
+Pipeline complete.
+
+Done: Fri Mar  6 22:59:32 EST 2026

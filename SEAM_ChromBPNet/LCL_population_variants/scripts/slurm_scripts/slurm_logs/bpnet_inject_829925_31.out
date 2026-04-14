@@ -1,0 +1,27 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829957
+Array:     31/34
+Locus:     HOXC13
+Node:      bam20
+Start:     Sat Mar  7 15:38:42 EST 2026
+==============================================
+Processing 1 loci: ['HOXC13']
+
+>>> Variant Injection: gnomad (k=100) <<<
+HOXC13: missing 25k maps, 25k preds, skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+HOXC13: missing 25k maps, 25k preds, variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+HOXC13: missing 25k maps, 25k preds, variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection Final Plots <<<
+GnomAD: no variant injection results found
+caqtl_eur: no variant injection results found
+caqtl_afr: no variant injection results found
+
+Pipeline complete.
+
+Done: Sat Mar  7 15:38:48 EST 2026

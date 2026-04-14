@@ -1,0 +1,17 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829940
+Array:     14/34
+Locus:     HLA-C
+Node:      bam18
+Start:     Sat Mar  7 15:38:15 EST 2026
+==============================================
+Processing 1 loci: ['HLA-C']
+
+>>> Variant Injection: gnomad (k=100) <<<
+
+==================================================
+HLA-C: variant injection (gnomad, k=100)
+==================================================
+  Injected 713 variants at indices (first 5): [131 160 173 184 191]
+  Clustering 25000 maps into 100 clusters...

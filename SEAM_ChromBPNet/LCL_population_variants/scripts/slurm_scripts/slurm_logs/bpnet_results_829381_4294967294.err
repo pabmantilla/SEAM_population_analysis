@@ -1,0 +1,11 @@
+slurmstepd: error: Unable to create TMPDIR [/tmp/slurm_tmp/829367]: Permission denied
+slurmstepd: error: Setting TMPDIR to /tmp
+Traceback (most recent call last):
+  File "/grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/scripts/run_seam_pipeline.py", line 588, in <module>
+    main()
+  File "/grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/scripts/run_seam_pipeline.py", line 578, in main
+    step_seq_results(loci, args.k)
+  File "/grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/scripts/run_seam_pipeline.py", line 438, in step_seq_results
+    im = ax_csm.pcolormesh(csm, cmap='viridis', vmin=0, vmax=100)
+                           ^^^
+NameError: name 'csm' is not defined

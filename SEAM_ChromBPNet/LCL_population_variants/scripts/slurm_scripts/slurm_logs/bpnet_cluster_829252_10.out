@@ -1,0 +1,23 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829263
+Array:     10/34
+Locus:     NXF1
+Args:      
+Node:      bam28
+Start:     Fri Mar  6 22:57:37 EST 2026
+==============================================
+Processing 1 loci: ['NXF1']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+
+==================================================
+NXF1: clustering (k=100)
+==================================================
+  Clustering 25000 maps into 100 clusters...
+  Saved cluster results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/NXF1/k100
+  WT cluster=47, sizes: min=2, max=1200
+
+Pipeline complete.
+
+Done: Sat Mar  7 03:10:50 EST 2026

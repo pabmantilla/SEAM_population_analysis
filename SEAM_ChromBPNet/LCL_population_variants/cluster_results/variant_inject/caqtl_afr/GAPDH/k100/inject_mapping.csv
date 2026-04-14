@@ -1,0 +1,8 @@
+seq_idx,source,variant_id,offset,ref,alt,pos,injected_idx
+1,variant,chr12_6534150_T_C_hg38,694,T,C,6534150.0,2149
+2,variant,chr12_6534163_C_T_hg38,707,C,T,6534163.0,2231
+3,variant,chr12_6534437_C_G_hg38,981,C,G,6534437.0,10825
+4,variant,chr12_6534473_C_T_hg38,1017,C,T,6534473.0,10971
+5,variant,chr12_6534537_G_A_hg38,1081,G,A,6534537.0,16362
+6,variant,chr12_6534714_C_T_hg38,1258,C,T,6534714.0,19345
+7,variant,chr12_6534761_G_T_hg38,1305,T,G,6534761.0,21464

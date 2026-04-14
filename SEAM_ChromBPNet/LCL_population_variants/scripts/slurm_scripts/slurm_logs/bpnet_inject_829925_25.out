@@ -1,0 +1,27 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829951
+Array:     25/34
+Locus:     B-ACTIN
+Node:      bam32
+Start:     Sat Mar  7 15:38:30 EST 2026
+==============================================
+Processing 1 loci: ['B-ACTIN']
+
+>>> Variant Injection: gnomad (k=100) <<<
+B-ACTIN: missing 25k maps, 25k preds, skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+B-ACTIN: missing 25k maps, 25k preds, variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+B-ACTIN: missing 25k maps, 25k preds, variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection Final Plots <<<
+GnomAD: no variant injection results found
+caqtl_eur: no variant injection results found
+caqtl_afr: no variant injection results found
+
+Pipeline complete.
+
+Done: Sat Mar  7 15:38:34 EST 2026

@@ -1,0 +1,16 @@
+==============================================
+Variant Library: caQTL African
+Job ID:    829480
+Array:     24/34
+Locus:     ABL1
+Node:      bam22
+Start:     Sat Mar  7 09:35:22 EST 2026
+==============================================
+Source: caqtl_afr
+Processing 1 loci
+Output: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/caqtl_afr
+ABL1: 1 variants -> (2, 2114, 4) saved
+
+Done.
+
+Done: Sat Mar  7 09:35:23 EST 2026

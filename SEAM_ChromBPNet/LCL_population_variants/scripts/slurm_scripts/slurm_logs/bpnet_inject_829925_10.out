@@ -1,0 +1,27 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829936
+Array:     10/34
+Locus:     NXF1
+Node:      bam18
+Start:     Sat Mar  7 15:38:14 EST 2026
+==============================================
+Processing 1 loci: ['NXF1']
+
+>>> Variant Injection: gnomad (k=100) <<<
+NXF1: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+NXF1: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+NXF1: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection Final Plots <<<
+GnomAD: no variant injection results found
+caqtl_eur: no variant injection results found
+caqtl_afr: no variant injection results found
+
+Pipeline complete.
+
+Done: Sat Mar  7 15:38:23 EST 2026

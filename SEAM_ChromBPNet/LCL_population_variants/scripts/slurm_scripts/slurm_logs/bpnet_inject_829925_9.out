@@ -1,0 +1,20 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829935
+Array:     9/34
+Locus:     DYNLRB2-AS1
+Node:      bam18
+Start:     Sat Mar  7 15:38:16 EST 2026
+==============================================
+Processing 1 loci: ['DYNLRB2-AS1']
+
+>>> Variant Injection: gnomad (k=100) <<<
+DYNLRB2-AS1: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+
+==================================================
+DYNLRB2-AS1: variant injection (caqtl_eur, k=100)
+==================================================
+  Injected 3 variants at indices (first 5): [ 2232 16364 19348]
+  Clustering 25000 maps into 100 clusters...

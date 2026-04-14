@@ -1,0 +1,19 @@
+==============================================
+Variant Attributions: caQTL European
+Job ID:    829531
+Array:     1/34
+Locus:     EH38E3485200
+Node:      bamgpu20
+GPU:       0
+Start:     Sat Mar  7 10:40:50 EST 2026
+==============================================
+Processing 1 loci: ['EH38E3485200']
+
+>>> Step 1: DeepSHAP Attribution Maps <<<
+Loading ChromBPNet model from /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/models/ENCFF673TIN.tar.gz (fold_0)...
+Model loaded: ./fold_0/model.chrombpnet_nobias.fold_0.ENCSR000EMT.h5
+EH38E3485200: library not found at /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/caqtl_eur/x_var_EH38E3485200.npy, skipping
+
+Pipeline complete.
+
+Done: Sat Mar  7 10:41:05 EST 2026

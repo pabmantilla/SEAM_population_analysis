@@ -1,0 +1,23 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829253
+Array:     0/34
+Locus:     IRF7
+Args:      
+Node:      bam32
+Start:     Fri Mar  6 22:57:29 EST 2026
+==============================================
+Processing 1 loci: ['IRF7']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+
+==================================================
+IRF7: clustering (k=100)
+==================================================
+  Clustering 25000 maps into 100 clusters...
+  Saved cluster results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/IRF7/k100
+  WT cluster=47, sizes: min=3, max=980
+
+Pipeline complete.
+
+Done: Sat Mar  7 02:14:26 EST 2026

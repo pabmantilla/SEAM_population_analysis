@@ -1,0 +1,23 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829267
+Array:     14/34
+Locus:     HLA-C
+Args:      
+Node:      bam31
+Start:     Fri Mar  6 22:57:46 EST 2026
+==============================================
+Processing 1 loci: ['HLA-C']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+
+==================================================
+HLA-C: clustering (k=100)
+==================================================
+  Clustering 25000 maps into 100 clusters...
+  Saved cluster results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/HLA-C/k100
+  WT cluster=38, sizes: min=3, max=928
+
+Pipeline complete.
+
+Done: Sat Mar  7 03:05:42 EST 2026

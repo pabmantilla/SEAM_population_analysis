@@ -1,0 +1,17 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829269
+Array:     16/34
+Locus:     HLA-DRB5
+Args:      
+Node:      bam21
+Start:     Fri Mar  6 22:57:38 EST 2026
+==============================================
+Processing 1 loci: ['HLA-DRB5']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+HLA-DRB5: attribution maps not found, skipping
+
+Pipeline complete.
+
+Done: Fri Mar  6 22:58:11 EST 2026

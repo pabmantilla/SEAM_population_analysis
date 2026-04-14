@@ -1,0 +1,27 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829927
+Array:     1/34
+Locus:     EH38E3485200
+Node:      bam15
+Start:     Sat Mar  7 15:38:15 EST 2026
+==============================================
+Processing 1 loci: ['EH38E3485200']
+
+>>> Variant Injection: gnomad (k=100) <<<
+EH38E3485200: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+EH38E3485200: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+EH38E3485200: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection Final Plots <<<
+GnomAD: no variant injection results found
+caqtl_eur: no variant injection results found
+caqtl_afr: no variant injection results found
+
+Pipeline complete.
+
+Done: Sat Mar  7 15:38:47 EST 2026

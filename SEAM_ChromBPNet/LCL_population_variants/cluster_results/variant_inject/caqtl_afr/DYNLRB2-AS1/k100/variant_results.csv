@@ -1,0 +1,2 @@
+seq_idx,source,variant_id,offset,ref,alt,pos,injected_idx,variant_idx,cluster,mech_diversity,mech_causality,pred,wt_pred,pred_diff
+1,variant,chr16_80231939_C_T_hg38,1056,T,C,80231939.0,2232,2232,0,0.02459806203842163,1.0,4.246863842010498,4.126766681671143,0.12009716033935547

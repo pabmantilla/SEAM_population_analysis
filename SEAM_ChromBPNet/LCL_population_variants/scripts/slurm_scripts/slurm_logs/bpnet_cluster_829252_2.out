@@ -1,0 +1,23 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829255
+Array:     2/34
+Locus:     RPL10A
+Args:      
+Node:      bam27
+Start:     Fri Mar  6 22:57:31 EST 2026
+==============================================
+Processing 1 loci: ['RPL10A']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+
+==================================================
+RPL10A: clustering (k=100)
+==================================================
+  Clustering 25000 maps into 100 clusters...
+  Saved cluster results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/RPL10A/k100
+  WT cluster=89, sizes: min=3, max=589
+
+Pipeline complete.
+
+Done: Sat Mar  7 02:55:14 EST 2026

@@ -1,0 +1,19 @@
+==============================================
+Variant Attributions: caQTL African
+Job ID:    829573
+Array:     10/34
+Locus:     NXF1
+Node:      bamgpu20
+GPU:       0
+Start:     Sat Mar  7 10:45:15 EST 2026
+==============================================
+Processing 1 loci: ['NXF1']
+
+>>> Step 1: DeepSHAP Attribution Maps <<<
+Loading ChromBPNet model from /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/models/ENCFF673TIN.tar.gz (fold_0)...
+Model loaded: ./fold_0/model.chrombpnet_nobias.fold_0.ENCSR000EMT.h5
+NXF1: library not found at /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/caqtl_afr/x_var_NXF1.npy, skipping
+
+Pipeline complete.
+
+Done: Sat Mar  7 10:45:29 EST 2026

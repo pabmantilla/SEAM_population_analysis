@@ -1,0 +1,16 @@
+==============================================
+SEAM eQTL LCL Pipeline
+Env: SEAM .venv (CLIPNET + SEAM + DeepSHAP)
+Job ID: 806254
+Args: --step all
+Start time: Thu Mar  5 00:47:50 EST 2026
+==============================================
+
+>>> Step 1: Extract sequences <<<
+Saved 25 loci to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_twohot_25loci.npz
+
+>>> Step 2: Generate mutagenesis libraries <<<
+==============================================
+Pipeline Complete
+End time: Thu Mar  5 00:47:54 EST 2026
+==============================================

@@ -1,0 +1,31 @@
+==============================================
+Variant Attributions: gnomAD
+Job ID:    829514
+Array:     17/34
+Locus:     TNF
+Node:      bamgpu19
+GPU:       0
+Start:     Sat Mar  7 10:31:50 EST 2026
+==============================================
+Processing 1 loci: ['TNF']
+
+>>> Step 1: DeepSHAP Attribution Maps <<<
+Loading ChromBPNet model from /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/models/ENCFF673TIN.tar.gz (fold_0)...
+Model loaded: ./fold_0/model.chrombpnet_nobias.fold_0.ENCSR000EMT.h5
+
+==================================================
+TNF: DeepLIFT/SHAP attributions (gnomad)
+==================================================
+  Computing predictions for 417 sequences...
+  Saved predictions (417,) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad/preds_TNF.npy
+  Chunk [0:256] pre-computing 50 dinuc shuffles...
+  Chunk [0:256] running DeepLIFT/SHAP (batch_size=8)...
+    256/417 sequences attributed
+  Chunk [256:417] pre-computing 50 dinuc shuffles...
+  Chunk [256:417] running DeepLIFT/SHAP (batch_size=8)...
+    417/417 sequences attributed
+  Saved attribution maps (417, 2114, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad/maps_TNF.npy
+
+Pipeline complete.
+
+Done: Sat Mar  7 10:37:00 EST 2026

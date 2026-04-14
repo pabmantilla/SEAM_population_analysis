@@ -1,0 +1,21 @@
+HLA-A: saved /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/results_finals/HLA-A_csm_mismatch_k100.png
+  WT cluster=23, 4 eQTL LCL variants across 2 clusters
+HLA-A: saved /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/HLA-A/k100/cluster_preds_sorted_k100.png
+HLA-A: saved /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/HLA-A/k100/cluster_logos_eqtl_k100.png (3 panels)
+HLA-C: saved /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/results_finals/HLA-C_csm_mismatch_k100.png
+  WT cluster=49, 6 eQTL LCL variants across 1 clusters
+HLA-C: saved /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/HLA-C/k100/cluster_preds_sorted_k100.png
+HLA-C: saved /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/HLA-C/k100/cluster_logos_eqtl_k100.png (2 panels)
+HLA-A: saved volcano /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/results_finals/HLA-A_volcano_activity_vs_mech_diversity_k100.png
+  eQTL variants cosine dist: [1.64517252e-03 5.11062111e-05 5.11062087e-05 5.04385051e-04]
+  eQTL variants activity: [42.290382 40.68871  40.68871  41.4138  ]
+  Background median cosine dist: 0.0052
+  Data: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/results_finals/HLA-A_volcano_data_k100.csv
+HLA-C: saved volcano /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/results_finals/HLA-C_volcano_activity_vs_mech_diversity_k100.png
+  eQTL variants cosine dist: [6.92895097e-04 2.17860662e-04 3.30933271e-04 4.41714763e-05
+ 4.41714754e-05 4.41714783e-05]
+  eQTL variants activity: [44.53132  45.590958 44.61737  45.12123  45.12123  45.12123 ]
+  Background median cosine dist: 0.0064
+  Data: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/results_finals/HLA-C_volcano_data_k100.csv
+
+All plots saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/results_finals

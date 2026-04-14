@@ -1,0 +1,1523 @@
+locus	category	variant_id	chrom	pos	ref	alt	rsids	consequence	AF	AC	AN	filters	flags
+YAP1	Oncogene	11-102109964-G-A	11	102109964	G	A	rs1942793483	non_coding_transcript_exon_variant	6.567023037116814e-06	1	152276	PASS	
+YAP1	Oncogene	11-102109966-T-C	11	102109966	T	C	rs2135076957	non_coding_transcript_exon_variant	6.574881323392112e-06	1	152094	PASS	
+YAP1	Oncogene	11-102109967-G-T	11	102109967	G	T		non_coding_transcript_exon_variant	0.0	0	18	AC0	
+YAP1	Oncogene	11-102109968-G-A	11	102109968	G	A		non_coding_transcript_exon_variant	0.0	0	18	AC0,AS_VQSR	
+YAP1	Oncogene	11-102109968-G-T	11	102109968	G	T		non_coding_transcript_exon_variant	0.0	0	18	AC0	
+YAP1	Oncogene	11-102109969-G-C	11	102109969	G	C	rs987059653	non_coding_transcript_exon_variant	1.9700810359999475e-05	3	152278	PASS	
+YAP1	Oncogene	11-102109969-G-A	11	102109969	G	A	rs987059653	non_coding_transcript_exon_variant	6.566160634553764e-06	1	152296	AC0	
+YAP1	Oncogene	11-102109972-C-T	11	102109972	C	T		non_coding_transcript_exon_variant	0.0	0	18	AC0	
+YAP1	Oncogene	11-102109973-G-A	11	102109973	G	A		non_coding_transcript_exon_variant	0.0	0	18	AC0	
+YAP1	Oncogene	11-102109973-G-C	11	102109973	G	C	rs911602411	non_coding_transcript_exon_variant	3.284072249589491e-05	5	152250	PASS	
+YAP1	Oncogene	11-102109974-C-A	11	102109974	C	A		non_coding_transcript_exon_variant	0.0	0	16	AC0	
+YAP1	Oncogene	11-102109974-C-T	11	102109974	C	T	rs77352987	non_coding_transcript_exon_variant	0.007309999081328661	1114	152394	AC0	
+YAP1	Oncogene	11-102109976-C-T	11	102109976	C	T	rs1039310692	non_coding_transcript_exon_variant	1.3135426244581637e-05	2	152260	PASS	
+YAP1	Oncogene	11-102109978-T-C	11	102109978	T	C		non_coding_transcript_exon_variant	0.0	0	12	AC0	
+YAP1	Oncogene	11-102109979-CCT-C	11	102109979	CCT	C	rs567247617	non_coding_transcript_exon_variant	1.9686589495235846e-05	3	152388	PASS	
+YAP1	Oncogene	11-102109979-C-A	11	102109979	C	A	rs989329992	non_coding_transcript_exon_variant	6.566764292562482e-06	1	152282	AC0	
+YAP1	Oncogene	11-102109980-C-T	11	102109980	C	T	rs578205380	non_coding_transcript_exon_variant	0.00014435884985367263	22	152398	AC0	
+YAP1	Oncogene	11-102109981-T-C	11	102109981	T	C		non_coding_transcript_exon_variant	0.0	0	12	AC0	
+YAP1	Oncogene	11-102109984-C-G	11	102109984	C	G	rs1942793959	non_coding_transcript_exon_variant	6.567195544814543e-06	1	152272	PASS	
+YAP1	Oncogene	11-102109985-T-C	11	102109985	T	C		non_coding_transcript_exon_variant	0.0	0	10	AC0,AS_VQSR	
+YAP1	Oncogene	11-102109986-C-T	11	102109986	C	T	rs751522220	non_coding_transcript_exon_variant	0.0004462293618920125	68	152388	AC0	
+YAP1	Oncogene	11-102109986-C-G	11	102109986	C	G	rs751522220	non_coding_transcript_exon_variant	0.0	0	10	AC0,AS_VQSR	
+YAP1	Oncogene	11-102109987-C-G	11	102109987	C	G	rs544056551	non_coding_transcript_exon_variant	0.00017718628184431231	27	152382	PASS	
+YAP1	Oncogene	11-102109989-C-T	11	102109989	C	T		non_coding_transcript_exon_variant	0.0	0	12	AC0,AS_VQSR	
+YAP1	Oncogene	11-102109990-T-C	11	102109990	T	C	rs1942794179	non_coding_transcript_exon_variant	6.567454323355181e-06	1	152266	PASS	
+YAP1	Oncogene	11-102109991-T-TGAG	11	102109991	T	TGAG	rs1942794245	non_coding_transcript_exon_variant	6.56754058740083e-06	1	152264	PASS	
+YAP1	Oncogene	11-102109993-T-A	11	102109993	T	A		non_coding_transcript_exon_variant	0.0	0	14	AC0	
+YAP1	Oncogene	11-102109996-C-T	11	102109996	C	T	rs1274888473	non_coding_transcript_exon_variant	1.9686589495235846e-05	3	152388	PASS	
+YAP1	Oncogene	11-102109996-C-A	11	102109996	C	A		non_coding_transcript_exon_variant	0.0	0	12	AC0	
+YAP1	Oncogene	11-102109997-G-A	11	102109997	G	A	rs1362444626	non_coding_transcript_exon_variant	6.5688348200796145e-06	1	152234	AC0	
+YAP1	Oncogene	11-102109997-G-T	11	102109997	G	T		non_coding_transcript_exon_variant	0.0	0	12	AC0	
+YAP1	Oncogene	11-102109998-G-A	11	102109998	G	A	rs932334066	non_coding_transcript_exon_variant	2.627016234960332e-05	4	152264	PASS	
+YAP1	Oncogene	11-102109998-G-T	11	102109998	G	T	rs932334066	non_coding_transcript_exon_variant	2.6268092148467256e-05	4	152276	AC0	
+YAP1	Oncogene	11-102109999-C-T	11	102109999	C	T		non_coding_transcript_exon_variant	0.0	0	14	AC0	
+YAP1	Oncogene	11-102110000-C-A	11	102110000	C	A		non_coding_transcript_exon_variant	0.0	0	14	AC0	
+YAP1	Oncogene	11-102110001-T-C	11	102110001	T	C		non_coding_transcript_exon_variant	0.0	0	14	AC0	
+YAP1	Oncogene	11-102110002-T-C	11	102110002	T	C		non_coding_transcript_exon_variant	0.0	0	12	AC0	
+YAP1	Oncogene	11-102110004-G-A	11	102110004	G	A		non_coding_transcript_exon_variant	0.0	0	10	AC0	
+YAP1	Oncogene	11-102110005-C-T	11	102110005	C	T	rs1049933513	non_coding_transcript_exon_variant	6.566850538481745e-05	10	152280	AC0	
+YAP1	Oncogene	11-102110007-C-T	11	102110007	C	T	rs886482315	non_coding_transcript_exon_variant	1.3133356097817237e-05	2	152284	PASS	
+YAP1	Oncogene	11-102110008-T-C	11	102110008	T	C		non_coding_transcript_exon_variant	0.0	0	10	AC0	
+YAP1	Oncogene	11-102110012-G-A	11	102110012	G	A		non_coding_transcript_exon_variant	0.0	0	4	AC0	
+YAP1	Oncogene	11-102110012-G-T	11	102110012	G	T		non_coding_transcript_exon_variant	0.0	0	4	AC0	
+YAP1	Oncogene	11-102110014-A-G	11	102110014	A	G		non_coding_transcript_exon_variant	0.0	0	4	AC0	
+YAP1	Oncogene	11-102110016-G-T	11	102110016	G	T		non_coding_transcript_exon_variant	0.0	0	6	AC0	
+YAP1	Oncogene	11-102110017-T-C	11	102110017	T	C	rs888701161	non_coding_transcript_exon_variant	6.569180034948038e-06	1	152226	PASS	
+YAP1	Oncogene	11-102110018-C-A	11	102110018	C	A		non_coding_transcript_exon_variant	0.0	0	6	AC0	
+YAP1	Oncogene	11-102110020-A-T	11	102110020	A	T		non_coding_transcript_exon_variant	0.0	0	6	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110020-A-G	11	102110020	A	G		non_coding_transcript_exon_variant	0.0	0	6	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110021-G-T	11	102110021	G	T	rs1372691112	non_coding_transcript_exon_variant	6.5671092898328014e-06	1	152274	AC0	
+YAP1	Oncogene	11-102110022-G-A	11	102110022	G	A	rs1200488501	non_coding_transcript_exon_variant	3.2836840307878214e-05	5	152268	PASS	
+YAP1	Oncogene	11-102110022-G-T	11	102110022	G	T		non_coding_transcript_exon_variant	0.0	0	6	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110023-C-T	11	102110023	C	T		non_coding_transcript_exon_variant	0.0	0	6	AC0	
+YAP1	Oncogene	11-102110023-C-A	11	102110023	C	A	rs1014385237	non_coding_transcript_exon_variant	9.843940726351573e-05	15	152378	PASS	
+YAP1	Oncogene	11-102110024-G-T	11	102110024	G	T		non_coding_transcript_exon_variant	0.0	0	8	AC0	
+YAP1	Oncogene	11-102110028-T-C	11	102110028	T	C	rs1942794926	non_coding_transcript_exon_variant	2.6273958565967342e-05	4	152242	PASS	
+YAP1	Oncogene	11-102110029-G-A	11	102110029	G	A	rs1417465464	non_coding_transcript_exon_variant	0.0	0	10	AC0	
+YAP1	Oncogene	11-102110029-G-T	11	102110029	G	T		non_coding_transcript_exon_variant	0.0	0	10	AC0	
+YAP1	Oncogene	11-102110030-G-T	11	102110030	G	T		non_coding_transcript_exon_variant	0.0	0	18	AC0	
+YAP1	Oncogene	11-102110032-A-G	11	102110032	A	G		non_coding_transcript_exon_variant	0.0	0	18	AC0	
+YAP1	Oncogene	11-102110034-C-A	11	102110034	C	A		non_coding_transcript_exon_variant	0.0	0	22	AC0	
+YAP1	Oncogene	11-102110034-C-T	11	102110034	C	T		non_coding_transcript_exon_variant	0.0	0	22	AC0	
+YAP1	Oncogene	11-102110035-G-T	11	102110035	G	T		non_coding_transcript_exon_variant	0.0	0	22	AC0	
+YAP1	Oncogene	11-102110035-G-A	11	102110035	G	A		non_coding_transcript_exon_variant	0.0	0	22	AC0	
+YAP1	Oncogene	11-102110038-T-A	11	102110038	T	A		non_coding_transcript_exon_variant	0.0	0	24	AC0	
+YAP1	Oncogene	11-102110038-T-C	11	102110038	T	C	rs754861792	non_coding_transcript_exon_variant	0.00016420792664503502	25	152246	PASS	
+YAP1	Oncogene	11-102110039-T-C	11	102110039	T	C	rs1942795135	non_coding_transcript_exon_variant	0.0	0	28	AC0	
+YAP1	Oncogene	11-102110040-T-C	11	102110040	T	C		non_coding_transcript_exon_variant	0.0	0	28	AC0	
+YAP1	Oncogene	11-102110041-C-A	11	102110041	C	A		non_coding_transcript_exon_variant	0.0	0	26	AC0	
+YAP1	Oncogene	11-102110042-C-A	11	102110042	C	A		non_coding_transcript_exon_variant	0.0	0	26	AC0	
+YAP1	Oncogene	11-102110043-C-T	11	102110043	C	T	rs1444899496	non_coding_transcript_exon_variant	6.5676268537126795e-06	1	152262	PASS	
+YAP1	Oncogene	11-102110044-G-A	11	102110044	G	A		non_coding_transcript_exon_variant	0.0	0	28	AC0	
+YAP1	Oncogene	11-102110045-A-G	11	102110045	A	G	rs1218405213	non_coding_transcript_exon_variant	1.970624556609475e-05	3	152236	PASS	
+YAP1	Oncogene	11-102110046-G-T	11	102110046	G	T		non_coding_transcript_exon_variant	0.0	0	64	AC0	
+YAP1	Oncogene	11-102110046-G-A	11	102110046	G	A		non_coding_transcript_exon_variant	0.0	0	64	AC0	
+YAP1	Oncogene	11-102110047-C-T	11	102110047	C	T	rs189505704	non_coding_transcript_exon_variant	0.0005641637911806768	86	152438	AC0	
+YAP1	Oncogene	11-102110050-G-A	11	102110050	G	A	rs905893825	non_coding_transcript_exon_variant	6.5671092898328014e-06	1	152274	PASS	
+YAP1	Oncogene	11-102110050-G-C	11	102110050	G	C	rs905893825	non_coding_transcript_exon_variant	6.5671092898328014e-06	1	152274	PASS	
+YAP1	Oncogene	11-102110050-G-T	11	102110050	G	T		non_coding_transcript_exon_variant	0.0	0	54	AC0	
+YAP1	Oncogene	11-102110051-G-GGCGGGGAAAAGGGGCCGA	11	102110051	G	GGCGGGGAAAAGGGGCCGA	rs1478317049	non_coding_transcript_exon_variant	6.5676268537126795e-06	1	152262	PASS	
+YAP1	Oncogene	11-102110051-G-T	11	102110051	G	T		non_coding_transcript_exon_variant	0.0	0	66	AC0	
+YAP1	Oncogene	11-102110053-C-T	11	102110053	C	T		non_coding_transcript_exon_variant	0.0	0	68	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110054-G-T	11	102110054	G	T		non_coding_transcript_exon_variant	0.0	0	66	AC0	
+YAP1	Oncogene	11-102110054-G-C	11	102110054	G	C	rs574212895	non_coding_transcript_exon_variant	1.9689690478065685e-05	3	152364	PASS	
+YAP1	Oncogene	11-102110054-G-A	11	102110054	G	A		non_coding_transcript_exon_variant	0.0	0	66	AC0	
+YAP1	Oncogene	11-102110056-G-T	11	102110056	G	T		non_coding_transcript_exon_variant	0.0	0	70	AC0	
+YAP1	Oncogene	11-102110057-GA-G	11	102110057	GA	G	rs1204008777	non_coding_transcript_exon_variant	0.0	0	78	AC0	
+YAP1	Oncogene	11-102110057-G-T	11	102110057	G	T		non_coding_transcript_exon_variant	0.0	0	78	AC0	
+YAP1	Oncogene	11-102110057-G-A	11	102110057	G	A	rs766428303	non_coding_transcript_exon_variant	0.001856273285406937	283	152456	PASS	
+YAP1	Oncogene	11-102110058-A-T	11	102110058	A	T	rs1250538044	non_coding_transcript_exon_variant	6.572029442691903e-06	1	152160	PASS	
+YAP1	Oncogene	11-102110059-A-G	11	102110059	A	G		non_coding_transcript_exon_variant	0.0	0	76	AC0	
+YAP1	Oncogene	11-102110061-A-G	11	102110061	A	G	rs1942795984	non_coding_transcript_exon_variant	6.5676268537126795e-06	1	152262	AC0	
+YAP1	Oncogene	11-102110063-G-T	11	102110063	G	T	rs1033580581	non_coding_transcript_exon_variant	6.565298458467922e-06	1	152316	AC0	
+YAP1	Oncogene	11-102110064-G-A	11	102110064	G	A		non_coding_transcript_exon_variant	0.0	0	72	AC0	
+YAP1	Oncogene	11-102110064-G-T	11	102110064	G	T		non_coding_transcript_exon_variant	0.0	0	72	AC0	
+YAP1	Oncogene	11-102110065-GC-G	11	102110065	GC	G	rs1942796219	non_coding_transcript_exon_variant	1.9696671262556627e-05	3	152310	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110065-G-A	11	102110065	G	A	rs1024413828	non_coding_transcript_exon_variant	6.565557087518876e-06	1	152310	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110065-G-T	11	102110065	G	T		non_coding_transcript_exon_variant	0.0	0	74	AC0	
+YAP1	Oncogene	11-102110066-C-T	11	102110066	C	T		non_coding_transcript_exon_variant	0.0	0	70	AC0	
+YAP1	Oncogene	11-102110067-C-T	11	102110067	C	T		non_coding_transcript_exon_variant	0.0	0	72	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110067-C-CGAGCG	11	102110067	C	CGAGCG	rs1228391083	non_coding_transcript_exon_variant	6.568921120395186e-06	1	152232	PASS	
+YAP1	Oncogene	11-102110068-G-A	11	102110068	G	A	rs1422764079	non_coding_transcript_exon_variant	3.9366978978033224e-05	6	152412	AC0	
+YAP1	Oncogene	11-102110070-G-T	11	102110070	G	T		non_coding_transcript_exon_variant	0.0	0	78	AC0	
+YAP1	Oncogene	11-102110071-C-G	11	102110071	C	G	rs1282335024	non_coding_transcript_exon_variant	6.569093727829309e-06	1	152228	PASS	
+YAP1	Oncogene	11-102110071-C-A	11	102110071	C	A	rs1282335024	non_coding_transcript_exon_variant	1.31211210685841e-05	2	152426	AC0	
+YAP1	Oncogene	11-102110071-C-T	11	102110071	C	T		non_coding_transcript_exon_variant	0.0	0	80	AC0	
+YAP1	Oncogene	11-102110072-G-A	11	102110072	G	A		non_coding_transcript_exon_variant	0.0	0	70	AC0	
+YAP1	Oncogene	11-102110073-G-C	11	102110073	G	C	rs1162289779	non_coding_transcript_exon_variant	1.3135426244581637e-05	2	152260	PASS	
+YAP1	Oncogene	11-102110073-G-T	11	102110073	G	T		non_coding_transcript_exon_variant	0.0	0	78	AC0	
+YAP1	Oncogene	11-102110074-A-G	11	102110074	A	G	rs1350915492	non_coding_transcript_exon_variant	6.562368752624948e-06	1	152384	AC0	
+YAP1	Oncogene	11-102110075-G-A	11	102110075	G	A		non_coding_transcript_exon_variant	0.0	0	72	AC0	
+YAP1	Oncogene	11-102110076-C-A	11	102110076	C	A		non_coding_transcript_exon_variant	0.0	0	68	AC0	
+YAP1	Oncogene	11-102110077-G-A	11	102110077	G	A	rs377442319	non_coding_transcript_exon_variant	3.9381448712226624e-05	6	152356	PASS	
+YAP1	Oncogene	11-102110077-G-T	11	102110077	G	T		non_coding_transcript_exon_variant	0.0	0	62	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110079-A-G	11	102110079	A	G		non_coding_transcript_exon_variant	0.0	0	66	AC0	
+YAP1	Oncogene	11-102110083-A-T	11	102110083	A	T	rs1409455563	non_coding_transcript_exon_variant	1.3139741147099402e-05	2	152210	PASS	
+YAP1	Oncogene	11-102110085-T-C	11	102110085	T	C		non_coding_transcript_exon_variant	0.0	0	66	AC0	
+YAP1	Oncogene	11-102110087-C-T	11	102110087	C	T	rs1942797193	non_coding_transcript_exon_variant	0.0	0	62	AC0	
+YAP1	Oncogene	11-102110090-G-T	11	102110090	G	T		non_coding_transcript_exon_variant	0.0	0	30	AC0	
+YAP1	Oncogene	11-102110090-G-A	11	102110090	G	A	rs1942797255	non_coding_transcript_exon_variant	6.567885666246322e-06	1	152256	AC0	
+YAP1	Oncogene	11-102110091-C-T	11	102110091	C	T		non_coding_transcript_exon_variant	0.0	0	32	AC0	
+YAP1	Oncogene	11-102110093-G-T	11	102110093	G	T	rs1352962976	non_coding_transcript_exon_variant	1.313594388324773e-05	2	152254	PASS	
+YAP1	Oncogene	11-102110095-CA-C	11	102110095	CA	C	rs1325686171	non_coding_transcript_exon_variant	2.627430373095113e-05	4	152240	PASS	
+YAP1	Oncogene	11-102110098-G-T	11	102110098	G	T		non_coding_transcript_exon_variant	0.0	0	36	AC0	
+YAP1	Oncogene	11-102110099-G-A	11	102110099	G	A	rs1406008584	non_coding_transcript_exon_variant	6.5686622262510016e-06	1	152238	PASS	
+YAP1	Oncogene	11-102110101-C-T	11	102110101	C	T		non_coding_transcript_exon_variant	0.0	0	30	AC0	
+YAP1	Oncogene	11-102110101-C-A	11	102110101	C	A		non_coding_transcript_exon_variant	0.0	0	30	AC0	
+YAP1	Oncogene	11-102110102-G-C	11	102110102	G	C	rs1479310102	non_coding_transcript_exon_variant	1.97049511974042e-05	3	152246	PASS	
+YAP1	Oncogene	11-102110102-G-T	11	102110102	G	T	rs1479310102	non_coding_transcript_exon_variant	1.9701327869498403e-05	3	152274	AC0	
+YAP1	Oncogene	11-102110102-G-A	11	102110102	G	A		non_coding_transcript_exon_variant	0.0	0	28	AC0	
+YAP1	Oncogene	11-102110103-C-G	11	102110103	C	G		non_coding_transcript_exon_variant	0.0	0	32	AC0	
+YAP1	Oncogene	11-102110103-C-A	11	102110103	C	A		non_coding_transcript_exon_variant	0.0	0	32	AC0	
+YAP1	Oncogene	11-102110104-C-T	11	102110104	C	T	rs1001541974	non_coding_transcript_exon_variant	1.3137151865475564e-05	2	152240	PASS	
+YAP1	Oncogene	11-102110106-G-T	11	102110106	G	T		non_coding_transcript_exon_variant	0.0	0	28	AC0	
+YAP1	Oncogene	11-102110106-G-C	11	102110106	G	C	rs1942797747	non_coding_transcript_exon_variant	6.569093727829309e-06	1	152228	PASS	
+YAP1	Oncogene	11-102110106-G-A	11	102110106	G	A		non_coding_transcript_exon_variant	0.0	0	28	AC0	
+YAP1	Oncogene	11-102110108-G-A	11	102110108	G	A		non_coding_transcript_exon_variant	0.0	0	24	AC0	
+YAP1	Oncogene	11-102110109-T-G	11	102110109	T	G	rs1473821761	non_coding_transcript_exon_variant	1.3139050572205653e-05	2	152218	PASS	
+YAP1	Oncogene	11-102110110-TC-T	11	102110110	TC	T	rs1407414661	non_coding_transcript_exon_variant	6.569266344334665e-06	1	152224	PASS	
+YAP1	Oncogene	11-102110111-C-T	11	102110111	C	T	rs1413178968	non_coding_transcript_exon_variant	6.567454323355181e-06	1	152266	PASS	
+YAP1	Oncogene	11-102110112-T-A	11	102110112	T	A	rs1010661192	non_coding_transcript_exon_variant	6.569007422978388e-06	1	152230	PASS	
+YAP1	Oncogene	11-102110113-C-T	11	102110113	C	T	rs2135077781	non_coding_transcript_exon_variant	6.56202425324164e-06	1	152392	PASS	
+YAP1	Oncogene	11-102110114-C-T	11	102110114	C	T	rs1942798243	non_coding_transcript_exon_variant	6.567454323355181e-06	1	152266	PASS	
+YAP1	Oncogene	11-102110115-G-A	11	102110115	G	A	rs757505512	non_coding_transcript_exon_variant	0.0003674588905366212	56	152398	AC0	
+YAP1	Oncogene	11-102110115-G-T	11	102110115	G	T		non_coding_transcript_exon_variant	0.0	0	28	AC0	
+YAP1	Oncogene	11-102110116-C-A	11	102110116	C	A		non_coding_transcript_exon_variant	0.0	0	28	AC0	
+YAP1	Oncogene	11-102110117-A-G	11	102110117	A	G		non_coding_transcript_exon_variant	0.0	0	28	AC0	
+YAP1	Oncogene	11-102110117-A-C	11	102110117	A	C	rs1248060223	non_coding_transcript_exon_variant	6.567799393135336e-06	1	152258	PASS	
+YAP1	Oncogene	11-102110118-G-C	11	102110118	G	C	rs1300356284	non_coding_transcript_exon_variant	6.567713122290818e-06	1	152260	PASS	
+YAP1	Oncogene	11-102110120-C-T	11	102110120	C	T		non_coding_transcript_exon_variant	0.0	0	20	AC0	
+YAP1	Oncogene	11-102110120-C-A	11	102110120	C	A	rs1221723354	non_coding_transcript_exon_variant	3.9404725940131085e-05	6	152266	PASS	
+YAP1	Oncogene	11-102110121-A-ACAG	11	102110121	A	ACAG		non_coding_transcript_exon_variant	0.0	0	20	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110122-C-A	11	102110122	C	A		non_coding_transcript_exon_variant	0.0	0	38	AC0	
+YAP1	Oncogene	11-102110123-C-T	11	102110123	C	T	rs1361425314	non_coding_transcript_exon_variant	6.56754058740083e-06	1	152264	PASS	
+YAP1	Oncogene	11-102110125-C-A	11	102110125	C	A		non_coding_transcript_exon_variant	0.0	0	36	AC0	
+YAP1	Oncogene	11-102110130-C-A	11	102110130	C	A	rs1591081472	non_coding_transcript_exon_variant	0.0	0	40	AC0	
+YAP1	Oncogene	11-102110130-C-T	11	102110130	C	T		non_coding_transcript_exon_variant	0.0	0	40	AC0	
+YAP1	Oncogene	11-102110132-G-T	11	102110132	G	T		non_coding_transcript_exon_variant	0.0	0	46	AC0	
+YAP1	Oncogene	11-102110135-C-T	11	102110135	C	T	rs559042970	non_coding_transcript_exon_variant	1.968219810788469e-05	3	152422	AC0	
+YAP1	Oncogene	11-102110135-C-A	11	102110135	C	A		non_coding_transcript_exon_variant	0.0	0	36	AC0	
+YAP1	Oncogene	11-102110136-C-A	11	102110136	C	A		non_coding_transcript_exon_variant	0.0	0	42	AC0	
+YAP1	Oncogene	11-102110137-G-A	11	102110137	G	A	rs913760202	non_coding_transcript_exon_variant	1.9687881452703145e-05	3	152378	AC0	
+YAP1	Oncogene	11-102110137-G-T	11	102110137	G	T		non_coding_transcript_exon_variant	0.0	0	114	AC0	
+YAP1	Oncogene	11-102110138-G-T	11	102110138	G	T		non_coding_transcript_exon_variant	0.0	0	124	AC0	
+YAP1	Oncogene	11-102110138-G-A	11	102110138	G	A	rs1942799055	non_coding_transcript_exon_variant	6.56185201711331e-06	1	152396	AC0	
+YAP1	Oncogene	11-102110139-A-G	11	102110139	A	G	rs966431776	non_coding_transcript_exon_variant	1.9707540104844112e-05	3	152226	PASS	
+YAP1	Oncogene	11-102110140-T-C	11	102110140	T	C	rs1332723541	non_coding_transcript_exon_variant	3.281658156233181e-05	5	152362	AC0	
+YAP1	Oncogene	11-102110143-G-T	11	102110143	G	T	rs1942799219	non_coding_transcript_exon_variant	0.0	0	118	AC0	
+YAP1	Oncogene	11-102110144-A-G	11	102110144	A	G		non_coding_transcript_exon_variant	0.0	0	120	AC0	
+YAP1	Oncogene	11-102110144-AC-A	11	102110144	AC	A		non_coding_transcript_exon_variant	0.0	0	120	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110145-C-A	11	102110145	C	A		non_coding_transcript_exon_variant	0.0	0	120	AC0	
+YAP1	Oncogene	11-102110146-C-A	11	102110146	C	A		non_coding_transcript_exon_variant	0.0	0	118	AC0	
+YAP1	Oncogene	11-102110147-C-A	11	102110147	C	A		non_coding_transcript_exon_variant	0.0	0	118	AC0	
+YAP1	Oncogene	11-102110148-A-G	11	102110148	A	G	rs1287551019	non_coding_transcript_exon_variant	0.0	0	110	AC0	
+YAP1	Oncogene	11-102110148-A-C	11	102110148	A	C	rs1287551019	non_coding_transcript_exon_variant	6.569956901082729e-06	1	152208	PASS	
+YAP1	Oncogene	11-102110150-C-A	11	102110150	C	A	rs1942799390	non_coding_transcript_exon_variant	6.562713288181866e-06	1	152376	AC0	
+YAP1	Oncogene	11-102110151-G-A	11	102110151	G	A	rs1233939058	non_coding_transcript_exon_variant	6.5621103746965025e-06	1	152390	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110151-G-T	11	102110151	G	T		non_coding_transcript_exon_variant	0.0	0	120	AC0	
+YAP1	Oncogene	11-102110154-T-C	11	102110154	T	C	rs1942799510	non_coding_transcript_exon_variant	0.0	0	112	AC0	
+YAP1	Oncogene	11-102110156-C-A	11	102110156	C	A		non_coding_transcript_exon_variant	0.0	0	112	AC0	
+YAP1	Oncogene	11-102110156-C-T	11	102110156	C	T	rs2135078160	non_coding_transcript_exon_variant	0.0	0	112	AC0	
+YAP1	Oncogene	11-102110157-G-T	11	102110157	G	T		non_coding_transcript_exon_variant	0.0	0	112	AC0	
+YAP1	Oncogene	11-102110158-G-A	11	102110158	G	A		non_coding_transcript_exon_variant	0.0	0	116	AC0	
+YAP1	Oncogene	11-102110158-G-T	11	102110158	G	T		non_coding_transcript_exon_variant	0.0	0	116	AC0	
+YAP1	Oncogene	11-102110160-T-C	11	102110160	T	C	rs1591081524	non_coding_transcript_exon_variant	0.0	0	130	AC0	
+YAP1	Oncogene	11-102110161-CGCG-C	11	102110161	CGCG	C		non_coding_transcript_exon_variant	0.0	0	126	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110163-C-A	11	102110163	C	A		non_coding_transcript_exon_variant	0.0	0	130	AC0	
+YAP1	Oncogene	11-102110163-C-T	11	102110163	C	T		non_coding_transcript_exon_variant	0.0	0	130	AC0	
+YAP1	Oncogene	11-102110164-G-T	11	102110164	G	T		non_coding_transcript_exon_variant	0.0	0	120	AC0	
+YAP1	Oncogene	11-102110165-G-T	11	102110165	G	T		non_coding_transcript_exon_variant	0.0	0	136	AC0	
+YAP1	Oncogene	11-102110165-G-A	11	102110165	G	A		non_coding_transcript_exon_variant	0.0	0	136	AC0	
+YAP1	Oncogene	11-102110167-G-T	11	102110167	G	T		non_coding_transcript_exon_variant	0.0	0	142	AC0	
+YAP1	Oncogene	11-102110167-G-A	11	102110167	G	A	rs528136590	non_coding_transcript_exon_variant	0.0019931028152577264	304	152526	AC0	
+YAP1	Oncogene	11-102110167-G-C	11	102110167	G	C		non_coding_transcript_exon_variant	0.0	0	142	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110168-C-A	11	102110168	C	A		non_coding_transcript_exon_variant	0.0	0	142	AC0	
+YAP1	Oncogene	11-102110170-G-A	11	102110170	G	A	rs1295529599	non_coding_transcript_exon_variant	6.567023037116814e-06	1	152276	PASS	
+YAP1	Oncogene	11-102110171-A-G	11	102110171	A	G		non_coding_transcript_exon_variant	0.0	0	172	AC0	
+YAP1	Oncogene	11-102110173-T-C	11	102110173	T	C		non_coding_transcript_exon_variant	0.0	0	188	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110175-CG-C	11	102110175	CG	C	rs1350949925	non_coding_transcript_exon_variant	6.569007422978388e-06	1	152230	PASS	
+YAP1	Oncogene	11-102110175-C-T	11	102110175	C	T		non_coding_transcript_exon_variant	0.005555555555555556	1	180	PASS	
+YAP1	Oncogene	11-102110176-G-T	11	102110176	G	T		non_coding_transcript_exon_variant	0.0	0	186	AC0	
+YAP1	Oncogene	11-102110176-G-C	11	102110176	G	C	rs911528446	non_coding_transcript_exon_variant	1.312559885544778e-05	2	152374	PASS	
+YAP1	Oncogene	11-102110178-G-A	11	102110178	G	A	rs1437412161	non_coding_transcript_exon_variant	6.56754058740083e-06	1	152264	PASS	
+YAP1	Oncogene	11-102110179-G-A	11	102110179	G	A	rs976444693	non_coding_transcript_exon_variant	0.00013111830804935293	20	152534	AC0	
+YAP1	Oncogene	11-102110179-G-T	11	102110179	G	T		non_coding_transcript_exon_variant	0.0	0	266	AC0	
+YAP1	Oncogene	11-102110180-C-A	11	102110180	C	A		non_coding_transcript_exon_variant	0.0	0	272	AC0	
+YAP1	Oncogene	11-102110182-C-G	11	102110182	C	G	rs1942800188	non_coding_transcript_exon_variant	6.56754058740083e-06	1	152264	PASS	
+YAP1	Oncogene	11-102110182-C-T	11	102110182	C	T		non_coding_transcript_exon_variant	0.0	0	230	AC0	
+YAP1	Oncogene	11-102110182-C-A	11	102110182	C	A		non_coding_transcript_exon_variant	0.0	0	230	AC0	
+YAP1	Oncogene	11-102110183-G-T	11	102110183	G	T	rs1942800239	non_coding_transcript_exon_variant	6.555743486868846e-06	1	152538	AC0	
+YAP1	Oncogene	11-102110183-G-A	11	102110183	G	A	rs1942800239	non_coding_transcript_exon_variant	0.0	0	264	AC0	
+YAP1	Oncogene	11-102110184-C-A	11	102110184	C	A		non_coding_transcript_exon_variant	0.0	0	378	AC0	
+YAP1	Oncogene	11-102110185-T-C	11	102110185	T	C	rs974827245	non_coding_transcript_exon_variant	0.0	0	384	AC0	
+YAP1	Oncogene	11-102110187-C-A	11	102110187	C	A		non_coding_transcript_exon_variant	0.0	0	386	AC0	
+YAP1	Oncogene	11-102110188-G-A	11	102110188	G	A		non_coding_transcript_exon_variant	0.0	0	690	AC0	
+YAP1	Oncogene	11-102110190-GC-G	11	102110190	GC	G		non_coding_transcript_exon_variant	0.0	0	708	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110190-G-T	11	102110190	G	T	rs2135078280	non_coding_transcript_exon_variant	0.0	0	708	AC0	
+YAP1	Oncogene	11-102110190-G-A	11	102110190	G	A		non_coding_transcript_exon_variant	0.0	0	708	AC0	
+YAP1	Oncogene	11-102110191-C-T	11	102110191	C	T		non_coding_transcript_exon_variant	0.0	0	764	AC0	
+YAP1	Oncogene	11-102110191-C-A	11	102110191	C	A		non_coding_transcript_exon_variant	0.0	0	764	AC0	
+YAP1	Oncogene	11-102110192-CCCTGCCCGGCTGAGCGCGGGCG-C	11	102110192	CCCTGCCCGGCTGAGCGCGGGCG	C	rs1942800440	non_coding_transcript_exon_variant	6.567799393135336e-06	1	152258	PASS	
+YAP1	Oncogene	11-102110192-C-T	11	102110192	C	T	rs1459337948	non_coding_transcript_exon_variant	0.0	0	768	AC0	
+YAP1	Oncogene	11-102110193-C-T	11	102110193	C	T		non_coding_transcript_exon_variant	0.0	0	844	AC0	
+YAP1	Oncogene	11-102110193-C-A	11	102110193	C	A		non_coding_transcript_exon_variant	0.0	0	844	AC0	
+YAP1	Oncogene	11-102110194-C-A	11	102110194	C	A		non_coding_transcript_exon_variant	0.0	0	884	AC0	
+YAP1	Oncogene	11-102110194-C-T	11	102110194	C	T	rs1390013517	non_coding_transcript_exon_variant	6.53022842739039e-06	1	153134	AC0	
+YAP1	Oncogene	11-102110195-T-C	11	102110195	T	C	rs1158944903	non_coding_transcript_exon_variant	0.0	0	892	AC0	
+YAP1	Oncogene	11-102110196-G-A	11	102110196	G	A		non_coding_transcript_exon_variant	0.0	0	908	AC0	
+YAP1	Oncogene	11-102110196-G-T	11	102110196	G	T	rs922366514	non_coding_transcript_exon_variant	6.528778857202549e-06	1	153168	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110197-C-T	11	102110197	C	T		non_coding_transcript_exon_variant	0.0	0	902	AC0	
+YAP1	Oncogene	11-102110197-C-A	11	102110197	C	A	rs1942800743	non_coding_transcript_exon_variant	0.0	0	902	AC0	
+YAP1	Oncogene	11-102110198-C-T	11	102110198	C	T		non_coding_transcript_exon_variant	0.0	0	920	AC0	
+YAP1	Oncogene	11-102110199-C-T	11	102110199	C	T		non_coding_transcript_exon_variant	0.0	0	900	AC0	
+YAP1	Oncogene	11-102110199-C-A	11	102110199	C	A		non_coding_transcript_exon_variant	0.0	0	900	AC0	
+YAP1	Oncogene	11-102110200-G-T	11	102110200	G	T		non_coding_transcript_exon_variant	0.0	0	908	AC0	
+YAP1	Oncogene	11-102110200-G-A	11	102110200	G	A	rs1942800829	non_coding_transcript_exon_variant	0.0	0	153150	AC0	
+YAP1	Oncogene	11-102110201-G-T	11	102110201	G	T		non_coding_transcript_exon_variant	0.0	0	920	AC0	
+YAP1	Oncogene	11-102110201-G-A	11	102110201	G	A		non_coding_transcript_exon_variant	0.0	0	920	AC0	
+YAP1	Oncogene	11-102110202-CTGAGCGCGGGCGAA-C	11	102110202	CTGAGCGCGGGCGAA	C	rs932923976	non_coding_transcript_exon_variant	0.00016409583196586806	25	152350	PASS	
+YAP1	Oncogene	11-102110202-C-T	11	102110202	C	T		non_coding_transcript_exon_variant	0.0	0	928	AC0	
+YAP1	Oncogene	11-102110202-C-A	11	102110202	C	A		non_coding_transcript_exon_variant	0.0	0	928	AC0	
+YAP1	Oncogene	11-102110203-T-C	11	102110203	T	C		non_coding_transcript_exon_variant	0.0	0	936	AC0	
+YAP1	Oncogene	11-102110204-G-T	11	102110204	G	T		non_coding_transcript_exon_variant	0.0	0	926	AC0	
+YAP1	Oncogene	11-102110204-G-A	11	102110204	G	A	rs2135078373	non_coding_transcript_exon_variant	0.0	0	926	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110205-A-G	11	102110205	A	G		non_coding_transcript_exon_variant	0.0	0	906	AC0	
+YAP1	Oncogene	11-102110206-G-T	11	102110206	G	T		non_coding_transcript_exon_variant	0.0	0	912	AC0	
+YAP1	Oncogene	11-102110206-G-A	11	102110206	G	A		non_coding_transcript_exon_variant	0.0	0	912	AC0	
+YAP1	Oncogene	11-102110207-C-A	11	102110207	C	A		non_coding_transcript_exon_variant	0.0	0	886	AC0	
+YAP1	Oncogene	11-102110207-C-T	11	102110207	C	T	rs1191444271	non_coding_transcript_exon_variant	0.0	0	884	AC0	
+YAP1	Oncogene	11-102110209-C-T	11	102110209	C	T		non_coding_transcript_exon_variant	0.0	0	910	AC0	
+YAP1	Oncogene	11-102110210-G-T	11	102110210	G	T		non_coding_transcript_exon_variant	0.0	0	910	AC0	
+YAP1	Oncogene	11-102110210-G-A	11	102110210	G	A	rs1591081587	non_coding_transcript_exon_variant	0.0	0	910	AC0	
+YAP1	Oncogene	11-102110211-G-C	11	102110211	G	C	rs1477452691	non_coding_transcript_exon_variant	6.57030223390276e-06	1	152200	PASS	
+YAP1	Oncogene	11-102110211-G-T	11	102110211	G	T		non_coding_transcript_exon_variant	0.0	0	968	AC0	
+YAP1	Oncogene	11-102110212-G-T	11	102110212	G	T		non_coding_transcript_exon_variant	0.0	0	988	AC0	
+YAP1	Oncogene	11-102110212-G-A	11	102110212	G	A	rs932281444	non_coding_transcript_exon_variant	2.6111705877744993e-05	4	153188	AC0	
+YAP1	Oncogene	11-102110213-C-T	11	102110213	C	T	rs1222167440	non_coding_transcript_exon_variant	2.6124666910496892e-05	4	153112	AC0	
+YAP1	Oncogene	11-102110213-C-A	11	102110213	C	A		non_coding_transcript_exon_variant	0.0	0	952	AC0	
+YAP1	Oncogene	11-102110214-G-T	11	102110214	G	T		non_coding_transcript_exon_variant	0.0	0	982	AC0	
+YAP1	Oncogene	11-102110214-G-A	11	102110214	G	A		non_coding_transcript_exon_variant	0.0	0	982	AC0	
+YAP1	Oncogene	11-102110214-GA-G	11	102110214	GA	G		non_coding_transcript_exon_variant	0.0	0	982	AC0	
+YAP1	Oncogene	11-102110214-G-C	11	102110214	G	C	rs1465340458	non_coding_transcript_exon_variant	6.57030223390276e-06	1	152200	PASS	
+YAP1	Oncogene	11-102110215-A-G	11	102110215	A	G		non_coding_transcript_exon_variant	0.0	0	982	AC0	
+YAP1	Oncogene	11-102110216-A-G	11	102110216	A	G		non_coding_transcript_exon_variant	0.0	0	968	AC0	
+YAP1	Oncogene	11-102110216-A-C	11	102110216	A	C		non_coding_transcript_exon_variant	0.0	0	968	AC0	
+YAP1	Oncogene	11-102110216-A-T	11	102110216	A	T		non_coding_transcript_exon_variant	0.0	0	968	AC0	
+YAP1	Oncogene	11-102110217-G-A	11	102110217	G	A	rs2135078446	non_coding_transcript_exon_variant	0.0	0	1014	AC0	
+YAP1	Oncogene	11-102110217-G-T	11	102110217	G	T		non_coding_transcript_exon_variant	0.0	0	1014	AC0	
+YAP1	Oncogene	11-102110218-G-T	11	102110218	G	T		non_coding_transcript_exon_variant	0.0	0	1032	AC0	
+YAP1	Oncogene	11-102110219-G-T	11	102110219	G	T		non_coding_transcript_exon_variant	0.0	0	1040	AC0	
+YAP1	Oncogene	11-102110220-C-A	11	102110220	C	A		non_coding_transcript_exon_variant	0.0	0	1008	AC0	
+YAP1	Oncogene	11-102110220-C-T	11	102110220	C	T		non_coding_transcript_exon_variant	0.0	0	1008	AC0	
+YAP1	Oncogene	11-102110221-G-T	11	102110221	G	T	rs1267389052	non_coding_transcript_exon_variant	1.3139223209123877e-05	2	152216	PASS	
+YAP1	Oncogene	11-102110221-G-A	11	102110221	G	A	rs1267389052	non_coding_transcript_exon_variant	6.5252854812398045e-06	1	153250	AC0	
+YAP1	Oncogene	11-102110222-G-T	11	102110222	G	T	rs1942802188	non_coding_transcript_exon_variant	6.521795841702972e-06	1	153332	AC0	
+YAP1	Oncogene	11-102110224-C-T	11	102110224	C	T		non_coding_transcript_exon_variant	0.0	0	1086	AC0	
+YAP1	Oncogene	11-102110224-C-A	11	102110224	C	A		non_coding_transcript_exon_variant	0.0	0	1086	AC0	
+YAP1	Oncogene	11-102110225-C-T	11	102110225	C	T	rs908073634	non_coding_transcript_exon_variant	0.0	0	922	AC0	
+YAP1	Oncogene	11-102110225-C-A	11	102110225	C	A		non_coding_transcript_exon_variant	0.0	0	922	AC0	
+YAP1	Oncogene	11-102110225-C-G	11	102110225	C	G	rs908073634	non_coding_transcript_exon_variant	1.9707799033003994e-05	3	152224	PASS	
+YAP1	Oncogene	11-102110226-G-A	11	102110226	G	A	rs1049426019	non_coding_transcript_exon_variant	6.5234976384938545e-06	1	153292	AC0	
+YAP1	Oncogene	11-102110226-G-C	11	102110226	G	C	rs1049426019	non_coding_transcript_exon_variant	6.569525286102826e-06	1	152218	PASS	
+YAP1	Oncogene	11-102110227-G-A	11	102110227	G	A	rs1220051627	non_coding_transcript_exon_variant	1.3037469687882975e-05	2	153404	AC0	
+YAP1	Oncogene	11-102110227-G-T	11	102110227	G	T		non_coding_transcript_exon_variant	0.0	0	1190	AC0	
+YAP1	Oncogene	11-102110228-GC-G	11	102110228	GC	G		non_coding_transcript_exon_variant	0.0	0	912	AC0	
+YAP1	Oncogene	11-102110228-G-A	11	102110228	G	A	rs866255874	non_coding_transcript_exon_variant	6.525030015138069e-06	1	153256	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110229-C-A	11	102110229	C	A	rs1942802614	non_coding_transcript_exon_variant	0.0	0	900	AC0	
+YAP1	Oncogene	11-102110229-C-T	11	102110229	C	T	rs1942802614	non_coding_transcript_exon_variant	0.0	0	900	AC0	
+YAP1	Oncogene	11-102110231-A-G	11	102110231	A	G		non_coding_transcript_exon_variant	0.0	0	862	AC0	
+YAP1	Oncogene	11-102110231-AG-A	11	102110231	AG	A		non_coding_transcript_exon_variant	0.0	0	862	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110232-G-C	11	102110232	G	C	rs778996617	non_coding_transcript_exon_variant	0.00015025608863802656	23	153072	PASS	
+YAP1	Oncogene	11-102110232-G-T	11	102110232	G	T		non_coding_transcript_exon_variant	0.001182033096926714	1	846	PASS	
+YAP1	Oncogene	11-102110233-G-T	11	102110233	G	T		non_coding_transcript_exon_variant	0.0	0	838	AC0	
+YAP1	Oncogene	11-102110234-G-A	11	102110234	G	A		non_coding_transcript_exon_variant	0.0	0	828	AC0	
+YAP1	Oncogene	11-102110234-G-T	11	102110234	G	T		non_coding_transcript_exon_variant	0.0	0	828	AC0	
+YAP1	Oncogene	11-102110235-C-T	11	102110235	C	T	rs941650019	non_coding_transcript_exon_variant	0.0	0	806	AC0	
+YAP1	Oncogene	11-102110235-C-A	11	102110235	C	A		non_coding_transcript_exon_variant	0.0	0	806	AC0	
+YAP1	Oncogene	11-102110236-G-A	11	102110236	G	A		non_coding_transcript_exon_variant	0.0	0	810	AC0	
+YAP1	Oncogene	11-102110236-G-T	11	102110236	G	T		non_coding_transcript_exon_variant	0.0	0	810	AC0	
+YAP1	Oncogene	11-102110238-G-A	11	102110238	G	A	rs776581494	non_coding_transcript_exon_variant	0.0	0	153116	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110238-G-T	11	102110238	G	T	rs776581494	non_coding_transcript_exon_variant	0.0	0	784	AC0	
+YAP1	Oncogene	11-102110239-C-G	11	102110239	C	G	rs147188850	non_coding_transcript_exon_variant	0.003985729780588842	610	153046	PASS	
+YAP1	Oncogene	11-102110239-C-A	11	102110239	C	A	rs147188850	non_coding_transcript_exon_variant	0.0	0	750	AC0	
+YAP1	Oncogene	11-102110239-C-T	11	102110239	C	T		non_coding_transcript_exon_variant	0.0	0	750	AC0	
+YAP1	Oncogene	11-102110240-G-T	11	102110240	G	T		non_coding_transcript_exon_variant	0.0	0	568	AC0	
+YAP1	Oncogene	11-102110241-G-A	11	102110241	G	A		non_coding_transcript_exon_variant	0.0	0	598	AC0	
+YAP1	Oncogene	11-102110241-G-T	11	102110241	G	T		non_coding_transcript_exon_variant	0.0	0	598	AC0	
+YAP1	Oncogene	11-102110242-G-A	11	102110242	G	A		non_coding_transcript_exon_variant	0.0	0	594	AC0	
+YAP1	Oncogene	11-102110242-G-C	11	102110242	G	C		non_coding_transcript_exon_variant	0.0	0	594	AC0	
+YAP1	Oncogene	11-102110243-T-G	11	102110243	T	G		non_coding_transcript_exon_variant	0.0	0	578	AC0	
+YAP1	Oncogene	11-102110244-C-T	11	102110244	C	T		non_coding_transcript_exon_variant	0.0	0	582	AC0	
+YAP1	Oncogene	11-102110244-C-A	11	102110244	C	A	rs1942803348	non_coding_transcript_exon_variant	6.5696979252893955e-06	1	152214	PASS	
+YAP1	Oncogene	11-102110245-A-G	11	102110245	A	G	rs1437330274	non_coding_transcript_exon_variant	2.6163285062072393e-05	4	152886	AC0	
+YAP1	Oncogene	11-102110246-C-A	11	102110246	C	A		non_coding_transcript_exon_variant	0.0	0	594	AC0	
+YAP1	Oncogene	11-102110246-C-T	11	102110246	C	T	rs897297549	non_coding_transcript_exon_variant	0.0	0	594	AC0	
+YAP1	Oncogene	11-102110247-G-A	11	102110247	G	A	rs1014849659	non_coding_transcript_exon_variant	0.00022904859756815832	35	152806	AC0	
+YAP1	Oncogene	11-102110247-G-T	11	102110247	G	T		non_coding_transcript_exon_variant	0.0	0	592	AC0	
+YAP1	Oncogene	11-102110248-T-C	11	102110248	T	C	rs1452213275	non_coding_transcript_exon_variant	2.629952529356845e-05	4	152094	PASS	
+YAP1	Oncogene	11-102110249-G-A	11	102110249	G	A	rs1045809504	non_coding_transcript_exon_variant	0.00018313101716199245	28	152896	AC0	
+YAP1	Oncogene	11-102110249-G-T	11	102110249	G	T		non_coding_transcript_exon_variant	0.0	0	574	AC0	
+YAP1	Oncogene	11-102110250-C-T	11	102110250	C	T	rs1177163538	non_coding_transcript_exon_variant	1.9640706017912324e-05	3	152744	AC0	
+YAP1	Oncogene	11-102110250-C-A	11	102110250	C	A		non_coding_transcript_exon_variant	0.0	0	552	AC0	
+YAP1	Oncogene	11-102110250-CGGCCGGGAGAGGCGCCGCG-C	11	102110250	CGGCCGGGAGAGGCGCCGCG	C	rs985709642	non_coding_transcript_exon_variant	4.582831404179542e-05	7	152744	AC0	
+YAP1	Oncogene	11-102110251-G-A	11	102110251	G	A	rs893685383	non_coding_transcript_exon_variant	0.0	0	554	AC0	
+YAP1	Oncogene	11-102110252-G-A	11	102110252	G	A		non_coding_transcript_exon_variant	0.0	0	574	AC0	
+YAP1	Oncogene	11-102110252-G-T	11	102110252	G	T		non_coding_transcript_exon_variant	0.0	0	574	AC0	
+YAP1	Oncogene	11-102110253-C-T	11	102110253	C	T	rs905946683	non_coding_transcript_exon_variant	0.0	0	576	AC0	
+YAP1	Oncogene	11-102110254-C-CG	11	102110254	C	CG	rs1189982723	non_coding_transcript_exon_variant	0.0	0	572	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110254-CG-C	11	102110254	CG	C		non_coding_transcript_exon_variant	0.0	0	572	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110254-C-A	11	102110254	C	A		non_coding_transcript_exon_variant	0.0	0	572	AC0	
+YAP1	Oncogene	11-102110254-C-T	11	102110254	C	T	rs1424306065	non_coding_transcript_exon_variant	1.3093461125513919e-05	2	152748	AC0	
+YAP1	Oncogene	11-102110255-G-C	11	102110255	G	C	rs1942803952	non_coding_transcript_exon_variant	6.545187977798723e-06	1	152784	AC0	
+YAP1	Oncogene	11-102110255-G-A	11	102110255	G	A	rs1942803952	non_coding_transcript_exon_variant	0.0	0	580	AC0	
+YAP1	Oncogene	11-102110255-G-T	11	102110255	G	T	rs1942803952	non_coding_transcript_exon_variant	6.545187977798723e-06	1	152784	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110256-G-T	11	102110256	G	T		non_coding_transcript_exon_variant	0.0	0	576	AC0	
+YAP1	Oncogene	11-102110256-G-A	11	102110256	G	A		non_coding_transcript_exon_variant	0.0	0	576	AC0	
+YAP1	Oncogene	11-102110257-G-A	11	102110257	G	A	rs1001532174	non_coding_transcript_exon_variant	6.545873481357352e-05	10	152768	AC0	
+YAP1	Oncogene	11-102110257-G-C	11	102110257	G	C	rs1001532174	non_coding_transcript_exon_variant	2.6280172923537837e-05	4	152206	PASS	
+YAP1	Oncogene	11-102110257-G-T	11	102110257	G	T		non_coding_transcript_exon_variant	0.0	0	562	AC0	
+YAP1	Oncogene	11-102110258-A-G	11	102110258	A	G		non_coding_transcript_exon_variant	0.0	0	562	AC0	
+YAP1	Oncogene	11-102110258-A-T	11	102110258	A	T	rs1942804182	non_coding_transcript_exon_variant	6.573757559821194e-06	1	152120	PASS	
+YAP1	Oncogene	11-102110259-G-C	11	102110259	G	C	rs1184716274	non_coding_transcript_exon_variant	6.569525286102826e-06	1	152218	PASS	
+YAP1	Oncogene	11-102110259-G-T	11	102110259	G	T		non_coding_transcript_exon_variant	0.0	0	562	AC0	
+YAP1	Oncogene	11-102110260-A-AGGCGCCGCGGGCCGGGAGT	11	102110260	A	AGGCGCCGCGGGCCGGGAGT	rs915434165	non_coding_transcript_exon_variant	3.287656821230373e-05	5	152084	PASS	
+YAP1	Oncogene	11-102110260-A-G	11	102110260	A	G	rs1942804289	non_coding_transcript_exon_variant	0.0	0	546	AC0	
+YAP1	Oncogene	11-102110261-GGCGCCGCGGGCCGGGAGTGTGCAGGAATGTAGCAACTTGCAGCGAAAAGTTTCCCT-G	11	102110261	GGCGCCGCGGGCCGGGAGTGTGCAGGAATGTAGCAACTTGCAGCGAAAAGTTTCCCT	G		non_coding_transcript_exon_variant	0.0	0	534	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110261-G-A	11	102110261	G	A	rs1942804413	non_coding_transcript_exon_variant	0.0	0	534	AC0	
+YAP1	Oncogene	11-102110261-G-T	11	102110261	G	T		non_coding_transcript_exon_variant	0.0	0	534	AC0	
+YAP1	Oncogene	11-102110262-G-A	11	102110262	G	A	rs1020736634	non_coding_transcript_exon_variant	1.3094318375256977e-05	2	152738	AC0	
+YAP1	Oncogene	11-102110263-C-A	11	102110263	C	A		non_coding_transcript_exon_variant	0.0	0	530	AC0	
+YAP1	Oncogene	11-102110263-C-T	11	102110263	C	T		non_coding_transcript_exon_variant	0.0	0	530	AC0	
+YAP1	Oncogene	11-102110264-G-A	11	102110264	G	A	rs772113632	non_coding_transcript_exon_variant	0.0	0	538	AC0	
+YAP1	Oncogene	11-102110264-G-T	11	102110264	G	T	rs772113632	non_coding_transcript_exon_variant	6.547330653292653e-05	10	152734	AC0	
+YAP1	Oncogene	11-102110265-C-A	11	102110265	C	A		non_coding_transcript_exon_variant	0.0	0	562	AC0	
+YAP1	Oncogene	11-102110266-C-G	11	102110266	C	G		non_coding_transcript_exon_variant	0.0	0	546	AC0	
+YAP1	Oncogene	11-102110266-C-A	11	102110266	C	A	rs1033042904	non_coding_transcript_exon_variant	1.3096719271822408e-05	2	152710	AC0	
+YAP1	Oncogene	11-102110266-C-T	11	102110266	C	T	rs1033042904	non_coding_transcript_exon_variant	1.3087463518695442e-05	2	152818	AC0	
+YAP1	Oncogene	11-102110267-G-A	11	102110267	G	A		non_coding_transcript_exon_variant	0.0	0	550	AC0	
+YAP1	Oncogene	11-102110267-G-GCAGGCACCCCCTGC	11	102110267	G	GCAGGCACCCCCTGC		non_coding_transcript_exon_variant	0.0	0	550	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110267-G-T	11	102110267	G	T		non_coding_transcript_exon_variant	0.0	0	550	AC0	
+YAP1	Oncogene	11-102110267-G-GCAGGCACCCCCCGC	11	102110267	G	GCAGGCACCCCCCGC		non_coding_transcript_exon_variant	0.0	0	550	AC0	
+YAP1	Oncogene	11-102110267-G-C	11	102110267	G	C		non_coding_transcript_exon_variant	0.0	0	550	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110268-C-T	11	102110268	C	T		non_coding_transcript_exon_variant	0.0	0	552	AC0	
+YAP1	Oncogene	11-102110268-C-A	11	102110268	C	A		non_coding_transcript_exon_variant	0.0	0	552	AC0	
+YAP1	Oncogene	11-102110268-C-CA	11	102110268	C	CA		non_coding_transcript_exon_variant	0.0	0	552	AC0	
+YAP1	Oncogene	11-102110269-G-C	11	102110269	G	C		non_coding_transcript_exon_variant	0.0	0	470	AC0	
+YAP1	Oncogene	11-102110269-G-A	11	102110269	G	A		non_coding_transcript_exon_variant	0.0	0	470	AC0	
+YAP1	Oncogene	11-102110270-G-T	11	102110270	G	T	rs958178310	non_coding_transcript_exon_variant	1.314146790196465e-05	2	152190	PASS	
+YAP1	Oncogene	11-102110270-G-GCACCCCCC	11	102110270	G	GCACCCCCC		non_coding_transcript_exon_variant	0.0	0	626	AC0	
+YAP1	Oncogene	11-102110271-G-A	11	102110271	G	A		non_coding_transcript_exon_variant	0.0	0	644	AC0	
+YAP1	Oncogene	11-102110271-G-GCACC	11	102110271	G	GCACC		non_coding_transcript_exon_variant	0.0	0	644	AC0	
+YAP1	Oncogene	11-102110271-G-T	11	102110271	G	T		non_coding_transcript_exon_variant	0.0	0	644	AC0	
+YAP1	Oncogene	11-102110272-C-T	11	102110272	C	T		non_coding_transcript_exon_variant	0.0	0	640	AC0	
+YAP1	Oncogene	11-102110272-C-A	11	102110272	C	A	rs1294862971	non_coding_transcript_exon_variant	6.547587868629197e-06	1	152728	AC0	
+YAP1	Oncogene	11-102110273-C-T	11	102110273	C	T		non_coding_transcript_exon_variant	0.0	0	612	AC0	
+YAP1	Oncogene	11-102110273-CG-C	11	102110273	CG	C		non_coding_transcript_exon_variant	0.0	0	612	AC0	
+YAP1	Oncogene	11-102110274-G-T	11	102110274	G	T		non_coding_transcript_exon_variant	0.0	0	620	AC0	
+YAP1	Oncogene	11-102110274-G-A	11	102110274	G	A		non_coding_transcript_exon_variant	0.0	0	620	AC0	
+YAP1	Oncogene	11-102110274-G-C	11	102110274	G	C	rs1008702068	non_coding_transcript_exon_variant	9.819324430479184e-05	15	152760	AC0	
+YAP1	Oncogene	11-102110275-G-C	11	102110275	G	C		non_coding_transcript_exon_variant	0.0	0	610	AC0	
+YAP1	Oncogene	11-102110275-G-A	11	102110275	G	A		non_coding_transcript_exon_variant	0.0	0	610	AC0	
+YAP1	Oncogene	11-102110275-G-T	11	102110275	G	T		non_coding_transcript_exon_variant	0.0	0	610	AC0	
+YAP1	Oncogene	11-102110276-G-T	11	102110276	G	T	rs1018668014	non_coding_transcript_exon_variant	6.571683928289785e-06	1	152168	PASS	
+YAP1	Oncogene	11-102110276-G-C	11	102110276	G	C	rs1018668014	non_coding_transcript_exon_variant	6.571683928289785e-06	1	152168	AS_VQSR	
+YAP1	Oncogene	11-102110277-A-T	11	102110277	A	T	rs1303856704	non_coding_transcript_exon_variant	6.583018445617685e-06	1	151906	PASS	
+YAP1	Oncogene	11-102110278-G-A	11	102110278	G	A	rs776015252	non_coding_transcript_exon_variant	2.6290191129689513e-05	4	152148	PASS	
+YAP1	Oncogene	11-102110278-G-C	11	102110278	G	C	rs776015252	non_coding_transcript_exon_variant	0.001040113038700055	159	152868	AC0	
+YAP1	Oncogene	11-102110278-G-T	11	102110278	G	T	rs776015252	non_coding_transcript_exon_variant	0.0	0	612	AC0	
+YAP1	Oncogene	11-102110279-T-G	11	102110279	T	G	rs1374592154	non_coding_transcript_exon_variant	6.603275224511358e-06	1	151440	AC0	
+YAP1	Oncogene	11-102110279-T-C	11	102110279	T	C	rs1374592154	non_coding_transcript_exon_variant	6.603275224511358e-05	10	151440	AC0	
+YAP1	Oncogene	11-102110280-G-T	11	102110280	G	T		non_coding_transcript_exon_variant	0.0	0	492	AC0	
+YAP1	Oncogene	11-102110280-G-A	11	102110280	G	A		non_coding_transcript_exon_variant	0.0	0	492	AC0	
+YAP1	Oncogene	11-102110281-T-A	11	102110281	T	A		non_coding_transcript_exon_variant	0.0	0	494	AC0	
+YAP1	Oncogene	11-102110282-G-T	11	102110282	G	T		non_coding_transcript_exon_variant	0.0	0	510	AC0	
+YAP1	Oncogene	11-102110282-G-A	11	102110282	G	A	rs535790573	non_coding_transcript_exon_variant	0.0	0	510	AC0	
+YAP1	Oncogene	11-102110283-C-T	11	102110283	C	T		non_coding_transcript_exon_variant	0.0	0	492	AC0	
+YAP1	Oncogene	11-102110285-G-T	11	102110285	G	T		non_coding_transcript_exon_variant	0.0	0	406	AC0	
+YAP1	Oncogene	11-102110285-G-A	11	102110285	G	A	rs1425556602	non_coding_transcript_exon_variant	0.0	0	406	AC0	
+YAP1	Oncogene	11-102110286-G-T	11	102110286	G	T		non_coding_transcript_exon_variant	0.0	0	398	AC0	
+YAP1	Oncogene	11-102110287-A-AT	11	102110287	A	AT	rs1256734839	non_coding_transcript_exon_variant	1.3162397662358175e-05	2	151948	PASS	
+YAP1	Oncogene	11-102110287-A-C	11	102110287	A	C	rs966537712	non_coding_transcript_exon_variant	6.581198831179088e-06	1	151948	PASS	
+YAP1	Oncogene	11-102110288-A-C	11	102110288	A	C		non_coding_transcript_exon_variant	0.0	0	364	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110289-T-C	11	102110289	T	C	rs1027772011	non_coding_transcript_exon_variant	8.561080013170892e-05	13	151850	PASS	
+YAP1	Oncogene	11-102110289-T-TG	11	102110289	T	TG	rs1942805715	non_coding_transcript_exon_variant	6.585446163977609e-06	1	151850	PASS	
+YAP1	Oncogene	11-102110289-T-A	11	102110289	T	A	rs1027772011	non_coding_transcript_exon_variant	6.585446163977609e-06	1	151850	PASS	
+YAP1	Oncogene	11-102110291-T-C	11	102110291	T	C	rs549613672	non_coding_transcript_exon_variant	5.2646125903210096e-05	8	151958	PASS	
+YAP1	Oncogene	11-102110292-A-G	11	102110292	A	G		non_coding_transcript_exon_variant	0.0	0	304	AC0	
+YAP1	Oncogene	11-102110293-G-T	11	102110293	G	T		non_coding_transcript_exon_variant	0.0	0	296	AC0	
+YAP1	Oncogene	11-102110294-C-A	11	102110294	C	A		non_coding_transcript_exon_variant	0.0	0	304	AC0	
+YAP1	Oncogene	11-102110296-A-C	11	102110296	A	C	rs1942805909	non_coding_transcript_exon_variant	6.578081831337982e-06	1	152020	PASS	
+YAP1	Oncogene	11-102110297-C-G	11	102110297	C	G	rs1942805969	non_coding_transcript_exon_variant	6.575054244197515e-06	1	152090	PASS	
+YAP1	Oncogene	11-102110298-T-C	11	102110298	T	C		non_coding_transcript_exon_variant	0.0	0	286	AC0	
+YAP1	Oncogene	11-102110300-G-T	11	102110300	G	T		non_coding_transcript_exon_variant	0.0	0	286	AC0	
+YAP1	Oncogene	11-102110301-CA-C	11	102110301	CA	C	rs1942806220	non_coding_transcript_exon_variant	0.0034482758620689655	1	290	PASS	
+YAP1	Oncogene	11-102110301-C-A	11	102110301	C	A	rs908025469	non_coding_transcript_exon_variant	0.0	0	290	AC0	
+YAP1	Oncogene	11-102110301-C-T	11	102110301	C	T	rs908025469	non_coding_transcript_exon_variant	6.559355608904981e-06	1	152454	AC0	
+YAP1	Oncogene	11-102110302-A-G	11	102110302	A	G	rs922353589	non_coding_transcript_exon_variant	8.533207304425453e-05	13	152346	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110302-A-C	11	102110302	A	C	rs922353589	non_coding_transcript_exon_variant	6.576524438364813e-06	1	152056	PASS	
+YAP1	Oncogene	11-102110303-G-C	11	102110303	G	C	rs982032990	non_coding_transcript_exon_variant	6.573584707212537e-06	1	152124	PASS	
+YAP1	Oncogene	11-102110303-G-T	11	102110303	G	T		non_coding_transcript_exon_variant	0.0	0	302	AC0	
+YAP1	Oncogene	11-102110303-G-A	11	102110303	G	A	rs982032990	non_coding_transcript_exon_variant	6.573584707212537e-06	1	152124	PASS	
+YAP1	Oncogene	11-102110305-G-T	11	102110305	G	T	rs927367409	non_coding_transcript_exon_variant	6.573411863693732e-06	1	152128	PASS	
+YAP1	Oncogene	11-102110305-G-C	11	102110305	G	C	rs927367409	non_coding_transcript_exon_variant	1.3146823727387464e-05	2	152128	PASS	
+YAP1	Oncogene	11-102110305-GAA-G	11	102110305	GAA	G	rs538412719	non_coding_transcript_exon_variant	0.00010489464643948235	16	152534	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110306-A-G	11	102110306	A	G	rs1942806664	non_coding_transcript_exon_variant	6.577389565629193e-06	1	152036	PASS	
+YAP1	Oncogene	11-102110307-A-G	11	102110307	A	G		non_coding_transcript_exon_variant	0.0	0	312	AC0	
+YAP1	Oncogene	11-102110309-A-C	11	102110309	A	C		non_coding_transcript_exon_variant	0.0	0	320	AC0	
+YAP1	Oncogene	11-102110311-T-C	11	102110311	T	C	rs1238050871	non_coding_transcript_exon_variant	6.58388528238284e-06	1	151886	PASS	
+YAP1	Oncogene	11-102110314-C-T	11	102110314	C	T	rs1310181100	non_coding_transcript_exon_variant	6.557463048695721e-06	1	152498	AC0	
+YAP1	Oncogene	11-102110314-C-A	11	102110314	C	A		non_coding_transcript_exon_variant	0.0	0	362	AC0	
+YAP1	Oncogene	11-102110314-C-G	11	102110314	C	G	rs1310181100	non_coding_transcript_exon_variant	6.573066203922806e-06	1	152136	PASS	
+YAP1	Oncogene	11-102110315-C-T	11	102110315	C	T		non_coding_transcript_exon_variant	0.0	0	384	AC0	
+YAP1	Oncogene	11-102110316-C-A	11	102110316	C	A		non_coding_transcript_exon_variant	0.0	0	420	AC0	
+YAP1	Oncogene	11-102110317-T-A	11	102110317	T	A	rs953831934	non_coding_transcript_exon_variant	6.579033934657035e-06	1	151998	PASS	
+YAP1	Oncogene	11-102110317-T-G	11	102110317	T	G	rs953831934	non_coding_transcript_exon_variant	3.947420360794221e-05	6	151998	PASS	
+YAP1	Oncogene	11-102110317-T-C	11	102110317	T	C		non_coding_transcript_exon_variant	0.0	0	418	AC0	
+YAP1	Oncogene	11-102110318-G-T	11	102110318	G	T	rs985079781	non_coding_transcript_exon_variant	0.00015069911284087484	23	152622	AC0	
+YAP1	Oncogene	11-102110319-C-G	11	102110319	C	G	rs1942807329	non_coding_transcript_exon_variant	6.5740168557792186e-06	1	152114	PASS	
+YAP1	Oncogene	11-102110319-C-A	11	102110319	C	A		non_coding_transcript_exon_variant	0.0	0	444	AC0	
+YAP1	Oncogene	11-102110319-C-T	11	102110319	C	T		non_coding_transcript_exon_variant	0.0	0	444	AC0	
+YAP1	Oncogene	11-102110320-G-T	11	102110320	G	T		non_coding_transcript_exon_variant	0.0	0	452	AC0	
+YAP1	Oncogene	11-102110320-G-A	11	102110320	G	A		non_coding_transcript_exon_variant	0.0	0	452	AC0	
+YAP1	Oncogene	11-102110321-C-A	11	102110321	C	A		non_coding_transcript_exon_variant	0.0	0	480	AC0	
+YAP1	Oncogene	11-102110321-C-T	11	102110321	C	T		non_coding_transcript_exon_variant	0.0	0	480	AC0	
+YAP1	Oncogene	11-102110322-T-C	11	102110322	T	C		non_coding_transcript_exon_variant	0.0	0	474	AC0	
+YAP1	Oncogene	11-102110323-G-A	11	102110323	G	A	rs1942807421	non_coding_transcript_exon_variant	6.550590208177757e-06	1	152658	AC0	
+YAP1	Oncogene	11-102110323-G-T	11	102110323	G	T		non_coding_transcript_exon_variant	0.0	0	498	AC0	
+YAP1	Oncogene	11-102110324-C-A	11	102110324	C	A		non_coding_transcript_exon_variant	0.0	0	514	AC0	
+YAP1	Oncogene	11-102110324-C-T	11	102110324	C	T		non_coding_transcript_exon_variant	0.0	0	514	AC0	
+YAP1	Oncogene	11-102110324-C-G	11	102110324	C	G		non_coding_transcript_exon_variant	0.0	0	514	AC0	
+YAP1	Oncogene	11-102110325-C-G	11	102110325	C	G	rs893174045	non_coding_transcript_exon_variant	5.9131166066594836e-05	9	152204	PASS	
+YAP1	Oncogene	11-102110325-C-T	11	102110325	C	T		non_coding_transcript_exon_variant	0.0	0	514	AC0	
+YAP1	Oncogene	11-102110325-CGGCCGGGCCGCGGTGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGA-C	11	102110325	CGGCCGGGCCGCGGTGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGA	C		non_coding_transcript_exon_variant	0.0019455252918287938	1	514	PASS	
+YAP1	Oncogene	11-102110326-G-C	11	102110326	G	C	rs909572422	non_coding_transcript_exon_variant	6.572806982950139e-06	1	152142	PASS	
+YAP1	Oncogene	11-102110326-G-T	11	102110326	G	T		non_coding_transcript_exon_variant	0.0	0	498	AC0	
+YAP1	Oncogene	11-102110326-G-A	11	102110326	G	A	rs909572422	non_coding_transcript_exon_variant	6.551362683438155e-06	1	152640	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110327-G-A	11	102110327	G	A	rs1164034359	non_coding_transcript_exon_variant	6.549474732126483e-06	1	152684	AC0	
+YAP1	Oncogene	11-102110327-G-C	11	102110327	G	C		non_coding_transcript_exon_variant	0.0	0	540	AC0	
+YAP1	Oncogene	11-102110328-CCGGGCCGCGG-C	11	102110328	CCGGGCCGCGG	C		non_coding_transcript_exon_variant	0.0	0	568	AC0	
+YAP1	Oncogene	11-102110328-C-A	11	102110328	C	A		non_coding_transcript_exon_variant	0.0	0	568	AC0	
+YAP1	Oncogene	11-102110328-C-T	11	102110328	C	T		non_coding_transcript_exon_variant	0.0	0	568	AC0	
+YAP1	Oncogene	11-102110328-CCGGGCCGCGGTGCGGG-C	11	102110328	CCGGGCCGCGGTGCGGG	C	rs1238918730	non_coding_transcript_exon_variant	4.6013883045856124e-05	7	152128	PASS	
+YAP1	Oncogene	11-102110329-C-G	11	102110329	C	G	rs1444217911	non_coding_transcript_exon_variant	6.554540330086651e-06	1	152566	AC0	
+YAP1	Oncogene	11-102110329-C-CT	11	102110329	C	CT		non_coding_transcript_exon_variant	0.0	0	566	AC0	
+YAP1	Oncogene	11-102110329-C-T	11	102110329	C	T	rs1444217911	non_coding_transcript_exon_variant	6.554540330086651e-06	1	152566	AC0	
+YAP1	Oncogene	11-102110329-C-CG	11	102110329	C	CG	rs1942807800	non_coding_transcript_exon_variant	6.578947368421053e-06	1	152000	PASS	
+YAP1	Oncogene	11-102110329-CGGGCCGCGGTGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGAGGCG-C	11	102110329	CGGGCCGCGGTGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGAGGCG	C		non_coding_transcript_exon_variant	0.0	0	564	AC0	
+YAP1	Oncogene	11-102110329-C-A	11	102110329	C	A	rs1444217911	non_coding_transcript_exon_variant	1.3109080660173301e-05	2	152566	AC0	
+YAP1	Oncogene	11-102110330-G-A	11	102110330	G	A		non_coding_transcript_exon_variant	0.0	0	590	AC0	
+YAP1	Oncogene	11-102110330-G-T	11	102110330	G	T		non_coding_transcript_exon_variant	0.0	0	590	AC0	
+YAP1	Oncogene	11-102110331-G-A	11	102110331	G	A	rs1942807858	non_coding_transcript_exon_variant	6.547159187628488e-06	1	152738	AC0	
+YAP1	Oncogene	11-102110331-GGCCGCGGTGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGAGGCGGGGCC-G	11	102110331	GGCCGCGGTGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGAGGCGGGGCC	G		non_coding_transcript_exon_variant	0.0	0	618	AC0	
+YAP1	Oncogene	11-102110332-G-T	11	102110332	G	T		non_coding_transcript_exon_variant	0.0	0	612	AC0	
+YAP1	Oncogene	11-102110332-G-A	11	102110332	G	A		non_coding_transcript_exon_variant	0.0	0	612	AC0	
+YAP1	Oncogene	11-102110332-G-C	11	102110332	G	C		non_coding_transcript_exon_variant	0.0	0	612	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110333-C-T	11	102110333	C	T	rs941040492	non_coding_transcript_exon_variant	0.00018334686607821053	28	152716	AC0	
+YAP1	Oncogene	11-102110333-C-A	11	102110333	C	A		non_coding_transcript_exon_variant	0.0	0	616	AC0	
+YAP1	Oncogene	11-102110334-CG-C	11	102110334	CG	C		non_coding_transcript_exon_variant	0.0	0	636	AC0	
+YAP1	Oncogene	11-102110334-CGCGGTGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGAGGCGGGGCCGCG-C	11	102110334	CGCGGTGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGAGGCGGGGCCGCG	C		non_coding_transcript_exon_variant	0.0015772870662460567	1	634	PASS	
+YAP1	Oncogene	11-102110334-C-A	11	102110334	C	A		non_coding_transcript_exon_variant	0.0	0	636	AC0	
+YAP1	Oncogene	11-102110335-G-A	11	102110335	G	A	rs1942808025	non_coding_transcript_exon_variant	0.001597444089456869	1	626	PASS	
+YAP1	Oncogene	11-102110336-CGGTGCGGGCGGG-C	11	102110336	CGGTGCGGGCGGG	C		non_coding_transcript_exon_variant	0.0	0	630	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110336-C-A	11	102110336	C	A	rs1942808111	non_coding_transcript_exon_variant	0.0	0	630	AC0	
+YAP1	Oncogene	11-102110336-C-T	11	102110336	C	T	rs1942808111	non_coding_transcript_exon_variant	6.549903716415369e-06	1	152674	AC0	
+YAP1	Oncogene	11-102110337-G-T	11	102110337	G	T		non_coding_transcript_exon_variant	0.0	0	642	AC0	
+YAP1	Oncogene	11-102110337-G-A	11	102110337	G	A		non_coding_transcript_exon_variant	0.0	0	642	AC0	
+YAP1	Oncogene	11-102110338-G-A	11	102110338	G	A		non_coding_transcript_exon_variant	0.0	0	710	AC0	
+YAP1	Oncogene	11-102110339-TGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGAGGCG-T	11	102110339	TGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGAGGCG	T		non_coding_transcript_exon_variant	0.0	0	694	AC0	
+YAP1	Oncogene	11-102110339-T-C	11	102110339	T	C		non_coding_transcript_exon_variant	0.0	0	694	AC0	
+YAP1	Oncogene	11-102110339-TGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGAGGCGGGGCCGCGGCGGC-T	11	102110339	TGCGGGCGGGCGCGCAGAGGAAGGAAGAGCCGAGAGGAGGCGGGGCCGCGGCGGC	T		non_coding_transcript_exon_variant	0.002898550724637681	2	690	PASS	
+YAP1	Oncogene	11-102110340-GC-G	11	102110340	GC	G		non_coding_transcript_exon_variant	0.0	0	722	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110341-C-A	11	102110341	C	A	rs1037257163	non_coding_transcript_exon_variant	6.55419665211635e-06	1	152574	AC0	
+YAP1	Oncogene	11-102110341-C-T	11	102110341	C	T	rs1037257163	non_coding_transcript_exon_variant	0.0	0	702	AC0	
+YAP1	Oncogene	11-102110342-G-C	11	102110342	G	C	rs1489517443	non_coding_transcript_exon_variant	6.578168374797721e-06	1	152018	PASS	
+YAP1	Oncogene	11-102110342-G-A	11	102110342	G	A	rs1489517443	non_coding_transcript_exon_variant	1.3085237235351077e-05	2	152844	AC0	
+YAP1	Oncogene	11-102110342-G-T	11	102110342	G	T		non_coding_transcript_exon_variant	0.001392757660167131	1	718	PASS	
+YAP1	Oncogene	11-102110343-G-T	11	102110343	G	T		non_coding_transcript_exon_variant	0.0	0	750	AC0	
+YAP1	Oncogene	11-102110343-G-A	11	102110343	G	A		non_coding_transcript_exon_variant	0.0	0	750	AC0	
+YAP1	Oncogene	11-102110343-G-C	11	102110343	G	C	rs1942808498	non_coding_transcript_exon_variant	6.574794866400168e-06	1	152096	PASS	
+YAP1	Oncogene	11-102110344-G-A	11	102110344	G	A		non_coding_transcript_exon_variant	0.0	0	772	AC0	
+YAP1	Oncogene	11-102110345-C-A	11	102110345	C	A		non_coding_transcript_exon_variant	0.0	0	744	AC0	
+YAP1	Oncogene	11-102110345-C-T	11	102110345	C	T		non_coding_transcript_exon_variant	0.0	0	744	AC0	
+YAP1	Oncogene	11-102110346-G-T	11	102110346	G	T		non_coding_transcript_exon_variant	0.0	0	750	AC0	
+YAP1	Oncogene	11-102110346-G-A	11	102110346	G	A	rs1370417794	non_coding_transcript_exon_variant	6.543217954590068e-06	1	152830	AC0	
+YAP1	Oncogene	11-102110347-G-T	11	102110347	G	T		non_coding_transcript_exon_variant	0.0	0	834	AC0	
+YAP1	Oncogene	11-102110347-G-A	11	102110347	G	A		non_coding_transcript_exon_variant	0.0	0	834	AC0	
+YAP1	Oncogene	11-102110348-G-A	11	102110348	G	A	rs1942808678	non_coding_transcript_exon_variant	0.0	0	850	AC0	
+YAP1	Oncogene	11-102110349-C-T	11	102110349	C	T		non_coding_transcript_exon_variant	0.0	0	834	AC0	
+YAP1	Oncogene	11-102110349-C-A	11	102110349	C	A		non_coding_transcript_exon_variant	0.0	0	834	AC0	
+YAP1	Oncogene	11-102110350-G-T	11	102110350	G	T		non_coding_transcript_exon_variant	0.0	0	868	AC0	
+YAP1	Oncogene	11-102110350-G-A	11	102110350	G	A		non_coding_transcript_exon_variant	0.0	0	868	AC0	
+YAP1	Oncogene	11-102110351-C-T	11	102110351	C	T	rs1942808972	non_coding_transcript_exon_variant	0.0	0	866	AC0	
+YAP1	Oncogene	11-102110351-CGCAGAGGAAGGAAGAGCCGAGAGGAGGCGGGGCCGCGGCGG-C	11	102110351	CGCAGAGGAAGGAAGAGCCGAGAGGAGGCGGGGCCGCGGCGG	C		non_coding_transcript_exon_variant	0.0	0	866	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110352-G-T	11	102110352	G	T		non_coding_transcript_exon_variant	0.0	0	860	AC0	
+YAP1	Oncogene	11-102110352-G-A	11	102110352	G	A	rs1266042942	non_coding_transcript_exon_variant	6.5523070673184025e-06	1	152618	AC0	
+YAP1	Oncogene	11-102110353-C-A	11	102110353	C	A		non_coding_transcript_exon_variant	0.0	0	904	AC0	
+YAP1	Oncogene	11-102110353-C-G	11	102110353	C	G		non_coding_transcript_exon_variant	0.0	0	904	AC0	
+YAP1	Oncogene	11-102110354-A-C	11	102110354	A	C		non_coding_transcript_exon_variant	0.0	0	882	AC0	
+YAP1	Oncogene	11-102110355-GAGGA-G	11	102110355	GAGGA	G	rs1458173008	non_coding_transcript_exon_variant	3.2691704153154096e-05	5	152944	AC0	
+YAP1	Oncogene	11-102110356-A-G	11	102110356	A	G		non_coding_transcript_exon_variant	0.0	0	998	AC0	
+YAP1	Oncogene	11-102110357-G-T	11	102110357	G	T		non_coding_transcript_exon_variant	0.0	0	1204	AC0	
+YAP1	Oncogene	11-102110358-G-T	11	102110358	G	T		non_coding_transcript_exon_variant	0.0	0	1198	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110358-G-A	11	102110358	G	A		non_coding_transcript_exon_variant	0.0	0	1198	AC0	
+YAP1	Oncogene	11-102110359-A-G	11	102110359	A	G		non_coding_transcript_exon_variant	0.0	0	1236	AC0	
+YAP1	Oncogene	11-102110360-A-T	11	102110360	A	T		non_coding_transcript_exon_variant	0.0	0	1260	AC0	
+YAP1	Oncogene	11-102110360-A-G	11	102110360	A	G		non_coding_transcript_exon_variant	0.0	0	1260	AC0	
+YAP1	Oncogene	11-102110360-A-C	11	102110360	A	C		non_coding_transcript_exon_variant	0.0	0	1260	AC0	
+YAP1	Oncogene	11-102110361-G-T	11	102110361	G	T		non_coding_transcript_exon_variant	0.0	0	1190	AC0	
+YAP1	Oncogene	11-102110362-G-A	11	102110362	G	A	rs1591081996	non_coding_transcript_exon_variant	0.0	0	1234	AC0	
+YAP1	Oncogene	11-102110362-G-T	11	102110362	G	T		non_coding_transcript_exon_variant	0.0	0	1234	AC0	
+YAP1	Oncogene	11-102110364-A-G	11	102110364	A	G		non_coding_transcript_exon_variant	0.0	0	1274	AC0	
+YAP1	Oncogene	11-102110364-A-C	11	102110364	A	C		non_coding_transcript_exon_variant	0.0	0	1274	AC0	
+YAP1	Oncogene	11-102110364-A-T	11	102110364	A	T		non_coding_transcript_exon_variant	0.0	0	1274	AC0	
+YAP1	Oncogene	11-102110365-G-T	11	102110365	G	T		non_coding_transcript_exon_variant	0.0	0	1188	AC0	
+YAP1	Oncogene	11-102110365-G-C	11	102110365	G	C	rs1042261575	non_coding_transcript_exon_variant	6.581198831179088e-06	1	151948	PASS	
+YAP1	Oncogene	11-102110365-G-A	11	102110365	G	A	rs1042261575	non_coding_transcript_exon_variant	6.530143140737645e-06	1	153136	AC0	
+YAP1	Oncogene	11-102110366-A-G	11	102110366	A	G		non_coding_transcript_exon_variant	0.0	0	1190	AC0	
+YAP1	Oncogene	11-102110367-G-T	11	102110367	G	T		non_coding_transcript_exon_variant	0.0	0	1334	AC0	
+YAP1	Oncogene	11-102110367-G-A	11	102110367	G	A		non_coding_transcript_exon_variant	0.0	0	1334	AC0	
+YAP1	Oncogene	11-102110368-C-G	11	102110368	C	G	rs1167135590	non_coding_transcript_exon_variant	6.578081831337982e-06	1	152020	PASS	
+YAP1	Oncogene	11-102110368-C-A	11	102110368	C	A		non_coding_transcript_exon_variant	0.0	0	1350	AC0	
+YAP1	Oncogene	11-102110368-C-T	11	102110368	C	T	rs1167135590	non_coding_transcript_exon_variant	0.0	0	1350	AC0	
+YAP1	Oncogene	11-102110369-C-T	11	102110369	C	T	rs902452280	non_coding_transcript_exon_variant	2.6130128037627384e-05	4	153080	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110370-G-T	11	102110370	G	T		non_coding_transcript_exon_variant	0.0	0	1060	AC0	
+YAP1	Oncogene	11-102110370-G-A	11	102110370	G	A		non_coding_transcript_exon_variant	0.0	0	1060	AC0	
+YAP1	Oncogene	11-102110371-A-C	11	102110371	A	C		non_coding_transcript_exon_variant	0.0	0	1094	AC0	
+YAP1	Oncogene	11-102110372-G-T	11	102110372	G	T		non_coding_transcript_exon_variant	0.0	0	1084	AC0	
+YAP1	Oncogene	11-102110372-G-A	11	102110372	G	A		non_coding_transcript_exon_variant	0.0	0	1086	AC0	
+YAP1	Oncogene	11-102110373-A-G	11	102110373	A	G		non_coding_transcript_exon_variant	0.0	0	1080	AC0	
+YAP1	Oncogene	11-102110373-A-T	11	102110373	A	T		non_coding_transcript_exon_variant	0.0	0	1080	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110374-G-T	11	102110374	G	T		non_coding_transcript_exon_variant	0.0	0	1088	AC0	
+YAP1	Oncogene	11-102110374-G-A	11	102110374	G	A	rs1942809959	non_coding_transcript_exon_variant	0.0	0	1088	AC0	
+YAP1	Oncogene	11-102110375-G-A	11	102110375	G	A	rs918841883	non_coding_transcript_exon_variant	5.225138139589565e-05	8	153106	AC0	
+YAP1	Oncogene	11-102110376-A-G	11	102110376	A	G		non_coding_transcript_exon_variant	0.0	0	962	AC0	
+YAP1	Oncogene	11-102110377-G-T	11	102110377	G	T		non_coding_transcript_exon_variant	0.0	0	956	AC0	
+YAP1	Oncogene	11-102110378-G-T	11	102110378	G	T		non_coding_transcript_exon_variant	0.0	0	946	AC0	
+YAP1	Oncogene	11-102110378-G-C	11	102110378	G	C		non_coding_transcript_exon_variant	0.0	0	946	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110379-C-T	11	102110379	C	T	rs950156376	non_coding_transcript_exon_variant	0.0	0	924	AC0	
+YAP1	Oncogene	11-102110379-C-A	11	102110379	C	A		non_coding_transcript_exon_variant	0.0	0	924	AC0	
+YAP1	Oncogene	11-102110380-G-T	11	102110380	G	T		non_coding_transcript_exon_variant	0.0010822510822510823	1	924	PASS	
+YAP1	Oncogene	11-102110380-G-A	11	102110380	G	A		non_coding_transcript_exon_variant	0.0	0	924	AC0	
+YAP1	Oncogene	11-102110381-G-A	11	102110381	G	A		non_coding_transcript_exon_variant	0.0	0	912	AC0	
+YAP1	Oncogene	11-102110381-G-T	11	102110381	G	T		non_coding_transcript_exon_variant	0.0	0	912	AC0	
+YAP1	Oncogene	11-102110382-G-A	11	102110382	G	A		non_coding_transcript_exon_variant	0.0	0	888	AC0	
+YAP1	Oncogene	11-102110382-G-T	11	102110382	G	T		non_coding_transcript_exon_variant	0.0	0	888	AC0	
+YAP1	Oncogene	11-102110382-G-C	11	102110382	G	C		non_coding_transcript_exon_variant	0.0	0	888	AC0	
+YAP1	Oncogene	11-102110383-G-A	11	102110383	G	A	rs1942810257	non_coding_transcript_exon_variant	0.0	0	922	AC0	
+YAP1	Oncogene	11-102110384-C-T	11	102110384	C	T		non_coding_transcript_exon_variant	0.0	0	914	AC0	
+YAP1	Oncogene	11-102110385-C-T	11	102110385	C	T	rs1591082033	non_coding_transcript_exon_variant	0.0	0	886	AC0	
+YAP1	Oncogene	11-102110385-C-A	11	102110385	C	A		non_coding_transcript_exon_variant	0.0	0	886	AC0	
+YAP1	Oncogene	11-102110386-G-T	11	102110386	G	T		non_coding_transcript_exon_variant	0.0	0	916	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110386-G-A	11	102110386	G	A		non_coding_transcript_exon_variant	0.0	0	916	AC0	
+YAP1	Oncogene	11-102110387-C-T	11	102110387	C	T	rs1942810518	non_coding_transcript_exon_variant	0.0	0	912	AC0	
+YAP1	Oncogene	11-102110387-C-A	11	102110387	C	A	rs1942810518	non_coding_transcript_exon_variant	0.0	0	912	AC0	
+YAP1	Oncogene	11-102110388-G-A	11	102110388	G	A	rs1045969111	non_coding_transcript_exon_variant	0.0	0	900	AC0	
+YAP1	Oncogene	11-102110389-G-A	11	102110389	G	A	rs2135079727	non_coding_transcript_exon_variant	6.527670796506391e-06	1	153194	AC0	
+YAP1	Oncogene	11-102110389-GC-G	11	102110389	GC	G		non_coding_transcript_exon_variant	0.0	0	936	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110390-C-A	11	102110390	C	A	rs1304446060	non_coding_transcript_exon_variant	6.579380222383052e-06	1	151990	PASS	
+YAP1	Oncogene	11-102110390-CGGCGCGGGCG-C	11	102110390	CGGCGCGGGCG	C	rs946896518	non_coding_transcript_exon_variant	5.232109455729814e-05	8	152902	AC0	
+YAP1	Oncogene	11-102110390-C-T	11	102110390	C	T		non_coding_transcript_exon_variant	0.0	0	912	AC0	
+YAP1	Oncogene	11-102110391-G-T	11	102110391	G	T		non_coding_transcript_exon_variant	0.0	0	914	AC0	
+YAP1	Oncogene	11-102110391-G-GCAGCCCCCCGGCCCTGAGA	11	102110391	G	GCAGCCCCCCGGCCCTGAGA		non_coding_transcript_exon_variant	0.0	0	152112	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110392-G-T	11	102110392	G	T		non_coding_transcript_exon_variant	0.0	0	934	AC0	
+YAP1	Oncogene	11-102110392-G-A	11	102110392	G	A		non_coding_transcript_exon_variant	0.0	0	934	AC0	
+YAP1	Oncogene	11-102110393-C-T	11	102110393	C	T		non_coding_transcript_exon_variant	0.0	0	934	AC0	
+YAP1	Oncogene	11-102110393-CGCGG-C	11	102110393	CGCGG	C		non_coding_transcript_exon_variant	0.0	0	934	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110394-G-T	11	102110394	G	T		non_coding_transcript_exon_variant	0.0	0	938	AC0	
+YAP1	Oncogene	11-102110394-G-A	11	102110394	G	A		non_coding_transcript_exon_variant	0.0	0	938	AC0	
+YAP1	Oncogene	11-102110395-C-T	11	102110395	C	T		non_coding_transcript_exon_variant	0.0	0	960	AC0	
+YAP1	Oncogene	11-102110395-C-A	11	102110395	C	A		non_coding_transcript_exon_variant	6.57583250039455e-06	1	152072	PASS	
+YAP1	Oncogene	11-102110396-G-T	11	102110396	G	T		non_coding_transcript_exon_variant	0.0	0	904	AC0	
+YAP1	Oncogene	11-102110396-G-C	11	102110396	G	C	rs905936845	non_coding_transcript_exon_variant	6.550761853603574e-06	1	152654	AC0	
+YAP1	Oncogene	11-102110396-G-A	11	102110396	G	A	rs905936845	non_coding_transcript_exon_variant	0.0	0	904	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110397-G-A	11	102110397	G	A	rs1001646745	non_coding_transcript_exon_variant	6.545787785559992e-06	1	152770	AC0	
+YAP1	Oncogene	11-102110397-G-T	11	102110397	G	T		non_coding_transcript_exon_variant	0.0	0	952	AC0	
+YAP1	Oncogene	11-102110398-G-A	11	102110398	G	A		non_coding_transcript_exon_variant	0.0	0	980	AC0	
+YAP1	Oncogene	11-102110398-G-T	11	102110398	G	T		non_coding_transcript_exon_variant	0.0	0	980	AC0	
+YAP1	Oncogene	11-102110399-C-G	11	102110399	C	G		non_coding_transcript_exon_variant	0.0	0	960	AC0	
+YAP1	Oncogene	11-102110399-C-T	11	102110399	C	T	rs1054565123	non_coding_transcript_exon_variant	0.0	0	960	AC0	
+YAP1	Oncogene	11-102110399-C-A	11	102110399	C	A	rs1054565123	non_coding_transcript_exon_variant	0.0	0	960	AC0	
+YAP1	Oncogene	11-102110400-G-A	11	102110400	G	A	rs1942811399	non_coding_transcript_exon_variant	6.5470734581642e-06	1	152740	AC0	
+YAP1	Oncogene	11-102110400-G-T	11	102110400	G	T		non_coding_transcript_exon_variant	0.0010799136069114472	1	926	PASS	
+YAP1	Oncogene	11-102110400-G-C	11	102110400	G	C	rs1942811399	non_coding_transcript_exon_variant	6.587007785843203e-06	1	151814	PASS	
+YAP1	Oncogene	11-102110401-G-GGCGC	11	102110401	G	GGCGC	rs1381480976	non_coding_transcript_exon_variant	6.573411863693732e-06	1	152128	PASS	
+YAP1	Oncogene	11-102110401-G-T	11	102110401	G	T		non_coding_transcript_exon_variant	0.0	0	992	AC0	
+YAP1	Oncogene	11-102110402-G-T	11	102110402	G	T	rs996361916	non_coding_transcript_exon_variant	4.569966182250251e-05	7	153174	AC0	
+YAP1	Oncogene	11-102110403-C-A	11	102110403	C	A		non_coding_transcript_exon_variant	0.0	0	1032	AC0	
+YAP1	Oncogene	11-102110403-C-T	11	102110403	C	T		non_coding_transcript_exon_variant	0.0	0	1032	AC0	
+YAP1	Oncogene	11-102110404-G-T	11	102110404	G	T		non_coding_transcript_exon_variant	0.0	0	1024	AC0	
+YAP1	Oncogene	11-102110404-G-A	11	102110404	G	A		non_coding_transcript_exon_variant	0.0	0	1024	AC0	
+YAP1	Oncogene	11-102110405-C-T	11	102110405	C	T	rs893109835	non_coding_transcript_exon_variant	6.528949361468753e-05	10	153164	AC0	
+YAP1	Oncogene	11-102110407-T-A	11	102110407	T	A	rs1390734168	non_coding_transcript_exon_variant	2.655866144346325e-05	4	150610	PASS	
+YAP1	Oncogene	11-102110409-T-C	11	102110409	T	C		non_coding_transcript_exon_variant	0.0	0	1086	AC0	
+YAP1	Oncogene	11-102110410-C-T	11	102110410	C	T	rs1027307673	non_coding_transcript_exon_variant	0.0	0	1072	AC0	
+YAP1	Oncogene	11-102110410-C-A	11	102110410	C	A		non_coding_transcript_exon_variant	0.0009328358208955224	1	1072	PASS	
+YAP1	Oncogene	11-102110413-A-G	11	102110413	A	G		non_coding_transcript_exon_variant	0.0	0	1056	AC0	
+YAP1	Oncogene	11-102110415-C-G	11	102110415	C	G	rs1314351240	non_coding_transcript_exon_variant	1.3076681661261638e-05	2	152944	AC0	
+YAP1	Oncogene	11-102110415-C-A	11	102110415	C	A		non_coding_transcript_exon_variant	0.0	0	1198	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110416-T-C	11	102110416	T	C		non_coding_transcript_exon_variant	0.0	0	1136	AC0	
+YAP1	Oncogene	11-102110417-T-G	11	102110417	T	G		non_coding_transcript_exon_variant	0.0	0	1060	AC0	
+YAP1	Oncogene	11-102110418-T-G	11	102110418	T	G	rs951717412	non_coding_transcript_exon_variant	0.0	0	1164	AC0	
+YAP1	Oncogene	11-102110418-T-C	11	102110418	T	C	rs951717412	non_coding_transcript_exon_variant	0.0	0	151094	AC0	
+YAP1	Oncogene	11-102110419-A-G	11	102110419	A	G		non_coding_transcript_exon_variant	0.0	0	1130	AC0	
+YAP1	Oncogene	11-102110420-G-T	11	102110420	G	T	rs1213141882	non_coding_transcript_exon_variant	6.573671132380589e-06	1	152122	PASS	
+YAP1	Oncogene	11-102110421-T-G	11	102110421	T	G		non_coding_transcript_exon_variant	0.0	0	1104	AC0	
+YAP1	Oncogene	11-102110422-T-G	11	102110422	T	G		non_coding_transcript_exon_variant	0.0	0	1132	AC0	
+YAP1	Oncogene	11-102110422-T-C	11	102110422	T	C	rs1942812689	non_coding_transcript_exon_variant	6.5787742427830845e-06	1	152004	AC0	
+YAP1	Oncogene	11-102110423-T-G	11	102110423	T	G	rs983135768	non_coding_transcript_exon_variant	0.0002553191489361702	39	152750	AC0	
+YAP1	Oncogene	11-102110424-T-C	11	102110424	T	C	rs1942812896	non_coding_transcript_exon_variant	6.595000989250149e-06	1	151630	PASS	
+YAP1	Oncogene	11-102110425-G-T	11	102110425	G	T		non_coding_transcript_exon_variant	0.0007886435331230284	1	1268	PASS	
+YAP1	Oncogene	11-102110426-G-T	11	102110426	G	T		non_coding_transcript_exon_variant	0.0	0	1308	AC0	
+YAP1	Oncogene	11-102110427-C-G	11	102110427	C	G	rs1020832601	non_coding_transcript_exon_variant	1.3052785464418106e-05	2	153224	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110427-C-A	11	102110427	C	A		non_coding_transcript_exon_variant	0.0	0	1282	AC0	
+YAP1	Oncogene	11-102110427-C-T	11	102110427	C	T	rs1020832601	non_coding_transcript_exon_variant	6.526392732209053e-06	1	153224	AC0	
+YAP1	Oncogene	11-102110428-G-A	11	102110428	G	A		non_coding_transcript_exon_variant	0.0	0	1338	AC0	
+YAP1	Oncogene	11-102110428-G-T	11	102110428	G	T		non_coding_transcript_exon_variant	0.0	0	1338	AC0	
+YAP1	Oncogene	11-102110429-T-G	11	102110429	T	G		non_coding_transcript_exon_variant	0.0	0	1098	AC0	
+YAP1	Oncogene	11-102110430-T-G	11	102110430	T	G	rs1942813043	non_coding_transcript_exon_variant	6.5573770491803276e-06	1	152500	AC0	
+YAP1	Oncogene	11-102110430-T-C	11	102110430	T	C	rs1942813043	non_coding_transcript_exon_variant	6.5573770491803276e-06	1	152500	AC0	
+YAP1	Oncogene	11-102110431-T-C	11	102110431	T	C		non_coding_transcript_exon_variant	0.0	0	1292	AC0	
+YAP1	Oncogene	11-102110432-G-T	11	102110432	G	T		non_coding_transcript_exon_variant	0.0	0	1436	AC0	
+YAP1	Oncogene	11-102110433-A-G	11	102110433	A	G		non_coding_transcript_exon_variant	0.0	0	1318	AC0	
+YAP1	Oncogene	11-102110434-G-T	11	102110434	G	T		non_coding_transcript_exon_variant	0.0	0	1500	AC0	
+YAP1	Oncogene	11-102110435-G-A	11	102110435	G	A	rs530598711	non_coding_transcript_exon_variant	0.00012364961603540285	19	153660	PASS	
+YAP1	Oncogene	11-102110435-G-T	11	102110435	G	T		non_coding_transcript_exon_variant	0.0	0	1490	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110436-C-G	11	102110436	C	G	rs981595779	non_coding_transcript_exon_variant	6.595435958316845e-06	1	151620	PASS	
+YAP1	Oncogene	11-102110436-C-T	11	102110436	C	T	rs981595779	non_coding_transcript_exon_variant	6.532702709765084e-06	1	153076	AC0	
+YAP1	Oncogene	11-102110437-G-T	11	102110437	G	T		non_coding_transcript_exon_variant	0.0	0	1524	AC0	
+YAP1	Oncogene	11-102110437-G-A	11	102110437	G	A	rs1234975910	non_coding_transcript_exon_variant	6.506942908082924e-06	1	153682	AC0	
+YAP1	Oncogene	11-102110441-TTC-T	11	102110441	TTC	T	rs927493034	non_coding_transcript_exon_variant	2.6331727097980358e-05	4	151908	PASS	
+YAP1	Oncogene	11-102110443-C-A	11	102110443	C	A		non_coding_transcript_exon_variant	0.0	0	1624	AC0	
+YAP1	Oncogene	11-102110443-CTG-C	11	102110443	CTG	C	rs1367324931	non_coding_transcript_exon_variant	1.9531758639547904e-05	3	153596	AC0	
+YAP1	Oncogene	11-102110443-C-G	11	102110443	C	G	rs550333681	non_coding_transcript_exon_variant	6.575486586007364e-06	1	152080	PASS	
+YAP1	Oncogene	11-102110443-C-T	11	102110443	C	T	rs550333681	non_coding_transcript_exon_variant	0.00026024046218706083	40	153704	AC0	
+YAP1	Oncogene	11-102110444-T-A	11	102110444	T	A	rs1321161274	non_coding_transcript_exon_variant	0.0	0	1588	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110445-G-T	11	102110445	G	T	rs1399999058	non_coding_transcript_exon_variant	0.0	0	1736	AC0	
+YAP1	Oncogene	11-102110445-GTC-G	11	102110445	GTC	G	rs573974130	5_prime_UTR_variant	0.0025074052902354102	386	153944	PASS	
+YAP1	Oncogene	11-102110446-T-C	11	102110446	T	C		non_coding_transcript_exon_variant	0.0	0	1740	AC0	
+YAP1	Oncogene	11-102110447-C-G	11	102110447	C	G	rs1201133426	5_prime_UTR_variant	6.533300231278828e-06	1	153062	AC0	
+YAP1	Oncogene	11-102110447-C-A	11	102110447	C	A		5_prime_UTR_variant	0.0	0	1778	AC0	
+YAP1	Oncogene	11-102110448-T-A	11	102110448	T	A		5_prime_UTR_variant	0.0	0	1830	AC0	
+YAP1	Oncogene	11-102110448-T-C	11	102110448	T	C	rs2135080199	5_prime_UTR_variant	0.0	0	1830	AC0	
+YAP1	Oncogene	11-102110449-C-A	11	102110449	C	A		5_prime_UTR_variant	0.0	0	1810	AC0	
+YAP1	Oncogene	11-102110450-A-G	11	102110450	A	G		5_prime_UTR_variant	0.0	0	1816	AC0	
+YAP1	Oncogene	11-102110451-G-T	11	102110451	G	T		5_prime_UTR_variant	0.0	0	1972	AC0	
+YAP1	Oncogene	11-102110452-T-C	11	102110452	T	C		5_prime_UTR_variant	0.0	0	1812	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110453-C-A	11	102110453	C	A		5_prime_UTR_variant	0.0	0	1964	AC0	
+YAP1	Oncogene	11-102110453-C-T	11	102110453	C	T	rs1942814160	5_prime_UTR_variant	6.495699846701484e-06	1	153948	AC0	
+YAP1	Oncogene	11-102110454-G-C	11	102110454	G	C	rs1258784966	5_prime_UTR_variant	1.3153048876729627e-05	2	152056	PASS	
+YAP1	Oncogene	11-102110454-G-T	11	102110454	G	T		5_prime_UTR_variant	0.0	0	1926	AC0	
+YAP1	Oncogene	11-102110454-GGGCGCAGCCGCCGCCAGGGAAAAGAAAGGGAGGAAGGAAGGAACAAGAAAAGGAAATAAAGAGAAAGGGGAGGCGGGGAAAGGCAACGAGCTGTCCGGCCTCCGTCAAGGGAGTTGGAGGGAAAAAGTTCTCAGGCGCCGCAGGTCCGAGTGCCTCGCAGCCCCTCCCGA-G	11	102110454	GGGCGCAGCCGCCGCCAGGGAAAAGAAAGGGAGGAAGGAAGGAACAAGAAAAGGAAATAAAGAGAAAGGGGAGGCGGGGAAAGGCAACGAGCTGTCCGGCCTCCGTCAAGGGAGTTGGAGGGAAAAAGTTCTCAGGCGCCGCAGGTCCGAGTGCCTCGCAGCCCCTCCCGA	G		5_prime_UTR_variant	0.0	0	1926	AC0	
+YAP1	Oncogene	11-102110454-G-A	11	102110454	G	A	rs1258784966	5_prime_UTR_variant	0.0	0	1926	AC0	
+YAP1	Oncogene	11-102110455-G-A	11	102110455	G	A	rs1942814234	5_prime_UTR_variant	6.487187804086928e-06	1	154150	AC0	
+YAP1	Oncogene	11-102110456-G-A	11	102110456	G	A	rs1942814336	5_prime_UTR_variant	0.0	0	2114	AC0	
+YAP1	Oncogene	11-102110456-G-C	11	102110456	G	C		5_prime_UTR_variant	0.0	0	2114	AC0	
+YAP1	Oncogene	11-102110457-C-CA	11	102110457	C	CA		5_prime_UTR_variant	0.0	0	1990	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110457-C-A	11	102110457	C	A		5_prime_UTR_variant	0.0	0	1990	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110457-C-T	11	102110457	C	T		5_prime_UTR_variant	0.0	0	1990	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110458-G-A	11	102110458	G	A		5_prime_UTR_variant	0.0	0	2076	AC0	
+YAP1	Oncogene	11-102110458-G-T	11	102110458	G	T		5_prime_UTR_variant	0.0	0	2076	AC0	
+YAP1	Oncogene	11-102110459-C-A	11	102110459	C	A		5_prime_UTR_variant	0.0	0	2184	AC0	
+YAP1	Oncogene	11-102110459-C-T	11	102110459	C	T		5_prime_UTR_variant	0.0	0	2184	AC0	
+YAP1	Oncogene	11-102110460-A-G	11	102110460	A	G	rs1295245326	5_prime_UTR_variant	0.0	0	2084	AC0	
+YAP1	Oncogene	11-102110460-AGCC-A	11	102110460	AGCC	A		5_prime_UTR_variant	0.0	0	2084	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110461-G-T	11	102110461	G	T		5_prime_UTR_variant	0.0	0	2318	AC0	
+YAP1	Oncogene	11-102110461-G-A	11	102110461	G	A		5_prime_UTR_variant	0.0	0	2318	AC0	
+YAP1	Oncogene	11-102110462-C-A	11	102110462	C	A	rs1452685473	5_prime_UTR_variant	0.0	0	2332	AC0	
+YAP1	Oncogene	11-102110462-C-G	11	102110462	C	G		5_prime_UTR_variant	0.0	0	2332	AC0	
+YAP1	Oncogene	11-102110462-C-T	11	102110462	C	T	rs1452685473	5_prime_UTR_variant	0.0	0	2332	AC0	
+YAP1	Oncogene	11-102110463-C-A	11	102110463	C	A		5_prime_UTR_variant	0.0	0	2430	AC0	
+YAP1	Oncogene	11-102110463-C-T	11	102110463	C	T	rs914677254	5_prime_UTR_variant	6.475341898052217e-06	1	154432	AC0	
+YAP1	Oncogene	11-102110464-G-C	11	102110464	G	C	rs2135080336	5_prime_UTR_variant	0.0	0	2348	AC0	
+YAP1	Oncogene	11-102110464-G-A	11	102110464	G	A		5_prime_UTR_variant	0.0	0	2348	AC0	
+YAP1	Oncogene	11-102110465-C-T	11	102110465	C	T	rs7117894	5_prime_UTR_variant	0.012240274451420804	1891	154490	PASS	
+YAP1	Oncogene	11-102110466-C-T	11	102110466	C	T		5_prime_UTR_variant	0.0	0	2576	AC0	
+YAP1	Oncogene	11-102110466-C-CA	11	102110466	C	CA		5_prime_UTR_variant	0.0	0	2576	AC0	
+YAP1	Oncogene	11-102110467-GC-G	11	102110467	GC	G		5_prime_UTR_variant	0.0	0	2568	AC0	
+YAP1	Oncogene	11-102110467-G-GCCTCAACCGGCCCC	11	102110467	G	GCCTCAACCGGCCCC		5_prime_UTR_variant	0.0	0	2568	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110467-G-A	11	102110467	G	A	rs1942814962	5_prime_UTR_variant	0.0	0	2568	AC0	
+YAP1	Oncogene	11-102110467-G-T	11	102110467	G	T		5_prime_UTR_variant	0.0	0	2568	AC0	
+YAP1	Oncogene	11-102110468-C-A	11	102110468	C	A		5_prime_UTR_variant	0.0	0	2714	AC0	
+YAP1	Oncogene	11-102110469-C-T	11	102110469	C	T	rs1041708721	5_prime_UTR_variant	1.2930421402433505e-05	2	154674	AC0	
+YAP1	Oncogene	11-102110470-A-G	11	102110470	A	G	rs1424650997	5_prime_UTR_variant	3.2556746408990874e-05	5	153578	AC0	
+YAP1	Oncogene	11-102110470-A-C	11	102110470	A	C		5_prime_UTR_variant	0.0	0	2106	AC0	
+YAP1	Oncogene	11-102110471-G-T	11	102110471	G	T		5_prime_UTR_variant	0.0	0	2806	AC0	
+YAP1	Oncogene	11-102110473-GA-G	11	102110473	GA	G		5_prime_UTR_variant	0.0	0	3242	AC0	
+YAP1	Oncogene	11-102110473-G-T	11	102110473	G	T		5_prime_UTR_variant	0.0	0	3242	AC0	
+YAP1	Oncogene	11-102110473-G-A	11	102110473	G	A		5_prime_UTR_variant	0.0	0	3242	AC0	
+YAP1	Oncogene	11-102110474-A-C	11	102110474	A	C		5_prime_UTR_variant	0.0	0	2676	AC0	
+YAP1	Oncogene	11-102110475-A-C	11	102110475	A	C		5_prime_UTR_variant	0.0	0	2200	AC0	
+YAP1	Oncogene	11-102110477-A-G	11	102110477	A	G	rs2135080494	5_prime_UTR_variant	0.0	0	3104	AC0	
+YAP1	Oncogene	11-102110477-A-T	11	102110477	A	T		5_prime_UTR_variant	0.0	0	3104	AC0	
+YAP1	Oncogene	11-102110478-GA-G	11	102110478	GA	G		5_prime_UTR_variant	0.0	0	4078	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110478-G-T	11	102110478	G	T	rs923820183	5_prime_UTR_variant	0.0	0	4078	AC0	
+YAP1	Oncogene	11-102110478-G-A	11	102110478	G	A		5_prime_UTR_variant	0.0	0	4078	AC0	
+YAP1	Oncogene	11-102110480-A-G	11	102110480	A	G		5_prime_UTR_variant	0.0	0	3728	AC0	
+YAP1	Oncogene	11-102110480-A-AAGGG	11	102110480	A	AAGGG	rs944657323	5_prime_UTR_variant	1.9771181525807983e-05	3	151736	PASS	
+YAP1	Oncogene	11-102110480-AAGGG-A	11	102110480	AAGGG	A	rs944657323	5_prime_UTR_variant	6.432357330314414e-06	1	155464	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110480-A-C	11	102110480	A	C		5_prime_UTR_variant	0.0	0	3728	AC0	
+YAP1	Oncogene	11-102110481-A-G	11	102110481	A	G		5_prime_UTR_variant	0.0	0	3958	AC0	
+YAP1	Oncogene	11-102110481-A-T	11	102110481	A	T		5_prime_UTR_variant	0.0	0	3958	AC0	
+YAP1	Oncogene	11-102110482-G-C	11	102110482	G	C	rs2135080541	5_prime_UTR_variant	6.573584707212537e-06	1	152124	PASS	
+YAP1	Oncogene	11-102110482-G-T	11	102110482	G	T		5_prime_UTR_variant	0.0	0	4962	AC0	
+YAP1	Oncogene	11-102110483-G-A	11	102110483	G	A		5_prime_UTR_variant	0.0	0	5186	AC0	
+YAP1	Oncogene	11-102110483-G-T	11	102110483	G	T		5_prime_UTR_variant	0.0	0	5186	AC0	
+YAP1	Oncogene	11-102110484-GAGGA-G	11	102110484	GAGGA	G	rs1040198559	5_prime_UTR_variant	1.9048102808960226e-05	3	157496	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110484-G-T	11	102110484	G	T		5_prime_UTR_variant	0.0	0	5424	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110485-A-C	11	102110485	A	C		5_prime_UTR_variant	0.0	0	4830	AC0	
+YAP1	Oncogene	11-102110485-A-G	11	102110485	A	G		5_prime_UTR_variant	0.0	0	4830	AC0	
+YAP1	Oncogene	11-102110486-G-GGAA	11	102110486	G	GGAA	rs900360092	5_prime_UTR_variant	3.793386862236834e-05	6	158170	AC0	
+YAP1	Oncogene	11-102110486-G-T	11	102110486	G	T		5_prime_UTR_variant	0.0	0	6074	AC0	
+YAP1	Oncogene	11-102110486-G-A	11	102110486	G	A	rs1231557941	5_prime_UTR_variant	0.0	0	6074	AC0	
+YAP1	Oncogene	11-102110487-G-T	11	102110487	G	T		5_prime_UTR_variant	0.0	0	6340	AC0	
+YAP1	Oncogene	11-102110488-A-G	11	102110488	A	G	rs995923910	5_prime_UTR_variant	1.271617497456765e-05	2	157280	AC0	
+YAP1	Oncogene	11-102110489-A-C	11	102110489	A	C		5_prime_UTR_variant	0.0	0	4818	AC0	
+YAP1	Oncogene	11-102110489-A-G	11	102110489	A	G		5_prime_UTR_variant	0.0	0	4818	AC0	
+YAP1	Oncogene	11-102110490-G-T	11	102110490	G	T		5_prime_UTR_variant	0.0	0	7030	AC0	
+YAP1	Oncogene	11-102110490-G-A	11	102110490	G	A	rs1048820191	5_prime_UTR_variant	5.0286633812732576e-05	8	159088	AC0	
+YAP1	Oncogene	11-102110492-A-G	11	102110492	A	G		5_prime_UTR_variant	0.0	0	6988	AC0	
+YAP1	Oncogene	11-102110493-A-C	11	102110493	A	C		5_prime_UTR_variant	0.00015542430836182778	1	6434	PASS	
+YAP1	Oncogene	11-102110493-A-G	11	102110493	A	G		5_prime_UTR_variant	0.0	0	6434	AC0	
+YAP1	Oncogene	11-102110494-G-T	11	102110494	G	T		5_prime_UTR_variant	0.0	0	8678	AC0	
+YAP1	Oncogene	11-102110494-G-A	11	102110494	G	A	rs1421277417	5_prime_UTR_variant	1.244059615336767e-05	2	160764	AC0	
+YAP1	Oncogene	11-102110495-G-T	11	102110495	G	T		5_prime_UTR_variant	0.0	0	8752	AC0	
+YAP1	Oncogene	11-102110496-A-C	11	102110496	A	C	rs1478754927	5_prime_UTR_variant	1.243348087730641e-05	2	160856	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110497-A-C	11	102110497	A	C		5_prime_UTR_variant	0.0004580152671755725	3	6550	PASS	
+YAP1	Oncogene	11-102110497-A-G	11	102110497	A	G		5_prime_UTR_variant	0.0	0	6552	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110498-C-A	11	102110498	C	A		5_prime_UTR_variant	0.0	0	10094	AC0	
+YAP1	Oncogene	11-102110499-A-C	11	102110499	A	C	rs1335984235	5_prime_UTR_variant	6.58059251655019e-06	1	151962	PASS	
+YAP1	Oncogene	11-102110500-A-G	11	102110500	A	G		5_prime_UTR_variant	0.0	0	10044	AC0	
+YAP1	Oncogene	11-102110501-GA-G	11	102110501	GA	G		5_prime_UTR_variant	0.0	0	11776	AC0	
+YAP1	Oncogene	11-102110501-G-T	11	102110501	G	T		5_prime_UTR_variant	0.0	0	11776	AC0	
+YAP1	Oncogene	11-102110501-G-A	11	102110501	G	A		5_prime_UTR_variant	0.0	0	11776	AC0	
+YAP1	Oncogene	11-102110502-A-G	11	102110502	A	G	rs953778083	5_prime_UTR_variant	8.576329331046312e-05	1	11660	PASS	
+YAP1	Oncogene	11-102110503-A-G	11	102110503	A	G		5_prime_UTR_variant	0.0	0	11462	AC0	
+YAP1	Oncogene	11-102110505-A-G	11	102110505	A	G		5_prime_UTR_variant	0.0	0	12648	AC0	
+YAP1	Oncogene	11-102110506-G-A	11	102110506	G	A		5_prime_UTR_variant	0.0	0	14586	AC0	
+YAP1	Oncogene	11-102110506-G-T	11	102110506	G	T		5_prime_UTR_variant	6.855889208830385e-05	1	14586	PASS	
+YAP1	Oncogene	11-102110507-G-C	11	102110507	G	C		5_prime_UTR_variant	0.0	0	14842	AC0	
+YAP1	Oncogene	11-102110507-G-T	11	102110507	G	T	rs1171380498	5_prime_UTR_variant	1.1982505541908813e-05	2	166910	AC0	
+YAP1	Oncogene	11-102110509-A-C	11	102110509	A	C		5_prime_UTR_variant	0.0	0	13884	AC0	
+YAP1	Oncogene	11-102110510-A-G	11	102110510	A	G		5_prime_UTR_variant	0.0	0	15218	AC0	
+YAP1	Oncogene	11-102110510-A-C	11	102110510	A	C		5_prime_UTR_variant	0.0	0	15218	AC0	
+YAP1	Oncogene	11-102110511-T-C	11	102110511	T	C		5_prime_UTR_variant	0.0	0	15572	AC0	
+YAP1	Oncogene	11-102110511-T-G	11	102110511	T	G		5_prime_UTR_variant	0.0	0	166496	AC0	
+YAP1	Oncogene	11-102110512-A-C	11	102110512	A	C		5_prime_UTR_variant	0.0	0	16532	AC0	
+YAP1	Oncogene	11-102110513-A-C	11	102110513	A	C		5_prime_UTR_variant	0.0	0	17700	AC0	
+YAP1	Oncogene	11-102110514-A-C	11	102110514	A	C		5_prime_UTR_variant	0.0	0	18568	AC0	
+YAP1	Oncogene	11-102110514-A-G	11	102110514	A	G	rs879311891	5_prime_UTR_variant	0.00011143041463843763	19	170510	PASS	
+YAP1	Oncogene	11-102110516-A-T	11	102110516	A	T		5_prime_UTR_variant	0.0	0	20258	AC0	
+YAP1	Oncogene	11-102110517-G-T	11	102110517	G	T		5_prime_UTR_variant	0.0	0	22084	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110517-G-A	11	102110517	G	A	rs1433024118	5_prime_UTR_variant	5.741055435631286e-06	1	174184	AC0	
+YAP1	Oncogene	11-102110518-A-G	11	102110518	A	G		5_prime_UTR_variant	0.0	0	22148	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110519-A-C	11	102110519	A	C		5_prime_UTR_variant	4.459109961651654e-05	1	22426	AS_VQSR	
+YAP1	Oncogene	11-102110520-A-G	11	102110520	A	G	rs1014601168	5_prime_UTR_variant	1.708875901432038e-05	3	175554	AC0	
+YAP1	Oncogene	11-102110521-G-C	11	102110521	G	C	rs1017108194	5_prime_UTR_variant	0.0	0	25752	AC0	
+YAP1	Oncogene	11-102110521-G-T	11	102110521	G	T		5_prime_UTR_variant	0.0	0	25752	AC0	
+YAP1	Oncogene	11-102110521-G-A	11	102110521	G	A	rs1017108194	5_prime_UTR_variant	1.1245431543435479e-05	2	177850	AC0	
+YAP1	Oncogene	11-102110522-G-T	11	102110522	G	T		5_prime_UTR_variant	0.0	0	25888	AC0	
+YAP1	Oncogene	11-102110522-G-A	11	102110522	G	A		5_prime_UTR_variant	0.0	0	25888	AC0	
+YAP1	Oncogene	11-102110523-G-A	11	102110523	G	A		5_prime_UTR_variant	0.0	0	26634	AC0	
+YAP1	Oncogene	11-102110523-G-T	11	102110523	G	T		5_prime_UTR_variant	0.0	0	26634	AC0	
+YAP1	Oncogene	11-102110523-G-C	11	102110523	G	C		5_prime_UTR_variant	0.0	0	26634	AC0	
+YAP1	Oncogene	11-102110524-G-A	11	102110524	G	A		5_prime_UTR_variant	0.0	0	27620	AC0	
+YAP1	Oncogene	11-102110524-GA-G	11	102110524	GA	G		5_prime_UTR_variant	0.0	0	27620	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110524-G-T	11	102110524	G	T		5_prime_UTR_variant	0.0	0	27620	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110525-A-T	11	102110525	A	T		5_prime_UTR_variant	0.0	0	26894	AC0	
+YAP1	Oncogene	11-102110525-A-G	11	102110525	A	G		5_prime_UTR_variant	3.718301479883989e-05	1	26894	PASS	
+YAP1	Oncogene	11-102110525-A-C	11	102110525	A	C		5_prime_UTR_variant	0.0	0	26894	AC0	
+YAP1	Oncogene	11-102110526-G-T	11	102110526	G	T		5_prime_UTR_variant	0.0	0	28848	AC0	
+YAP1	Oncogene	11-102110526-G-C	11	102110526	G	C		5_prime_UTR_variant	0.0	0	28848	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110527-G-T	11	102110527	G	T	rs1942817562	5_prime_UTR_variant	0.0	0	28734	AC0	
+YAP1	Oncogene	11-102110527-G-C	11	102110527	G	C		5_prime_UTR_variant	0.0	0	28734	AC0	
+YAP1	Oncogene	11-102110528-C-A	11	102110528	C	A		5_prime_UTR_variant	0.0	0	29280	AC0	
+YAP1	Oncogene	11-102110528-C-T	11	102110528	C	T		5_prime_UTR_variant	0.0	0	29278	AC0	
+YAP1	Oncogene	11-102110528-CG-C	11	102110528	CG	C		5_prime_UTR_variant	0.0	0	29280	AC0	
+YAP1	Oncogene	11-102110528-C-G	11	102110528	C	G		5_prime_UTR_variant	0.0	0	29280	AC0	
+YAP1	Oncogene	11-102110529-G-A	11	102110529	G	A	rs1475412580	5_prime_UTR_variant	2.1973675536707026e-05	4	182036	PASS	
+YAP1	Oncogene	11-102110529-G-T	11	102110529	G	T		5_prime_UTR_variant	0.0	0	29974	AC0	
+YAP1	Oncogene	11-102110530-G-A	11	102110530	G	A		5_prime_UTR_variant	0.0	0	31624	AC0	
+YAP1	Oncogene	11-102110530-G-T	11	102110530	G	T		5_prime_UTR_variant	0.0	0	31624	AC0	
+YAP1	Oncogene	11-102110531-G-T	11	102110531	G	T		5_prime_UTR_variant	0.0	0	31838	AC0	
+YAP1	Oncogene	11-102110531-G-C	11	102110531	G	C		5_prime_UTR_variant	0.0	0	31838	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110532-G-T	11	102110532	G	T		5_prime_UTR_variant	0.0	0	32332	AC0	
+YAP1	Oncogene	11-102110532-G-A	11	102110532	G	A	rs1942817785	5_prime_UTR_variant	5.422111370167544e-06	1	184430	AC0	
+YAP1	Oncogene	11-102110532-GA-G	11	102110532	GA	G		5_prime_UTR_variant	0.0	0	32332	AC0	
+YAP1	Oncogene	11-102110533-A-G	11	102110533	A	G		5_prime_UTR_variant	0.0	0	32368	AC0	
+YAP1	Oncogene	11-102110533-A-C	11	102110533	A	C		5_prime_UTR_variant	3.089471082550667e-05	1	32368	PASS	
+YAP1	Oncogene	11-102110534-A-G	11	102110534	A	G		5_prime_UTR_variant	0.0	0	31536	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110534-A-C	11	102110534	A	C		5_prime_UTR_variant	6.342762907522517e-05	2	31532	PASS	
+YAP1	Oncogene	11-102110535-A-G	11	102110535	A	G		5_prime_UTR_variant	0.0	0	33534	AC0	
+YAP1	Oncogene	11-102110535-A-C	11	102110535	A	C		5_prime_UTR_variant	0.0	0	33534	AC0	
+YAP1	Oncogene	11-102110535-A-T	11	102110535	A	T		5_prime_UTR_variant	0.0	0	33534	AC0	
+YAP1	Oncogene	11-102110536-G-A	11	102110536	G	A	rs536110404	5_prime_UTR_variant	2.6707404360784985e-05	5	187214	AC0	
+YAP1	Oncogene	11-102110536-G-T	11	102110536	G	T		5_prime_UTR_variant	0.0	0	35026	AC0	
+YAP1	Oncogene	11-102110537-G-C	11	102110537	G	C		5_prime_UTR_variant	0.0	0	35716	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110537-G-T	11	102110537	G	T		5_prime_UTR_variant	0.0	0	35716	AC0	
+YAP1	Oncogene	11-102110537-G-A	11	102110537	G	A		5_prime_UTR_variant	0.0	0	35716	AC0	
+YAP1	Oncogene	11-102110537-GC-G	11	102110537	GC	G	rs1240831941	5_prime_UTR_variant	1.0649287030233326e-05	2	187806	PASS	
+YAP1	Oncogene	11-102110538-C-A	11	102110538	C	A		5_prime_UTR_variant	0.0	0	36188	AC0	
+YAP1	Oncogene	11-102110538-C-T	11	102110538	C	T		5_prime_UTR_variant	0.0	0	36188	AC0	
+YAP1	Oncogene	11-102110539-A-G	11	102110539	A	G		5_prime_UTR_variant	0.0	0	36928	AC0	
+YAP1	Oncogene	11-102110539-A-T	11	102110539	A	T		5_prime_UTR_variant	0.0	0	36928	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110540-A-C	11	102110540	A	C		5_prime_UTR_variant	0.0	0	35562	AC0	
+YAP1	Oncogene	11-102110540-A-G	11	102110540	A	G	rs1942818110	5_prime_UTR_variant	0.0	0	35562	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110541-C-T	11	102110541	C	T		5_prime_UTR_variant	0.0	0	37982	AC0	
+YAP1	Oncogene	11-102110541-C-G	11	102110541	C	G		5_prime_UTR_variant	0.0	0	37982	AC0	
+YAP1	Oncogene	11-102110541-C-A	11	102110541	C	A		5_prime_UTR_variant	0.0	0	37982	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110542-G-A	11	102110542	G	A		5_prime_UTR_variant	0.0	0	37856	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110542-G-T	11	102110542	G	T		5_prime_UTR_variant	0.0	0	37856	AC0	
+YAP1	Oncogene	11-102110543-A-T	11	102110543	A	T		5_prime_UTR_variant	0.0	0	39090	AC0	
+YAP1	Oncogene	11-102110543-AG-A	11	102110543	AG	A	rs1942818203	5_prime_UTR_variant	6.5726341803267915e-06	1	152146	PASS	
+YAP1	Oncogene	11-102110544-G-A	11	102110544	G	A		5_prime_UTR_variant	0.0	0	39956	AC0	
+YAP1	Oncogene	11-102110544-G-T	11	102110544	G	T		5_prime_UTR_variant	0.0	0	39956	AC0	
+YAP1	Oncogene	11-102110545-C-A	11	102110545	C	A		5_prime_UTR_variant	0.0	0	40104	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110545-C-T	11	102110545	C	T	rs1942818323	5_prime_UTR_variant	0.0	0	40104	AC0	
+YAP1	Oncogene	11-102110546-T-A	11	102110546	T	A		5_prime_UTR_variant	0.0	0	38774	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110546-T-C	11	102110546	T	C	rs7106388	5_prime_UTR_variant	0.5484326446628034	104483	190512	PASS	
+YAP1	Oncogene	11-102110547-G-A	11	102110547	G	A	rs972810322	5_prime_UTR_variant	2.4276558555059236e-05	1	41192	PASS	
+YAP1	Oncogene	11-102110548-T-C	11	102110548	T	C		5_prime_UTR_variant	0.0	0	41548	AC0	
+YAP1	Oncogene	11-102110549-C-T	11	102110549	C	T	rs1486214206	5_prime_UTR_variant	0.0	0	42764	AC0	
+YAP1	Oncogene	11-102110550-C-A	11	102110550	C	A		5_prime_UTR_variant	0.0	0	42916	AC0	
+YAP1	Oncogene	11-102110550-C-T	11	102110550	C	T	rs1257202255	5_prime_UTR_variant	1.0258935532849111e-05	2	194952	PASS	
+YAP1	Oncogene	11-102110551-G-A	11	102110551	G	A		5_prime_UTR_variant	0.0	0	43456	AC0	
+YAP1	Oncogene	11-102110552-G-T	11	102110552	G	T		5_prime_UTR_variant	0.0	0	44446	AC0	
+YAP1	Oncogene	11-102110552-G-GACCCGGGCAACCGGCAC	11	102110552	G	GACCCGGGCAACCGGCAC		5_prime_UTR_variant	0.0	0	44446	AC0	
+YAP1	Oncogene	11-102110552-G-A	11	102110552	G	A		5_prime_UTR_variant	2.2499212527561534e-05	1	44446	PASS	
+YAP1	Oncogene	11-102110552-G-GC	11	102110552	G	GC		5_prime_UTR_variant	0.0	0	44446	AC0	
+YAP1	Oncogene	11-102110553-C-A	11	102110553	C	A		5_prime_UTR_variant	0.0	0	44390	AC0	
+YAP1	Oncogene	11-102110553-C-G	11	102110553	C	G		5_prime_UTR_variant	0.0	0	44390	AC0	
+YAP1	Oncogene	11-102110553-C-T	11	102110553	C	T	rs1003571315	5_prime_UTR_variant	1.018610004787467e-05	2	196346	AC0	
+YAP1	Oncogene	11-102110554-C-T	11	102110554	C	T	rs1483826335	5_prime_UTR_variant	6.576005471236552e-06	1	152068	PASS	
+YAP1	Oncogene	11-102110554-C-A	11	102110554	C	A		5_prime_UTR_variant	0.0	0	45610	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110555-T-C	11	102110555	T	C		5_prime_UTR_variant	0.0	0	44924	AC0	
+YAP1	Oncogene	11-102110555-T-A	11	102110555	T	A		5_prime_UTR_variant	0.0	0	44924	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110556-C-A	11	102110556	C	A	rs1274823882	5_prime_UTR_variant	1.5087659300536115e-05	3	198838	PASS	
+YAP1	Oncogene	11-102110556-C-T	11	102110556	C	T		5_prime_UTR_variant	0.0	0	46818	AC0	
+YAP1	Oncogene	11-102110557-C-G	11	102110557	C	G		5_prime_UTR_variant	2.1297440047706264e-05	1	46954	PASS	
+YAP1	Oncogene	11-102110557-C-T	11	102110557	C	T		5_prime_UTR_variant	0.0	0	46954	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110558-G-A	11	102110558	G	A	rs1213450159	5_prime_UTR_variant	0.0	0	47514	AC0	
+YAP1	Oncogene	11-102110558-G-T	11	102110558	G	T		5_prime_UTR_variant	0.0	0	47514	AC0	
+YAP1	Oncogene	11-102110559-T-G	11	102110559	T	G		5_prime_UTR_variant	0.0	0	47772	AC0	
+YAP1	Oncogene	11-102110559-T-A	11	102110559	T	A		5_prime_UTR_variant	0.0	0	47772	AC0	
+YAP1	Oncogene	11-102110560-C-T	11	102110560	C	T	rs1337429505	5_prime_UTR_variant	6.577303042660388e-06	1	152038	PASS	
+YAP1	Oncogene	11-102110560-C-A	11	102110560	C	A		5_prime_UTR_variant	0.0	0	49756	AC0	
+YAP1	Oncogene	11-102110561-A-C	11	102110561	A	C		5_prime_UTR_variant	0.0	0	48716	AC0	
+YAP1	Oncogene	11-102110561-A-T	11	102110561	A	T		5_prime_UTR_variant	0.0	0	48716	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110561-A-G	11	102110561	A	G	rs1285907897	5_prime_UTR_variant	4.982561036372695e-06	1	200700	AC0	
+YAP1	Oncogene	11-102110562-A-G	11	102110562	A	G		5_prime_UTR_variant	0.0	0	49894	AC0	
+YAP1	Oncogene	11-102110562-A-T	11	102110562	A	T		5_prime_UTR_variant	0.0	0	49894	AC0	
+YAP1	Oncogene	11-102110562-A-ACC	11	102110562	A	ACC		5_prime_UTR_variant	0.0	0	49894	AC0	
+YAP1	Oncogene	11-102110562-A-C	11	102110562	A	C		5_prime_UTR_variant	0.0	0	49894	AC0	
+YAP1	Oncogene	11-102110563-G-C	11	102110563	G	C	rs1034511552	5_prime_UTR_variant	0.0	0	51066	AC0	
+YAP1	Oncogene	11-102110563-G-T	11	102110563	G	T		5_prime_UTR_variant	0.0	0	51066	AC0	
+YAP1	Oncogene	11-102110564-G-T	11	102110564	G	T		5_prime_UTR_variant	0.0	0	51724	AC0	
+YAP1	Oncogene	11-102110564-G-GCACCCGCGGC	11	102110564	G	GCACCCGCGGC		5_prime_UTR_variant	0.0	0	51724	AC0	
+YAP1	Oncogene	11-102110564-G-A	11	102110564	G	A	rs1942820296	5_prime_UTR_variant	0.0	0	51724	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110565-G-T	11	102110565	G	T		5_prime_UTR_variant	0.0	0	53482	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110565-G-A	11	102110565	G	A	rs959101908	5_prime_UTR_variant	3.892413685726519e-05	8	205528	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110566-A-C	11	102110566	A	C		5_prime_UTR_variant	0.0	0	52020	AC0	
+YAP1	Oncogene	11-102110566-A-G	11	102110566	A	G		5_prime_UTR_variant	0.0	0	52022	AC0	
+YAP1	Oncogene	11-102110567-G-A	11	102110567	G	A	rs1942820754	5_prime_UTR_variant	3.6686477364443466e-05	2	54516	PASS	
+YAP1	Oncogene	11-102110567-G-T	11	102110567	G	T		5_prime_UTR_variant	0.0	0	54516	AC0	
+YAP1	Oncogene	11-102110567-G-C	11	102110567	G	C		5_prime_UTR_variant	0.0	0	54516	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110568-T-A	11	102110568	T	A		5_prime_UTR_variant	0.0	0	52338	AC0	
+YAP1	Oncogene	11-102110568-T-G	11	102110568	T	G		5_prime_UTR_variant	0.0	0	202588	AC0	
+YAP1	Oncogene	11-102110569-T-G	11	102110569	T	G		5_prime_UTR_variant	0.0	0	54214	AC0	
+YAP1	Oncogene	11-102110569-T-C	11	102110569	T	C	rs377378231	5_prime_UTR_variant	0.00047633860870241473	98	205736	PASS	
+YAP1	Oncogene	11-102110570-G-A	11	102110570	G	A		5_prime_UTR_variant	0.0	0	56788	AC0	
+YAP1	Oncogene	11-102110570-G-T	11	102110570	G	T		5_prime_UTR_variant	0.0	0	56788	AC0	
+YAP1	Oncogene	11-102110571-GA-G	11	102110571	GA	G		5_prime_UTR_variant	0.0	0	57390	AC0	
+YAP1	Oncogene	11-102110571-G-T	11	102110571	G	T		5_prime_UTR_variant	1.7424638438752397e-05	1	57390	PASS	
+YAP1	Oncogene	11-102110571-G-A	11	102110571	G	A		5_prime_UTR_variant	0.0	0	57390	AC0	
+YAP1	Oncogene	11-102110571-G-C	11	102110571	G	C	rs918840942	5_prime_UTR_variant	9.550095023445484e-06	2	209422	AC0	
+YAP1	Oncogene	11-102110572-A-T	11	102110572	A	T	rs1942821188	5_prime_UTR_variant	0.0	0	57480	AC0	
+YAP1	Oncogene	11-102110572-A-G	11	102110572	A	G		5_prime_UTR_variant	0.0	0	57480	AC0	
+YAP1	Oncogene	11-102110572-AG-A	11	102110572	AG	A		5_prime_UTR_variant	0.0	0	57480	AC0	
+YAP1	Oncogene	11-102110572-A-AG	11	102110572	A	AG	rs1942821445	5_prime_UTR_variant	6.585099237445508e-06	1	151858	PASS	
+YAP1	Oncogene	11-102110573-G-A	11	102110573	G	A	rs1277947671	5_prime_UTR_variant	2.3713990305720763e-05	5	210846	PASS	
+YAP1	Oncogene	11-102110573-G-T	11	102110573	G	T		5_prime_UTR_variant	1.6990621177110236e-05	1	58856	PASS	
+YAP1	Oncogene	11-102110574-G-A	11	102110574	G	A	rs1942821581	5_prime_UTR_variant	6.576956973547479e-06	1	152046	PASS	
+YAP1	Oncogene	11-102110574-G-C	11	102110574	G	C		5_prime_UTR_variant	0.0	0	60018	AC0	
+YAP1	Oncogene	11-102110574-G-T	11	102110574	G	T		5_prime_UTR_variant	0.0	0	60018	AC0	
+YAP1	Oncogene	11-102110575-G-T	11	102110575	G	T		5_prime_UTR_variant	0.0	0	60698	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110575-G-A	11	102110575	G	A	rs1942821701	5_prime_UTR_variant	9.404506639581688e-06	2	212664	PASS	
+YAP1	Oncogene	11-102110575-GA-G	11	102110575	GA	G		5_prime_UTR_variant	1.647717910693689e-05	1	60690	AS_VQSR	
+YAP1	Oncogene	11-102110576-A-G	11	102110576	A	G	rs1942821817	5_prime_UTR_variant	9.493881193570744e-06	2	210662	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110577-A-C	11	102110577	A	C		5_prime_UTR_variant	0.0	0	57800	AC0	
+YAP1	Oncogene	11-102110579-A-C	11	102110579	A	C		5_prime_UTR_variant	0.0	0	61104	AC0	
+YAP1	Oncogene	11-102110579-A-T	11	102110579	A	T	rs1942822215	5_prime_UTR_variant	1.4102913661962561e-05	3	212722	PASS	
+YAP1	Oncogene	11-102110579-A-G	11	102110579	A	G		5_prime_UTR_variant	0.0	0	61104	AC0	
+YAP1	Oncogene	11-102110580-A-G	11	102110580	A	G	rs1329668306	5_prime_UTR_variant	9.3711929528629e-06	2	213420	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110580-A-T	11	102110580	A	T		5_prime_UTR_variant	0.0	0	61636	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110581-G-T	11	102110581	G	T		5_prime_UTR_variant	0.0	0	64176	AC0	
+YAP1	Oncogene	11-102110582-TTCTCAGGCGCCGCAG-T	11	102110582	TTCTCAGGCGCCGCAG	T		5_prime_UTR_variant	0.0	0	63624	AC0	
+YAP1	Oncogene	11-102110582-T-G	11	102110582	T	G		5_prime_UTR_variant	0.0	0	63624	AC0	
+YAP1	Oncogene	11-102110582-T-C	11	102110582	T	C		5_prime_UTR_variant	0.0	0	63624	AC0	
+YAP1	Oncogene	11-102110584-C-A	11	102110584	C	A	rs1409424907	5_prime_UTR_variant	0.0	0	66368	AC0	
+YAP1	Oncogene	11-102110586-C-A	11	102110586	C	A		5_prime_UTR_variant	0.0	0	67788	AC0	
+YAP1	Oncogene	11-102110586-C-T	11	102110586	C	T	rs914623622	5_prime_UTR_variant	4.553360835632781e-06	1	219618	AC0	
+YAP1	Oncogene	11-102110586-C-G	11	102110586	C	G	rs914623622	5_prime_UTR_variant	2.6345254561022197e-05	4	151830	PASS	
+YAP1	Oncogene	11-102110587-A-C	11	102110587	A	C		5_prime_UTR_variant	0.0	0	67650	AC0	
+YAP1	Oncogene	11-102110587-A-T	11	102110587	A	T		5_prime_UTR_variant	0.0	0	67650	AC0	
+YAP1	Oncogene	11-102110587-A-G	11	102110587	A	G		5_prime_UTR_variant	0.0	0	67650	AC0	
+YAP1	Oncogene	11-102110588-G-T	11	102110588	G	T		5_prime_UTR_variant	0.0	0	69122	AC0	
+YAP1	Oncogene	11-102110589-G-C	11	102110589	G	C		5_prime_UTR_variant	0.0	0	69618	AC0	
+YAP1	Oncogene	11-102110589-G-A	11	102110589	G	A	rs1942823062	5_prime_UTR_variant	9.028530155290718e-06	2	221520	AC0	
+YAP1	Oncogene	11-102110590-C-T	11	102110590	C	T		5_prime_UTR_variant	0.0	0	70370	AC0	
+YAP1	Oncogene	11-102110590-C-A	11	102110590	C	A	rs1942823234	5_prime_UTR_variant	0.0	0	70370	AC0	
+YAP1	Oncogene	11-102110591-G-A	11	102110591	G	A	rs1942823406	5_prime_UTR_variant	0.0	0	70548	AC0	
+YAP1	Oncogene	11-102110591-G-T	11	102110591	G	T	rs1942823406	5_prime_UTR_variant	0.0	0	70548	AC0	
+YAP1	Oncogene	11-102110592-C-T	11	102110592	C	T	rs1942823644	5_prime_UTR_variant	8.904640208012395e-06	2	224602	AC0	
+YAP1	Oncogene	11-102110592-C-A	11	102110592	C	A		5_prime_UTR_variant	1.3780178591114541e-05	1	72568	PASS	
+YAP1	Oncogene	11-102110592-C-G	11	102110592	C	G		5_prime_UTR_variant	0.0	0	72568	AC0	
+YAP1	Oncogene	11-102110593-C-G	11	102110593	C	G	rs1475780609	5_prime_UTR_variant	6.585099237445508e-06	1	151858	PASS	
+YAP1	Oncogene	11-102110593-C-A	11	102110593	C	A		5_prime_UTR_variant	0.0	0	73444	AC0	
+YAP1	Oncogene	11-102110593-C-T	11	102110593	C	T	rs1475780609	5_prime_UTR_variant	0.0	0	73444	AC0	
+YAP1	Oncogene	11-102110594-G-A	11	102110594	G	A		5_prime_UTR_variant	0.0	0	73432	AC0	
+YAP1	Oncogene	11-102110596-A-G	11	102110596	A	G	rs1942824252	5_prime_UTR_variant	0.0	0	75192	AC0	
+YAP1	Oncogene	11-102110596-A-C	11	102110596	A	C		5_prime_UTR_variant	0.0	0	75192	AC0	
+YAP1	Oncogene	11-102110597-GGTCCGAGTGCCTC-G	11	102110597	GGTCCGAGTGCCTC	G		5_prime_UTR_variant	0.0	0	229294	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110597-G-T	11	102110597	G	T		5_prime_UTR_variant	0.0	0	77398	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110597-G-A	11	102110597	G	A	rs1417671126	5_prime_UTR_variant	0.0	0	77398	AC0	
+YAP1	Oncogene	11-102110597-G-GGCACCCCCCGCCGGGCATCAGATCGTGCAC	11	102110597	G	GGCACCCCCCGCCGGGCATCAGATCGTGCAC		5_prime_UTR_variant	0.0	0	77398	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110598-G-GC	11	102110598	G	GC		5_prime_UTR_variant	0.0	0	78136	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110598-G-GCACCCCCCGCCGGGCA	11	102110598	G	GCACCCCCCGCCGGGCA		5_prime_UTR_variant	0.0	0	78136	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110598-G-GCA	11	102110598	G	GCA		5_prime_UTR_variant	0.0	0	78138	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110598-G-GCACCC	11	102110598	G	GCACCC		5_prime_UTR_variant	0.0	0	78136	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110599-T-A	11	102110599	T	A		5_prime_UTR_variant	0.0	0	67972	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110599-TCCGAGTGCCTCGCAGCCCCTCCC-T	11	102110599	TCCGAGTGCCTCGCAGCCCCTCCC	T		5_prime_UTR_variant	0.0	0	67976	AC0	
+YAP1	Oncogene	11-102110599-T-G	11	102110599	T	G		5_prime_UTR_variant	0.0	0	67976	AC0	
+YAP1	Oncogene	11-102110599-T-C	11	102110599	T	C		5_prime_UTR_variant	0.0	0	217274	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110600-C-T	11	102110600	C	T		5_prime_UTR_variant	0.0	0	74010	AC0	
+YAP1	Oncogene	11-102110601-C-A	11	102110601	C	A	rs1942824639	5_prime_UTR_variant	0.0	0	80882	AC0	
+YAP1	Oncogene	11-102110601-C-T	11	102110601	C	T		5_prime_UTR_variant	0.0	0	80882	AC0	
+YAP1	Oncogene	11-102110602-G-T	11	102110602	G	T		5_prime_UTR_variant	0.0	0	71438	AC0	
+YAP1	Oncogene	11-102110602-G-C	11	102110602	G	C	rs1186254414	5_prime_UTR_variant	4.4931703810208485e-06	1	222560	AC0	
+YAP1	Oncogene	11-102110602-G-A	11	102110602	G	A	rs1186254414	5_prime_UTR_variant	0.0	0	71438	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110603-A-G	11	102110603	A	G		5_prime_UTR_variant	0.0	0	77114	AC0	
+YAP1	Oncogene	11-102110603-A-C	11	102110603	A	C	rs1220852255	5_prime_UTR_variant	1.7551865763330644e-05	4	227896	AC0	
+YAP1	Oncogene	11-102110604-G-A	11	102110604	G	A	rs1233080193	5_prime_UTR_variant	4.4182491362322935e-06	1	226334	AC0	
+YAP1	Oncogene	11-102110604-G-T	11	102110604	G	T		5_prime_UTR_variant	2.6623359335480952e-05	2	75122	PASS	
+YAP1	Oncogene	11-102110604-G-C	11	102110604	G	C		5_prime_UTR_variant	0.0	0	75120	AC0	
+YAP1	Oncogene	11-102110605-T-A	11	102110605	T	A	rs1591082704	5_prime_UTR_variant	0.0	0	73846	AC0	
+YAP1	Oncogene	11-102110605-T-C	11	102110605	T	C		5_prime_UTR_variant	0.0	0	73848	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110606-G-A	11	102110606	G	A	rs1203320253	5_prime_UTR_variant	8.810650314099683e-06	2	226998	AC0	
+YAP1	Oncogene	11-102110606-G-T	11	102110606	G	T		5_prime_UTR_variant	0.0	0	75876	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110606-G-C	11	102110606	G	C		5_prime_UTR_variant	0.0	0	75874	AC0	
+YAP1	Oncogene	11-102110607-C-T	11	102110607	C	T		5_prime_UTR_variant	0.0	0	83054	AC0	
+YAP1	Oncogene	11-102110607-C-A	11	102110607	C	A	rs2135081479	5_prime_UTR_variant	0.0	0	83054	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110608-C-G	11	102110608	C	G	rs112117152	5_prime_UTR_variant	0.008371625383266721	2015	240694	PASS	
+YAP1	Oncogene	11-102110608-C-CT	11	102110608	C	CT		5_prime_UTR_variant	0.0	0	88928	AC0	
+YAP1	Oncogene	11-102110608-C-T	11	102110608	C	T	rs112117152	5_prime_UTR_variant	6.593261686556339e-06	1	151670	PASS	
+YAP1	Oncogene	11-102110609-T-A	11	102110609	T	A		5_prime_UTR_variant	0.0	0	82460	AC0	
+YAP1	Oncogene	11-102110609-T-TCGCAGC	11	102110609	T	TCGCAGC		5_prime_UTR_variant	0.0	0	82462	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110609-T-C	11	102110609	T	C		5_prime_UTR_variant	0.0	0	82462	AC0	
+YAP1	Oncogene	11-102110609-TCGCAGCCCCTCCCGAGG-T	11	102110609	TCGCAGCCCCTCCCGAGG	T		5_prime_UTR_variant	0.0	0	82462	AC0	
+YAP1	Oncogene	11-102110610-C-G	11	102110610	C	G		5_prime_UTR_variant	1.1476049484725379e-05	1	87138	PASS	
+YAP1	Oncogene	11-102110610-C-A	11	102110610	C	A	rs2135081519	5_prime_UTR_variant	6.6116576748122285e-06	1	151248	PASS	
+YAP1	Oncogene	11-102110611-G-A	11	102110611	G	A		5_prime_UTR_variant	0.0	0	90936	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110611-G-C	11	102110611	G	C	rs977387133	5_prime_UTR_variant	8.656509695290859e-05	21	242592	PASS	
+YAP1	Oncogene	11-102110611-G-T	11	102110611	G	T		5_prime_UTR_variant	0.0	0	90936	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110612-C-A	11	102110612	C	A		5_prime_UTR_variant	0.0	0	89242	AC0	
+YAP1	Oncogene	11-102110612-C-T	11	102110612	C	T	rs1942826265	5_prime_UTR_variant	4.160183713712798e-06	1	240374	AC0	
+YAP1	Oncogene	11-102110613-AG-A	11	102110613	AG	A		5_prime_UTR_variant	0.0	0	88286	AC0	
+YAP1	Oncogene	11-102110613-A-G	11	102110613	A	G		5_prime_UTR_variant	0.0	0	88286	AC0	
+YAP1	Oncogene	11-102110614-G-T	11	102110614	G	T		5_prime_UTR_variant	0.0	0	90082	AC0	
+YAP1	Oncogene	11-102110614-G-C	11	102110614	G	C		5_prime_UTR_variant	0.0	0	241216	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110614-G-A	11	102110614	G	A		5_prime_UTR_variant	1.1100996869518884e-05	1	90082	PASS	
+YAP1	Oncogene	11-102110615-C-A	11	102110615	C	A		5_prime_UTR_variant	0.0	0	91092	AC0	
+YAP1	Oncogene	11-102110616-C-A	11	102110616	C	A		5_prime_UTR_variant	0.0	0	98512	AC0	
+YAP1	Oncogene	11-102110617-C-T	11	102110617	C	T	rs1210374514	5_prime_UTR_variant	1.222603493385715e-05	3	245378	PASS	
+YAP1	Oncogene	11-102110617-CCT-C	11	102110617	CCT	C		5_prime_UTR_variant	0.0	0	94346	AC0	
+YAP1	Oncogene	11-102110618-C-A	11	102110618	C	A	rs1942826751	5_prime_UTR_variant	0.0	0	99036	AC0	
+YAP1	Oncogene	11-102110618-C-T	11	102110618	C	T		5_prime_UTR_variant	0.0	0	99036	AC0	
+YAP1	Oncogene	11-102110619-T-A	11	102110619	T	A		5_prime_UTR_variant	0.0	0	96896	AC0	
+YAP1	Oncogene	11-102110619-T-C	11	102110619	T	C		5_prime_UTR_variant	0.0	0	96896	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110620-C-G	11	102110620	C	G	rs1942826975	5_prime_UTR_variant	0.0	0	101186	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110620-CCCGAGGCGCAGCCGCCAGACCAGTGGAGCCGGGGCGCAGGGCGGGGGCGGAGGCGCCGGGGCGGGGGATGCGGGG-C	11	102110620	CCCGAGGCGCAGCCGCCAGACCAGTGGAGCCGGGGCGCAGGGCGGGGGCGGAGGCGCCGGGGCGGGGGATGCGGGG	C		5_prime_UTR_variant	0.0	0	101186	AC0	
+YAP1	Oncogene	11-102110620-C-A	11	102110620	C	A	rs1942826975	5_prime_UTR_variant	7.927447995941146e-06	2	252288	PASS	
+YAP1	Oncogene	11-102110621-C-A	11	102110621	C	A		5_prime_UTR_variant	0.0	0	107158	AC0	
+YAP1	Oncogene	11-102110621-C-T	11	102110621	C	T	rs1942827235	5_prime_UTR_variant	7.734310950237443e-06	2	258588	AC0	
+YAP1	Oncogene	11-102110622-C-A	11	102110622	C	A		5_prime_UTR_variant	0.0	0	105282	AC0	
+YAP1	Oncogene	11-102110622-C-T	11	102110622	C	T	rs1942827446	5_prime_UTR_variant	1.560853787021501e-05	4	256270	PASS	
+YAP1	Oncogene	11-102110623-G-A	11	102110623	G	A	rs1942827618	5_prime_UTR_variant	9.813927926513308e-06	1	101896	PASS	
+YAP1	Oncogene	11-102110623-G-T	11	102110623	G	T	rs1942827618	5_prime_UTR_variant	3.953162925656818e-06	1	252962	AC0	
+YAP1	Oncogene	11-102110624-A-G	11	102110624	A	G		5_prime_UTR_variant	0.0	0	104214	AC0	
+YAP1	Oncogene	11-102110624-A-AGGCGCAGCCGCCAGACCAGTGGAGCCGG	11	102110624	A	AGGCGCAGCCGCCAGACCAGTGGAGCCGG		5_prime_UTR_variant	0.0	0	104212	AC0	
+YAP1	Oncogene	11-102110624-A-C	11	102110624	A	C		5_prime_UTR_variant	0.0	0	104214	AC0	
+YAP1	Oncogene	11-102110625-G-C	11	102110625	G	C		5_prime_UTR_variant	0.0	0	105606	AC0	
+YAP1	Oncogene	11-102110625-G-A	11	102110625	G	A	rs1942827790	5_prime_UTR_variant	3.894657309103372e-06	1	256762	AC0	
+YAP1	Oncogene	11-102110625-G-T	11	102110625	G	T		5_prime_UTR_variant	0.0	0	105606	AC0	
+YAP1	Oncogene	11-102110626-GC-G	11	102110626	GC	G		5_prime_UTR_variant	0.0	0	108212	AC0	
+YAP1	Oncogene	11-102110626-G-T	11	102110626	G	T		5_prime_UTR_variant	0.0	0	108212	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110626-G-A	11	102110626	G	A	rs1942827951	5_prime_UTR_variant	7.716168459389806e-06	2	259196	PASS	
+YAP1	Oncogene	11-102110627-C-A	11	102110627	C	A		5_prime_UTR_variant	8.653363562416712e-06	1	115562	PASS	
+YAP1	Oncogene	11-102110627-C-G	11	102110627	C	G		5_prime_UTR_variant	0.0	0	115562	AC0	
+YAP1	Oncogene	11-102110627-C-T	11	102110627	C	T	rs1334052764	5_prime_UTR_variant	8.653363562416712e-06	1	115562	PASS	
+YAP1	Oncogene	11-102110628-G-T	11	102110628	G	T	rs912595434	5_prime_UTR_variant	1.1195700850873264e-05	3	267960	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110628-G-A	11	102110628	G	A	rs912595434	5_prime_UTR_variant	7.4638005672488435e-06	2	267960	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110628-G-C	11	102110628	G	C		5_prime_UTR_variant	0.0	0	116460	AC0	
+YAP1	Oncogene	11-102110629-C-T	11	102110629	C	T		5_prime_UTR_variant	0.0	0	115522	AC0	
+YAP1	Oncogene	11-102110629-C-A	11	102110629	C	A		5_prime_UTR_variant	0.0	0	115522	AC0	
+YAP1	Oncogene	11-102110630-A-T	11	102110630	A	T		5_prime_UTR_variant	0.0	0	115582	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110630-A-G	11	102110630	A	G		5_prime_UTR_variant	0.0	0	115582	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110631-G-A	11	102110631	G	A	rs1942828509	5_prime_UTR_variant	7.411909456114084e-06	2	269836	PASS	
+YAP1	Oncogene	11-102110631-G-GTGGAGGAACTGGAGTCGTCCACT	11	102110631	G	GTGGAGGAACTGGAGTCGTCCACT		5_prime_UTR_variant	0.0	0	118582	AC0	
+YAP1	Oncogene	11-102110632-C-A	11	102110632	C	A		5_prime_UTR_variant	0.0	0	121474	AC0	
+YAP1	Oncogene	11-102110632-C-T	11	102110632	C	T		5_prime_UTR_variant	0.0	0	121474	AC0	
+YAP1	Oncogene	11-102110633-C-A	11	102110633	C	A		5_prime_UTR_variant	0.0	0	127104	AC0	
+YAP1	Oncogene	11-102110633-C-T	11	102110633	C	T		5_prime_UTR_variant	0.0	0	127102	AC0	
+YAP1	Oncogene	11-102110634-G-A	11	102110634	G	A	rs1942828681	5_prime_UTR_variant	0.0	0	128528	AC0	
+YAP1	Oncogene	11-102110634-G-T	11	102110634	G	T		5_prime_UTR_variant	0.0	0	128528	AC0	
+YAP1	Oncogene	11-102110634-G-GC	11	102110634	G	GC		5_prime_UTR_variant	0.0	0	128528	AC0	
+YAP1	Oncogene	11-102110634-G-C	11	102110634	G	C	rs1942828681	5_prime_UTR_variant	6.603362432150451e-06	1	151438	PASS	
+YAP1	Oncogene	11-102110635-C-G	11	102110635	C	G		5_prime_UTR_variant	7.769887025842644e-06	1	128702	PASS	
+YAP1	Oncogene	11-102110636-C-T	11	102110636	C	T	rs1257881408	5_prime_UTR_variant	3.5441387034122967e-06	1	282156	AC0	
+YAP1	Oncogene	11-102110637-A-G	11	102110637	A	G		5_prime_UTR_variant	0.0	0	126820	AC0	
+YAP1	Oncogene	11-102110637-A-T	11	102110637	A	T		5_prime_UTR_variant	0.0	0	126820	AC0	
+YAP1	Oncogene	11-102110637-A-C	11	102110637	A	C		5_prime_UTR_variant	7.885191610156127e-06	1	126820	PASS	
+YAP1	Oncogene	11-102110638-G-T	11	102110638	G	T		5_prime_UTR_variant	0.0	0	132168	AC0	
+YAP1	Oncogene	11-102110638-G-A	11	102110638	G	A	rs1352613924	5_prime_UTR_variant	6.604409103517509e-06	1	151414	PASS	
+YAP1	Oncogene	11-102110638-G-C	11	102110638	G	C		5_prime_UTR_variant	7.566127958356032e-06	1	132168	PASS	
+YAP1	Oncogene	11-102110639-A-G	11	102110639	A	G		5_prime_UTR_variant	0.0	0	132300	AC0	
+YAP1	Oncogene	11-102110639-A-C	11	102110639	A	C		5_prime_UTR_variant	0.0	0	132300	AC0	
+YAP1	Oncogene	11-102110640-C-A	11	102110640	C	A	rs1483690830	5_prime_UTR_variant	1.0524617079348597e-05	3	285046	AC0	
+YAP1	Oncogene	11-102110641-C-T	11	102110641	C	T	rs1441694056	5_prime_UTR_variant	0.0	0	138820	AC0	
+YAP1	Oncogene	11-102110641-C-A	11	102110641	C	A		5_prime_UTR_variant	0.0	0	138820	AC0	
+YAP1	Oncogene	11-102110642-A-C	11	102110642	A	C	rs879940387	5_prime_UTR_variant	3.5326701333936243e-06	1	283072	AC0	
+YAP1	Oncogene	11-102110642-AGTGGAGCCGGGGCGCAGGGCGGGGGCGGAGGCGCCGGGGCGGGGGATGCGGGGCCGCGGCGCAGCCCCCCGGCCCTGAGAGCGAGGACAGCGCCGCCCGGCCCGCAGCCGTCGCCGCTTCTCCACCTCGGCCC-A	11	102110642	AGTGGAGCCGGGGCGCAGGGCGGGGGCGGAGGCGCCGGGGCGGGGGATGCGGGGCCGCGGCGCAGCCCCCCGGCCCTGAGAGCGAGGACAGCGCCGCCCGGCCCGCAGCCGTCGCCGCTTCTCCACCTCGGCCC	A		5_prime_UTR_variant	7.5247941968787154e-06	1	132894	AS_VQSR	
+YAP1	Oncogene	11-102110642-A-G	11	102110642	A	G	rs879940387	5_prime_UTR_variant	7.065340266787249e-06	2	283072	AC0	
+YAP1	Oncogene	11-102110642-A-T	11	102110642	A	T	rs879940387	5_prime_UTR_variant	3.532695093086516e-06	1	283070	AC0	
+YAP1	Oncogene	11-102110643-G-T	11	102110643	G	T		5_prime_UTR_variant	0.0	0	146210	AC0	
+YAP1	Oncogene	11-102110643-G-C	11	102110643	G	C	rs1462491725	5_prime_UTR_variant	3.3580034654595764e-06	1	297796	AC0	
+YAP1	Oncogene	11-102110644-T-A	11	102110644	T	A		5_prime_UTR_variant	0.0	0	139994	AC0	
+YAP1	Oncogene	11-102110644-T-G	11	102110644	T	G		5_prime_UTR_variant	0.0	0	149022	AC0	
+YAP1	Oncogene	11-102110645-G-A	11	102110645	G	A	rs1394352350	5_prime_UTR_variant	1.3299198723276923e-05	4	300770	PASS	
+YAP1	Oncogene	11-102110646-G-T	11	102110646	G	T		5_prime_UTR_variant	0.0	0	146888	AC0	
+YAP1	Oncogene	11-102110647-AGCCGGGGCGCAGGGCGGGGGCGGAGGC-A	11	102110647	AGCCGGGGCGCAGGGCGGGGGCGGAGGC	A	rs1216238749	5_prime_UTR_variant	6.735684985484599e-05	20	296926	PASS	
+YAP1	Oncogene	11-102110648-G-A	11	102110648	G	A	rs921892093	5_prime_UTR_variant	0.0	0	152078	AC0	lcr
+YAP1	Oncogene	11-102110648-G-T	11	102110648	G	T		5_prime_UTR_variant	0.0	0	152078	AC0	lcr
+YAP1	Oncogene	11-102110648-G-C	11	102110648	G	C	rs921892093	5_prime_UTR_variant	1.9846520243450647e-05	3	151160	PASS	lcr
+YAP1	Oncogene	11-102110649-C-CCCCG	11	102110649	C	CCCCG		5_prime_UTR_variant	6.455694568178591e-06	1	154902	PASS	lcr
+YAP1	Oncogene	11-102110649-C-A	11	102110649	C	A		5_prime_UTR_variant	0.0	0	154902	AC0	lcr
+YAP1	Oncogene	11-102110649-C-G	11	102110649	C	G		5_prime_UTR_variant	0.0	0	154902	AC0	lcr
+YAP1	Oncogene	11-102110649-C-T	11	102110649	C	T		5_prime_UTR_variant	0.0	0	154902	AC0	lcr
+YAP1	Oncogene	11-102110650-C-A	11	102110650	C	A		5_prime_UTR_variant	0.0	0	156276	AC0	lcr
+YAP1	Oncogene	11-102110650-C-CGGGGCGCAGGGCG	11	102110650	C	CGGGGCGCAGGGCG		5_prime_UTR_variant	0.0	0	156276	AC0	lcr
+YAP1	Oncogene	11-102110650-C-G	11	102110650	C	G	rs558260128	5_prime_UTR_variant	6.636757015052165e-06	1	150676	PASS	lcr
+YAP1	Oncogene	11-102110650-C-T	11	102110650	C	T	rs558260128	5_prime_UTR_variant	6.513385006187715e-06	2	307060	AC0	lcr
+YAP1	Oncogene	11-102110651-G-A	11	102110651	G	A		5_prime_UTR_variant	6.299133239266277e-06	1	158752	PASS	lcr
+YAP1	Oncogene	11-102110651-G-T	11	102110651	G	T		5_prime_UTR_variant	0.0	0	158752	AC0,AS_VQSR	lcr
+YAP1	Oncogene	11-102110651-G-C	11	102110651	G	C	rs1257129133	5_prime_UTR_variant	0.0	0	158752	AC0	lcr
+YAP1	Oncogene	11-102110652-G-A	11	102110652	G	A	rs1942831271	5_prime_UTR_variant	0.0	0	160844	AC0	lcr
+YAP1	Oncogene	11-102110653-G-T	11	102110653	G	T		5_prime_UTR_variant	0.0	0	163942	AC0	lcr
+YAP1	Oncogene	11-102110653-G-A	11	102110653	G	A		5_prime_UTR_variant	0.0	0	163942	AC0	lcr
+YAP1	Oncogene	11-102110654-G-A	11	102110654	G	A	rs578121849	5_prime_UTR_variant	0.00035992613689712373	115	319510	PASS	lcr
+YAP1	Oncogene	11-102110655-C-A	11	102110655	C	A		5_prime_UTR_variant	0.0	0	169420	AC0	lcr
+YAP1	Oncogene	11-102110655-C-T	11	102110655	C	T		5_prime_UTR_variant	5.902490851139181e-06	1	169420	PASS	lcr
+YAP1	Oncogene	11-102110656-G-T	11	102110656	G	T		5_prime_UTR_variant	0.0	0	173046	AC0,AS_VQSR	lcr
+YAP1	Oncogene	11-102110656-G-A	11	102110656	G	A		5_prime_UTR_variant	5.77894384022376e-06	1	173042	AS_VQSR	lcr
+YAP1	Oncogene	11-102110657-CA-C	11	102110657	CA	C	rs1468234954	5_prime_UTR_variant	6.636228498619665e-06	1	150688	PASS	lcr
+YAP1	Oncogene	11-102110657-C-T	11	102110657	C	T		5_prime_UTR_variant	0.0	0	178068	AC0	lcr
+YAP1	Oncogene	11-102110657-C-A	11	102110657	C	A		5_prime_UTR_variant	0.0	0	178068	AC0	lcr
+YAP1	Oncogene	11-102110658-A-AGGGCGGGGGCGGAGGCGCCG	11	102110658	A	AGGGCGGGGGCGGAGGCGCCG		5_prime_UTR_variant	0.0	0	176006	AC0	lcr
+YAP1	Oncogene	11-102110658-AGGGCGGGGGCGGAGGCGCCG-A	11	102110658	AGGGCGGGGGCGGAGGCGCCG	A	rs1271167765	5_prime_UTR_variant	4.0101673165194215e-05	13	324176	PASS	lcr
+YAP1	Oncogene	11-102110658-A-AGGGCGG	11	102110658	A	AGGGCGG		5_prime_UTR_variant	5.681624490074202e-06	1	176006	PASS	lcr
+YAP1	Oncogene	11-102110658-A-G	11	102110658	A	G	rs1048935372	5_prime_UTR_variant	1.2343545560026663e-05	4	324056	PASS	lcr
+YAP1	Oncogene	11-102110658-AGGGCGGGGGCGGAGGCGCCGGGGCGGG-A	11	102110658	AGGGCGGGGGCGGAGGCGCCGGGGCGGG	A		5_prime_UTR_variant	5.681624490074202e-06	1	176006	PASS	lcr
+YAP1	Oncogene	11-102110658-A-C	11	102110658	A	C	rs1048935372	5_prime_UTR_variant	6.171772780013331e-06	2	324056	AC0	lcr
+YAP1	Oncogene	11-102110658-A-T	11	102110658	A	T	rs1048935372	5_prime_UTR_variant	9.257659170019996e-06	3	324056	AC0	lcr
+YAP1	Oncogene	11-102110659-G-T	11	102110659	G	T	rs1942832080	5_prime_UTR_variant	5.354809690063615e-06	1	186748	PASS	lcr
+YAP1	Oncogene	11-102110659-G-C	11	102110659	G	C	rs1942832080	5_prime_UTR_variant	5.354809690063615e-06	1	186748	PASS	lcr
+YAP1	Oncogene	11-102110660-G-T	11	102110660	G	T		5_prime_UTR_variant	5.107147964290822e-06	1	195804	PASS	lcr
+YAP1	Oncogene	11-102110660-G-A	11	102110660	G	A	rs1194136070	5_prime_UTR_variant	5.760202759137122e-06	2	347210	PASS	lcr
+YAP1	Oncogene	11-102110661-GC-G	11	102110661	GC	G		5_prime_UTR_variant	0.0	0	196644	AC0	lcr
+YAP1	Oncogene	11-102110662-C-A	11	102110662	C	A		5_prime_UTR_variant	0.0	0	196744	AC0	lcr
+YAP1	Oncogene	11-102110662-CG-C	11	102110662	CG	C		5_prime_UTR_variant	0.0	0	196744	AC0,AS_VQSR	lcr
+YAP1	Oncogene	11-102110662-C-T	11	102110662	C	T	rs2135082022	5_prime_UTR_variant	2.886086178533291e-06	1	346490	AC0	lcr
+YAP1	Oncogene	11-102110663-G-A	11	102110663	G	A		5_prime_UTR_variant	4.989820765638099e-06	1	200408	PASS	lcr
+YAP1	Oncogene	11-102110663-G-T	11	102110663	G	T		5_prime_UTR_variant	0.0	0	200408	AC0	lcr
+YAP1	Oncogene	11-102110663-GGGGGCGGAGGCGCC-G	11	102110663	GGGGGCGGAGGCGCC	G	rs1042499246	5_prime_UTR_variant	0.0	0	200408	AC0	lcr
+YAP1	Oncogene	11-102110664-G-A	11	102110664	G	A		5_prime_UTR_variant	0.0	0	214176	AC0	lcr
+YAP1	Oncogene	11-102110665-GGGCGGA-G	11	102110665	GGGCGGA	G		5_prime_UTR_variant	0.0	0	215418	AC0	lcr
+YAP1	Oncogene	11-102110665-G-T	11	102110665	G	T	rs1942833407	5_prime_UTR_variant	0.0	0	215416	AC0	lcr
+YAP1	Oncogene	11-102110665-G-A	11	102110665	G	A	rs1942833407	5_prime_UTR_variant	0.0	0	215418	AC0	lcr
+YAP1	Oncogene	11-102110665-G-GGGCGGA	11	102110665	G	GGGCGGA	rs1424325259	5_prime_UTR_variant	1.3283034907815738e-05	2	150568	PASS	lcr
+YAP1	Oncogene	11-102110666-G-T	11	102110666	G	T		5_prime_UTR_variant	0.0	0	223292	AC0	lcr
+YAP1	Oncogene	11-102110666-G-A	11	102110666	G	A		5_prime_UTR_variant	0.0	0	223292	AC0	lcr
+YAP1	Oncogene	11-102110667-G-A	11	102110667	G	A	rs1004673880	5_prime_UTR_variant	5.23875631924981e-06	2	381770	PASS	lcr
+YAP1	Oncogene	11-102110667-G-T	11	102110667	G	T		5_prime_UTR_variant	0.0	0	230514	AC0	lcr
+YAP1	Oncogene	11-102110668-C-A	11	102110668	C	A		5_prime_UTR_variant	0.0	0	236834	AC0	lcr
+YAP1	Oncogene	11-102110668-C-CGGAGGCGCCGGGGCGGGGGA	11	102110668	C	CGGAGGCGCCGGGGCGGGGGA		5_prime_UTR_variant	0.0	0	236834	AC0	lcr
+YAP1	Oncogene	11-102110668-C-T	11	102110668	C	T	rs1942833892	5_prime_UTR_variant	0.0	0	236834	AC0	lcr
+YAP1	Oncogene	11-102110669-G-A	11	102110669	G	A	rs1591082976	5_prime_UTR_variant	4.1535828805927995e-06	1	240756	PASS	lcr
+YAP1	Oncogene	11-102110669-G-T	11	102110669	G	T	rs1591082976	5_prime_UTR_variant	0.0	0	240756	AC0	lcr
+YAP1	Oncogene	11-102110670-G-T	11	102110670	G	T		5_prime_UTR_variant	3.957324215658341e-06	1	252696	PASS	lcr
+YAP1	Oncogene	11-102110671-AGGCGCCGGGGCGGGGGATGCGGGGCCGC-A	11	102110671	AGGCGCCGGGGCGGGGGATGCGGGGCCGC	A	rs1942834126	5_prime_UTR_variant	1.2571658453183144e-05	5	397720	PASS	lcr
+YAP1	Oncogene	11-102110671-A-G	11	102110671	A	G		5_prime_UTR_variant	4.0366853968869085e-06	1	247728	PASS	lcr
+YAP1	Oncogene	11-102110671-A-C	11	102110671	A	C		5_prime_UTR_variant	4.036652807492027e-06	1	247730	PASS	lcr
+YAP1	Oncogene	11-102110671-A-T	11	102110671	A	T		5_prime_UTR_variant	0.0	0	247728	AC0	lcr
+YAP1	Oncogene	11-102110672-G-A	11	102110672	G	A		5_prime_UTR_variant	0.0	0	260628	AC0	lcr
+YAP1	Oncogene	11-102110673-G-A	11	102110673	G	A		5_prime_UTR_variant	0.0	0	269710	AC0	lcr
+YAP1	Oncogene	11-102110674-C-A	11	102110674	C	A		5_prime_UTR_variant	0.0	0	278902	AC0	lcr
+YAP1	Oncogene	11-102110675-G-T	11	102110675	G	T		5_prime_UTR_variant	0.0	0	282136	AC0,AS_VQSR	lcr
+YAP1	Oncogene	11-102110675-G-A	11	102110675	G	A		5_prime_UTR_variant	0.0	0	282134	AC0	lcr
+YAP1	Oncogene	11-102110676-C-A	11	102110676	C	A		5_prime_UTR_variant	0.0	0	301992	AC0	lcr
+YAP1	Oncogene	11-102110676-C-T	11	102110676	C	T		5_prime_UTR_variant	0.0	0	301992	AC0	lcr
+YAP1	Oncogene	11-102110677-C-A	11	102110677	C	A		5_prime_UTR_variant	0.0	0	303684	AC0	lcr
+YAP1	Oncogene	11-102110677-C-T	11	102110677	C	T	rs1942834240	5_prime_UTR_variant	0.0	0	303682	AC0	lcr
+YAP1	Oncogene	11-102110678-G-T	11	102110678	G	T		5_prime_UTR_variant	0.0	0	304070	AC0	lcr
+YAP1	Oncogene	11-102110678-G-A	11	102110678	G	A	rs1276729141	5_prime_UTR_variant	8.806382866301495e-06	4	454216	PASS	lcr
+YAP1	Oncogene	11-102110679-G-C	11	102110679	G	C		5_prime_UTR_variant	3.2294526077829806e-06	1	309650	PASS	lcr
+YAP1	Oncogene	11-102110679-GGGCGGGGGATGCGGGGCCGC-G	11	102110679	GGGCGGGGGATGCGGGGCCGC	G		5_prime_UTR_variant	0.0	0	309650	AC0	lcr
+YAP1	Oncogene	11-102110679-G-A	11	102110679	G	A	rs1942834457	5_prime_UTR_variant	4.3426149490177e-06	2	460552	AS_VQSR	lcr
+YAP1	Oncogene	11-102110679-G-T	11	102110679	G	T		5_prime_UTR_variant	0.0	0	309650	AC0,AS_VQSR	lcr
+YAP1	Oncogene	11-102110680-G-C	11	102110680	G	C	rs1942834676	5_prime_UTR_variant	6.649555144760816e-06	1	150386	PASS	lcr
+YAP1	Oncogene	11-102110680-G-GGCGGGGGAT	11	102110680	G	GGCGGGGGAT	rs1431406319	5_prime_UTR_variant	3.9897330868564894e-05	6	150386	PASS	lcr
+YAP1	Oncogene	11-102110681-G-T	11	102110681	G	T		5_prime_UTR_variant	0.0	0	314130	AC0	lcr
+YAP1	Oncogene	11-102110681-G-C	11	102110681	G	C		5_prime_UTR_variant	0.0	0	314130	AC0	lcr
+YAP1	Oncogene	11-102110681-G-A	11	102110681	G	A		5_prime_UTR_variant	0.0	0	314130	AC0,AS_VQSR	lcr
+YAP1	Oncogene	11-102110682-CG-C	11	102110682	CG	C		5_prime_UTR_variant	0.0	0	316392	AC0	lcr
+YAP1	Oncogene	11-102110682-C-A	11	102110682	C	A		5_prime_UTR_variant	0.0	0	316390	AC0	lcr
+YAP1	Oncogene	11-102110682-C-T	11	102110682	C	T		5_prime_UTR_variant	9.481908518546613e-06	3	316392	PASS	lcr
+YAP1	Oncogene	11-102110683-G-T	11	102110683	G	T		5_prime_UTR_variant	0.0	0	328182	AC0	lcr
+YAP1	Oncogene	11-102110683-G-A	11	102110683	G	A	rs1036022681	5_prime_UTR_variant	6.268623034264294e-06	3	478574	PASS	lcr
+YAP1	Oncogene	11-102110683-G-C	11	102110683	G	C	rs1036022681	5_prime_UTR_variant	0.0	0	328182	AC0	lcr
+YAP1	Oncogene	11-102110684-G-T	11	102110684	G	T		5_prime_UTR_variant	2.991038847612553e-06	1	334332	PASS	lcr
+YAP1	Oncogene	11-102110684-G-A	11	102110684	G	A		5_prime_UTR_variant	2.9910209550928112e-06	1	334334	PASS	lcr
+YAP1	Oncogene	11-102110685-G-T	11	102110685	G	T		5_prime_UTR_variant	0.0	0	342766	AC0	lcr
+YAP1	Oncogene	11-102110686-G-A	11	102110686	G	A	rs868518014	5_prime_UTR_variant	0.00011501592375634074	58	504278	PASS	lcr
+YAP1	Oncogene	11-102110686-G-T	11	102110686	G	T		5_prime_UTR_variant	0.0	0	353258	AC0	lcr
+YAP1	Oncogene	11-102110687-G-A	11	102110687	G	A	rs1942835269	5_prime_UTR_variant	5.872657299125757e-06	3	510842	PASS	lcr
+YAP1	Oncogene	11-102110688-A-G	11	102110688	A	G	rs1942835435	5_prime_UTR_variant	2.803350564594804e-06	1	356716	AS_VQSR	lcr
+YAP1	Oncogene	11-102110688-A-C	11	102110688	A	C		5_prime_UTR_variant	0.0	0	356718	AC0	lcr
+YAP1	Oncogene	11-102110689-T-A	11	102110689	T	A	rs1942835598	5_prime_UTR_variant	7.6952970192267e-06	4	519798	PASS	lcr
+YAP1	Oncogene	11-102110689-T-G	11	102110689	T	G	rs1942835598	5_prime_UTR_variant	2.681425231138855e-06	1	372936	PASS	lcr
+YAP1	Oncogene	11-102110690-G-A	11	102110690	G	A	rs1377755602	5_prime_UTR_variant	3.7355108871464806e-06	2	535402	PASS	lcr
+YAP1	Oncogene	11-102110691-C-A	11	102110691	C	A		5_prime_UTR_variant	5.1369775051755045e-06	2	389334	PASS	lcr
+YAP1	Oncogene	11-102110691-C-T	11	102110691	C	T	rs1942835921	5_prime_UTR_variant	2.5685415307480107e-06	1	389326	AS_VQSR	lcr
+YAP1	Oncogene	11-102110692-G-A	11	102110692	G	A	rs537555874	5_prime_UTR_variant	0.0005179402221187545	287	554118	PASS	lcr
+YAP1	Oncogene	11-102110692-G-T	11	102110692	G	T	rs537555874	5_prime_UTR_variant	5.415045161476647e-06	3	554012	PASS	lcr
+YAP1	Oncogene	11-102110693-G-T	11	102110693	G	T		5_prime_UTR_variant	0.0	0	413704	AC0	lcr
+YAP1	Oncogene	11-102110693-G-A	11	102110693	G	A	rs1591083092	5_prime_UTR_variant	1.0619017953219687e-05	6	565024	PASS	lcr
+YAP1	Oncogene	11-102110694-G-A	11	102110694	G	A	rs1346176040	5_prime_UTR_variant	5.282917861193094e-06	3	567868	PASS	lcr
+YAP1	Oncogene	11-102110694-G-C	11	102110694	G	C		5_prime_UTR_variant	2.3986567522187575e-06	1	416900	PASS	lcr
+YAP1	Oncogene	11-102110695-G-A	11	102110695	G	A		5_prime_UTR_variant	0.0	0	428756	AC0,AS_VQSR	lcr
+YAP1	Oncogene	11-102110695-G-T	11	102110695	G	T		5_prime_UTR_variant	0.0	0	428756	AC0,AS_VQSR	lcr
+YAP1	Oncogene	11-102110696-C-A	11	102110696	C	A		5_prime_UTR_variant	2.2915282201700316e-06	1	436390	PASS	lcr
+YAP1	Oncogene	11-102110696-C-T	11	102110696	C	T	rs1158821332	5_prime_UTR_variant	4.583035436029991e-06	2	436392	AS_VQSR	lcr
+YAP1	Oncogene	11-102110697-C-T	11	102110697	C	T		5_prime_UTR_variant	4.510559219131988e-06	2	443404	PASS	lcr
+YAP1	Oncogene	11-102110697-C-A	11	102110697	C	A		5_prime_UTR_variant	2.255269437039643e-06	1	443406	PASS	lcr
+YAP1	Oncogene	11-102110697-C-G	11	102110697	C	G		5_prime_UTR_variant	2.255269437039643e-06	1	443406	PASS	lcr
+YAP1	Oncogene	11-102110698-G-A	11	102110698	G	A		5_prime_UTR_variant	4.383600075397921e-06	2	456246	PASS	lcr
+YAP1	Oncogene	11-102110698-G-C	11	102110698	G	C	rs1398657536	5_prime_UTR_variant	8.233325868451213e-06	5	607288	PASS	lcr
+YAP1	Oncogene	11-102110698-G-T	11	102110698	G	T		5_prime_UTR_variant	0.0	0	456246	AC0,AS_VQSR	lcr
+YAP1	Oncogene	11-102110699-C-T	11	102110699	C	T	rs1942836842	5_prime_UTR_variant	6.52405091369333e-06	4	613116	PASS	lcr
+YAP1	Oncogene	11-102110700-G-A	11	102110700	G	A	rs1426790691	5_prime_UTR_variant	6.614631565021828e-06	1	151180	PASS	lcr
+YAP1	Oncogene	11-102110700-G-C	11	102110700	G	C	rs1426790691	5_prime_UTR_variant	6.614631565021828e-06	1	151180	PASS	lcr
+YAP1	Oncogene	11-102110701-G-A	11	102110701	G	A	rs1173768463	5_prime_UTR_variant	7.951198722719436e-06	5	628836	PASS	lcr
+YAP1	Oncogene	11-102110702-C-T	11	102110702	C	T	rs1295887036	5_prime_UTR_variant	4.129415894121776e-06	2	484330	AS_VQSR	lcr
+YAP1	Oncogene	11-102110702-C-A	11	102110702	C	A		5_prime_UTR_variant	0.0	0	484330	AC0	lcr
+YAP1	Oncogene	11-102110702-C-G	11	102110702	C	G	rs1295887036	5_prime_UTR_variant	4.722966526761903e-06	3	635194	PASS	lcr
+YAP1	Oncogene	11-102110703-G-GCAGCCCCC	11	102110703	G	GCAGCCCCC		5_prime_UTR_variant	0.0	0	494714	AC0	lcr
+YAP1	Oncogene	11-102110703-G-A	11	102110703	G	A		5_prime_UTR_variant	0.0	0	494706	AC0	lcr
+YAP1	Oncogene	11-102110704-C-A	11	102110704	C	A		5_prime_UTR_variant	0.0	0	506878	AC0	
+YAP1	Oncogene	11-102110704-C-T	11	102110704	C	T		5_prime_UTR_variant	0.0	0	506882	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110705-A-T	11	102110705	A	T	rs1942837409	5_prime_UTR_variant	0.0	0	498026	AC0	
+YAP1	Oncogene	11-102110705-A-G	11	102110705	A	G		5_prime_UTR_variant	0.0	0	498026	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110705-AGCCCCC-A	11	102110705	AGCCCCC	A		5_prime_UTR_variant	4.015854593936862e-06	2	498026	PASS	
+YAP1	Oncogene	11-102110706-G-GC	11	102110706	G	GC	rs1565410384	5_prime_UTR_variant	0.0	0	522600	AC0	
+YAP1	Oncogene	11-102110706-GC-G	11	102110706	GC	G		5_prime_UTR_variant	1.9135679622797485e-06	1	522584	PASS	
+YAP1	Oncogene	11-102110706-G-A	11	102110706	G	A		5_prime_UTR_variant	1.913502053187703e-06	1	522602	PASS	
+YAP1	Oncogene	11-102110707-C-T	11	102110707	C	T	rs1003109421	5_prime_UTR_variant	8.872405930316124e-06	6	676254	AS_VQSR	
+YAP1	Oncogene	11-102110707-C-A	11	102110707	C	A		5_prime_UTR_variant	5.708870442894169e-06	3	525498	PASS	
+YAP1	Oncogene	11-102110707-C-G	11	102110707	C	G		5_prime_UTR_variant	0.0	0	525500	AC0	
+YAP1	Oncogene	11-102110708-C-G	11	102110708	C	G		5_prime_UTR_variant	1.8423738618735469e-06	1	542778	PASS	
+YAP1	Oncogene	11-102110708-C-A	11	102110708	C	A		5_prime_UTR_variant	0.0	0	542778	AC0	
+YAP1	Oncogene	11-102110708-C-T	11	102110708	C	T		5_prime_UTR_variant	1.8423738618735469e-06	1	542778	PASS	
+YAP1	Oncogene	11-102110709-CCCCGGCCCTGAGAGCGAGGACAGCGCCG-C	11	102110709	CCCCGGCCCTGAGAGCGAGGACAGCGCCG	C		5_prime_UTR_variant	3.534555582653815e-06	2	565842	PASS	
+YAP1	Oncogene	11-102110709-C-A	11	102110709	C	A	rs1942837756	5_prime_UTR_variant	2.4741889078576706e-05	14	565842	PASS	
+YAP1	Oncogene	11-102110709-C-T	11	102110709	C	T		5_prime_UTR_variant	1.7672777913269075e-06	1	565842	PASS	
+YAP1	Oncogene	11-102110710-C-A	11	102110710	C	A	rs1250553514	5_prime_UTR_variant	1.375005156269336e-06	1	727270	AC0	
+YAP1	Oncogene	11-102110710-C-T	11	102110710	C	T	rs1250553514	5_prime_UTR_variant	0.0	0	576338	AC0	
+YAP1	Oncogene	11-102110711-C-T	11	102110711	C	T		5_prime_UTR_variant	0.0	0	581946	AC0	
+YAP1	Oncogene	11-102110711-C-A	11	102110711	C	A	rs1190437990	5_prime_UTR_variant	0.0	0	581944	AC0	
+YAP1	Oncogene	11-102110712-C-A	11	102110712	C	A		5_prime_UTR_variant	0.0	0	586656	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110712-C-G	11	102110712	C	G	rs1034984539	5_prime_UTR_variant	1.0846281081374224e-05	8	737580	PASS	
+YAP1	Oncogene	11-102110712-C-T	11	102110712	C	T	rs1034984539	5_prime_UTR_variant	6.7789624391249175e-06	5	737576	PASS	
+YAP1	Oncogene	11-102110713-G-T	11	102110713	G	T	rs1299228851	5_prime_UTR_variant	1.342552191716453e-06	1	744850	AC0	
+YAP1	Oncogene	11-102110713-G-A	11	102110713	G	A	rs1299228851	5_prime_UTR_variant	2.6854937683117105e-06	2	744742	PASS	
+YAP1	Oncogene	11-102110714-G-T	11	102110714	G	T		5_prime_UTR_variant	0.0	0	601508	AC0	
+YAP1	Oncogene	11-102110714-G-A	11	102110714	G	A		5_prime_UTR_variant	1.6624882794576298e-06	1	601508	PASS	
+YAP1	Oncogene	11-102110715-C-A	11	102110715	C	A		5_prime_UTR_variant	0.0	0	611750	AC0	
+YAP1	Oncogene	11-102110715-C-T	11	102110715	C	T		5_prime_UTR_variant	6.538618716796077e-06	4	611750	PASS	
+YAP1	Oncogene	11-102110716-C-T	11	102110716	C	T		5_prime_UTR_variant	1.5777798113606458e-06	1	633802	PASS	
+YAP1	Oncogene	11-102110716-C-A	11	102110716	C	A		5_prime_UTR_variant	0.0	0	633802	AC0	
+YAP1	Oncogene	11-102110717-C-G	11	102110717	C	G		5_prime_UTR_variant	1.4928893679404994e-06	1	669842	PASS	
+YAP1	Oncogene	11-102110717-C-A	11	102110717	C	A		5_prime_UTR_variant	0.0	0	669842	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110718-T-C	11	102110718	T	C		5_prime_UTR_variant	0.0	0	676178	AC0	
+YAP1	Oncogene	11-102110719-G-C	11	102110719	G	C		5_prime_UTR_variant	0.0	0	689932	AC0	
+YAP1	Oncogene	11-102110719-G-T	11	102110719	G	T		5_prime_UTR_variant	0.0	0	689932	AC0	
+YAP1	Oncogene	11-102110720-A-T	11	102110720	A	T		5_prime_UTR_variant	0.0	0	684044	AC0	
+YAP1	Oncogene	11-102110720-A-G	11	102110720	A	G		5_prime_UTR_variant	0.0	0	684044	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110720-A-C	11	102110720	A	C		5_prime_UTR_variant	0.0	0	151042	AC0	
+YAP1	Oncogene	11-102110721-G-T	11	102110721	G	T		5_prime_UTR_variant	0.0	0	710538	AC0	
+YAP1	Oncogene	11-102110721-G-A	11	102110721	G	A	rs1367482185	5_prime_UTR_variant	4.641932900859918e-06	4	861710	PASS	
+YAP1	Oncogene	11-102110721-G-C	11	102110721	G	C		5_prime_UTR_variant	0.0	0	710538	AC0	
+YAP1	Oncogene	11-102110722-A-T	11	102110722	A	T		5_prime_UTR_variant	2.8383207359198e-06	2	704642	PASS	
+YAP1	Oncogene	11-102110723-G-A	11	102110723	G	A	rs981592318	5_prime_UTR_variant	1.830102439984078e-05	16	874268	PASS	
+YAP1	Oncogene	11-102110723-G-C	11	102110723	G	C	rs981592318	5_prime_UTR_variant	2.765150258265034e-06	2	723288	PASS	
+YAP1	Oncogene	11-102110724-C-T	11	102110724	C	T	rs1942838742	5_prime_UTR_variant	1.3585036896960213e-06	1	736104	AS_VQSR	
+YAP1	Oncogene	11-102110724-C-A	11	102110724	C	A		5_prime_UTR_variant	1.3585147629799292e-06	1	736098	PASS	
+YAP1	Oncogene	11-102110725-G-T	11	102110725	G	T	rs1942838903	5_prime_UTR_variant	3.3095633141525754e-06	3	906464	PASS	
+YAP1	Oncogene	11-102110727-G-A	11	102110727	G	A	rs1942839010	5_prime_UTR_variant	3.846942962659007e-06	3	779840	PASS	
+YAP1	Oncogene	11-102110727-G-T	11	102110727	G	T		5_prime_UTR_variant	0.0	0	779838	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110728-G-C	11	102110728	G	C		5_prime_UTR_variant	0.0	0	789870	AC0	
+YAP1	Oncogene	11-102110728-G-A	11	102110728	G	A	rs1218036328	5_prime_UTR_variant	6.628838097258312e-06	1	150856	PASS	
+YAP1	Oncogene	11-102110729-AC-A	11	102110729	AC	A	rs1235249660	5_prime_UTR_variant	6.6271687409704824e-06	1	150894	PASS	
+YAP1	Oncogene	11-102110729-A-G	11	102110729	A	G		5_prime_UTR_variant	0.0	0	786472	AC0	
+YAP1	Oncogene	11-102110730-C-A	11	102110730	C	A		5_prime_UTR_variant	1.2316150661007806e-06	1	811942	PASS	
+YAP1	Oncogene	11-102110730-C-T	11	102110730	C	T		5_prime_UTR_variant	0.0	0	811946	AC0	
+YAP1	Oncogene	11-102110731-A-C	11	102110731	A	C		5_prime_UTR_variant	1.2212577000297988e-06	1	818828	PASS	
+YAP1	Oncogene	11-102110731-A-T	11	102110731	A	T	rs1942839352	5_prime_UTR_variant	6.6403707983053775e-06	1	150594	PASS	
+YAP1	Oncogene	11-102110732-G-A	11	102110732	G	A		5_prime_UTR_variant	0.0	0	842220	AC0	
+YAP1	Oncogene	11-102110732-G-T	11	102110732	G	T	rs144715383	5_prime_UTR_variant	0.053331533792753356	52950	992846	PASS	
+YAP1	Oncogene	11-102110732-G-C	11	102110732	G	C		5_prime_UTR_variant	1.187338225166821e-06	1	842220	PASS	
+YAP1	Oncogene	11-102110733-C-A	11	102110733	C	A	rs1301271156	5_prime_UTR_variant	2.648831203231574e-05	4	151010	PASS	
+YAP1	Oncogene	11-102110733-C-T	11	102110733	C	T	rs1301271156	5_prime_UTR_variant	0.0	0	848178	AC0	
+YAP1	Oncogene	11-102110734-G-T	11	102110734	G	T		5_prime_UTR_variant	0.0	0	860824	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110734-G-A	11	102110734	G	A		5_prime_UTR_variant	1.1616776483927027e-06	1	860824	PASS	
+YAP1	Oncogene	11-102110735-C-T	11	102110735	C	T		5_prime_UTR_variant	1.156681803775872e-06	1	864542	PASS	
+YAP1	Oncogene	11-102110736-C-T	11	102110736	C	T		5_prime_UTR_variant	0.0	0	876568	AC0	
+YAP1	Oncogene	11-102110737-G-T	11	102110737	G	T		5_prime_UTR_variant	0.0	0	884228	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110737-G-A	11	102110737	G	A	rs1312917069	5_prime_UTR_variant	1.3522493702381504e-05	14	1035312	PASS	
+YAP1	Oncogene	11-102110738-C-T	11	102110738	C	T		5_prime_UTR_variant	0.0	0	890740	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110739-C-A	11	102110739	C	A		5_prime_UTR_variant	0.0	0	904720	AC0	
+YAP1	Oncogene	11-102110740-C-T	11	102110740	C	T		5_prime_UTR_variant	0.0	0	900162	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110740-C-A	11	102110740	C	A	rs1363267686	5_prime_UTR_variant	1.1109111471046322e-06	1	900162	PASS	
+YAP1	Oncogene	11-102110741-G-T	11	102110741	G	T		5_prime_UTR_variant	0.0	0	914274	AC0	
+YAP1	Oncogene	11-102110742-G-T	11	102110742	G	T		5_prime_UTR_variant	0.0	0	915444	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110742-G-A	11	102110742	G	A	rs1288694668	5_prime_UTR_variant	1.0923661086860583e-05	10	915444	PASS	
+YAP1	Oncogene	11-102110743-C-T	11	102110743	C	T	rs1942840915	5_prime_UTR_variant	1.8634501033283083e-06	2	1073278	PASS	
+YAP1	Oncogene	11-102110743-C-A	11	102110743	C	A		5_prime_UTR_variant	1.0844199220952728e-06	1	922152	PASS	
+YAP1	Oncogene	11-102110744-C-A	11	102110744	C	A		5_prime_UTR_variant	0.0	0	933160	AC0	
+YAP1	Oncogene	11-102110744-C-T	11	102110744	C	T	rs1429030308	5_prime_UTR_variant	2.7671805013393153e-06	3	1084136	PASS	
+YAP1	Oncogene	11-102110745-C-T	11	102110745	C	T	rs1361209214	5_prime_UTR_variant	0.0	0	943184	AC0	
+YAP1	Oncogene	11-102110745-C-G	11	102110745	C	G		5_prime_UTR_variant	0.0	0	943186	AC0	
+YAP1	Oncogene	11-102110745-C-A	11	102110745	C	A		5_prime_UTR_variant	0.0	0	943176	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110746-G-A	11	102110746	G	A		5_prime_UTR_variant	9.132520173737064e-07	1	1094988	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110746-G-T	11	102110746	G	T		5_prime_UTR_variant	2.1185453220400744e-06	2	944044	PASS	
+YAP1	Oncogene	11-102110746-G-C	11	102110746	G	C		5_prime_UTR_variant	0.0	0	944044	AC0	
+YAP1	Oncogene	11-102110747-C-A	11	102110747	C	A		5_prime_UTR_variant	0.0	0	947240	AC0	
+YAP1	Oncogene	11-102110747-C-T	11	102110747	C	T		5_prime_UTR_variant	0.0	0	947242	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110748-A-G	11	102110748	A	G		5_prime_UTR_variant	0.0	0	947552	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110748-A-T	11	102110748	A	T		5_prime_UTR_variant	0.0	0	947552	AC0	
+YAP1	Oncogene	11-102110749-G-T	11	102110749	G	T	rs574182270	5_prime_UTR_variant	1.7964706537536355e-06	2	1113294	PASS	
+YAP1	Oncogene	11-102110749-G-A	11	102110749	G	A	rs574182270	5_prime_UTR_variant	0.0	0	962110	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110750-C-T	11	102110750	C	T		5_prime_UTR_variant	0.0	0	968414	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110750-C-A	11	102110750	C	A		5_prime_UTR_variant	0.0	0	968410	AC0	
+YAP1	Oncogene	11-102110751-C-A	11	102110751	C	A		5_prime_UTR_variant	0.0	0	968070	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110751-C-T	11	102110751	C	T	rs542951358	5_prime_UTR_variant	2.322681160197106e-05	26	1119396	PASS	
+YAP1	Oncogene	11-102110752-G-A	11	102110752	G	A		5_prime_UTR_variant	1.0132020223512366e-06	1	986970	AS_VQSR	
+YAP1	Oncogene	11-102110752-G-T	11	102110752	G	T		5_prime_UTR_variant	0.0	0	986974	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110753-T-C	11	102110753	T	C		5_prime_UTR_variant	0.0	0	984474	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110753-TCGC-T	11	102110753	TCGC	T	rs1942841793	5_prime_UTR_variant	9.690588324426801e-06	11	1135122	PASS	
+YAP1	Oncogene	11-102110754-C-A	11	102110754	C	A		5_prime_UTR_variant	0.0	0	995222	AC0	
+YAP1	Oncogene	11-102110754-C-G	11	102110754	C	G		5_prime_UTR_variant	1.0047969004025216e-06	1	995226	PASS	
+YAP1	Oncogene	11-102110754-C-T	11	102110754	C	T		5_prime_UTR_variant	0.0	0	995226	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110755-G-A	11	102110755	G	A		5_prime_UTR_variant	5.985288161698545e-06	6	1002458	PASS	
+YAP1	Oncogene	11-102110755-G-T	11	102110755	G	T		5_prime_UTR_variant	0.0	0	1002460	AC0	
+YAP1	Oncogene	11-102110756-C-T	11	102110756	C	T		5_prime_UTR_variant	0.0	0	1008372	AC0	
+YAP1	Oncogene	11-102110756-C-A	11	102110756	C	A		5_prime_UTR_variant	0.0	0	1008372	AC0	
+YAP1	Oncogene	11-102110757-C-A	11	102110757	C	A		5_prime_UTR_variant	0.0	0	1015402	AC0	
+YAP1	Oncogene	11-102110757-C-T	11	102110757	C	T		5_prime_UTR_variant	0.0	0	1015402	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110758-G-A	11	102110758	G	A		5_prime_UTR_variant	0.0	0	1018510	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110758-GCTT-G	11	102110758	GCTT	G		5_prime_UTR_variant	9.81826393457109e-07	1	1018510	PASS	
+YAP1	Oncogene	11-102110758-G-T	11	102110758	G	T		5_prime_UTR_variant	3.927313285708114e-06	4	1018508	PASS	
+YAP1	Oncogene	11-102110759-C-A	11	102110759	C	A		5_prime_UTR_variant	0.0	0	1026852	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110759-C-T	11	102110759	C	T		5_prime_UTR_variant	2.9215505252947845e-06	3	1026852	PASS	
+YAP1	Oncogene	11-102110760-T-C	11	102110760	T	C		5_prime_UTR_variant	0.0	0	1026848	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110761-T-C	11	102110761	T	C		5_prime_UTR_variant	0.0	0	1030284	AC0	
+YAP1	Oncogene	11-102110762-C-A	11	102110762	C	A	rs112773705	5_prime_UTR_variant	1.6803305546267062e-06	2	1190242	PASS	
+YAP1	Oncogene	11-102110762-C-T	11	102110762	C	T	rs112773705	5_prime_UTR_variant	0.00382078919291289	4548	1190330	PASS	
+YAP1	Oncogene	11-102110762-C-G	11	102110762	C	G		5_prime_UTR_variant	9.624954040844455e-07	1	1038966	PASS	
+YAP1	Oncogene	11-102110763-T-C	11	102110763	T	C		5_prime_UTR_variant	0.0	0	1039546	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110764-C-A	11	102110764	C	A	rs1942842159	5_prime_UTR_variant	0.0	0	1041852	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110764-C-T	11	102110764	C	T		5_prime_UTR_variant	9.598273846431457e-07	1	1041854	PASS	
+YAP1	Oncogene	11-102110765-C-A	11	102110765	C	A	rs1054513691	5_prime_UTR_variant	2.8692263991782536e-06	3	1045578	PASS	
+YAP1	Oncogene	11-102110765-C-T	11	102110765	C	T	rs1054513691	5_prime_UTR_variant	0.0	0	1045580	AC0	
+YAP1	Oncogene	11-102110766-A-G	11	102110766	A	G		5_prime_UTR_variant	0.0	0	1061158	AC0	
+YAP1	Oncogene	11-102110767-C-T	11	102110767	C	T		5_prime_UTR_variant	0.0	0	1069040	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110767-C-G	11	102110767	C	G	rs893215491	5_prime_UTR_variant	9.354186934071691e-07	1	1069040	PASS	
+YAP1	Oncogene	11-102110767-C-A	11	102110767	C	A		5_prime_UTR_variant	0.0	0	1069040	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110768-C-A	11	102110768	C	A		5_prime_UTR_variant	0.0	0	1071888	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110768-C-T	11	102110768	C	T	rs1392738217	5_prime_UTR_variant	0.0	0	1071888	AC0	
+YAP1	Oncogene	11-102110769-T-A	11	102110769	T	A		5_prime_UTR_variant	9.34317481080071e-07	1	1070300	PASS	
+YAP1	Oncogene	11-102110769-T-C	11	102110769	T	C		5_prime_UTR_variant	0.0	0	1070300	AC0	
+YAP1	Oncogene	11-102110770-C-T	11	102110770	C	T	rs1169922552	5_prime_UTR_variant	1.639293202342878e-06	2	1220038	PASS	
+YAP1	Oncogene	11-102110770-C-A	11	102110770	C	A		5_prime_UTR_variant	0.0	0	1069002	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110771-G-T	11	102110771	G	T		5_prime_UTR_variant	0.0	0	1074398	AC0	
+YAP1	Oncogene	11-102110771-G-A	11	102110771	G	A		5_prime_UTR_variant	0.0	0	1074398	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110772-G-A	11	102110772	G	A		5_prime_UTR_variant	0.0	0	1077882	AC0	
+YAP1	Oncogene	11-102110772-G-C	11	102110772	G	C		5_prime_UTR_variant	0.0	0	1077882	AC0	
+YAP1	Oncogene	11-102110772-G-T	11	102110772	G	T		5_prime_UTR_variant	0.0	0	1077882	AC0	
+YAP1	Oncogene	11-102110773-C-T	11	102110773	C	T		5_prime_UTR_variant	0.0	0	1081732	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110773-C-A	11	102110773	C	A		5_prime_UTR_variant	0.0	0	1081730	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110774-C-G	11	102110774	C	G		5_prime_UTR_variant	1.8445420002213451e-06	2	1084280	PASS	
+YAP1	Oncogene	11-102110774-C-T	11	102110774	C	T		5_prime_UTR_variant	0.0	0	1084280	AC0	
+YAP1	Oncogene	11-102110774-C-A	11	102110774	C	A		5_prime_UTR_variant	0.0	0	1084278	AC0	
+YAP1	Oncogene	11-102110775-C-A	11	102110775	C	A		5_prime_UTR_variant	9.221859495748723e-07	1	1084380	AS_VQSR	
+YAP1	Oncogene	11-102110775-C-G	11	102110775	C	G	rs1942843038	5_prime_UTR_variant	7.284853979149129e-06	9	1235440	PASS	
+YAP1	Oncogene	11-102110775-C-T	11	102110775	C	T		5_prime_UTR_variant	1.8443718991497445e-06	2	1084380	PASS	
+YAP1	Oncogene	11-102110776-G-A	11	102110776	G	A		5_prime_UTR_variant	0.0	0	1091022	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110776-G-C	11	102110776	G	C	rs1942843236	5_prime_UTR_variant	8.049222606080704e-07	1	1242356	AC0	
+YAP1	Oncogene	11-102110776-G-T	11	102110776	G	T		5_prime_UTR_variant	0.0	0	1091022	AC0	
+YAP1	Oncogene	11-102110777-TG-T	11	102110777	TG	T		5_prime_UTR_variant	0.0	0	1091850	AC0	
+YAP1	Oncogene	11-102110777-T-C	11	102110777	T	C		5_prime_UTR_variant	0.0	0	1091848	AC0	
+YAP1	Oncogene	11-102110778-G-A	11	102110778	G	A	rs946066900	5_prime_UTR_variant	0.0	0	1093862	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110778-G-T	11	102110778	G	T		5_prime_UTR_variant	0.0	0	1093862	AC0	
+YAP1	Oncogene	11-102110779-G-T	11	102110779	G	T		5_prime_UTR_variant	0.0	0	1103562	AC0	
+YAP1	Oncogene	11-102110779-G-A	11	102110779	G	A	rs1429093203	5_prime_UTR_variant	4.462400293243448e-05	56	1254930	PASS	
+YAP1	Oncogene	11-102110780-A-G	11	102110780	A	G		5_prime_UTR_variant	0.0	0	1102730	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110781-G-A	11	102110781	G	A		5_prime_UTR_variant	0.0	0	1107094	AC0	
+YAP1	Oncogene	11-102110781-G-T	11	102110781	G	T		5_prime_UTR_variant	0.0	0	1107094	AC0	
+YAP1	Oncogene	11-102110782-C-A	11	102110782	C	A	rs1418680821	5_prime_UTR_variant	0.0	0	1109250	AC0	
+YAP1	Oncogene	11-102110782-C-G	11	102110782	C	G	rs1418680821	5_prime_UTR_variant	2.379864442921331e-06	3	1260576	PASS	
+YAP1	Oncogene	11-102110782-C-T	11	102110782	C	T		5_prime_UTR_variant	1.8030168077226815e-06	2	1109252	PASS	
+YAP1	Oncogene	11-102110783-C-A	11	102110783	C	A		5_prime_UTR_variant	8.994730886646602e-07	1	1111762	AS_VQSR	
+YAP1	Oncogene	11-102110783-C-G	11	102110783	C	G		5_prime_UTR_variant	8.994714705638967e-07	1	1111764	PASS	
+YAP1	Oncogene	11-102110783-CG-C	11	102110783	CG	C		5_prime_UTR_variant	8.994714705638967e-07	1	1111764	AS_VQSR	
+YAP1	Oncogene	11-102110783-C-T	11	102110783	C	T		5_prime_UTR_variant	8.994714705638967e-07	1	1111764	PASS	
+YAP1	Oncogene	11-102110784-GGGGC-G	11	102110784	GGGGC	G		5_prime_UTR_variant	0.0	0	1111004	AC0	
+YAP1	Oncogene	11-102110784-G-T	11	102110784	G	T	rs1184657910	5_prime_UTR_variant	0.0	0	1111004	AC0	
+YAP1	Oncogene	11-102110784-G-C	11	102110784	G	C	rs1184657910	5_prime_UTR_variant	0.0	0	1111004	AC0	
+YAP1	Oncogene	11-102110784-G-A	11	102110784	G	A		5_prime_UTR_variant	0.0	0	1111004	AC0	
+YAP1	Oncogene	11-102110785-G-T	11	102110785	G	T		5_prime_UTR_variant	0.0	0	1115224	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110785-G-C	11	102110785	G	C		5_prime_UTR_variant	0.0	0	1115224	AC0	
+YAP1	Oncogene	11-102110785-G-A	11	102110785	G	A		5_prime_UTR_variant	8.96680846179781e-07	1	1115224	PASS	
+YAP1	Oncogene	11-102110786-G-T	11	102110786	G	T		5_prime_UTR_variant	0.0	0	1116858	AC0	
+YAP1	Oncogene	11-102110786-G-A	11	102110786	G	A		5_prime_UTR_variant	8.953689725999187e-07	1	1116858	PASS	
+YAP1	Oncogene	11-102110786-GGC-G	11	102110786	GGC	G	rs1942844027	5_prime_UTR_variant	0.0	0	1116858	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110787-G-T	11	102110787	G	T		5_prime_UTR_variant	3.5816747194653275e-06	4	1116796	PASS	
+YAP1	Oncogene	11-102110787-G-C	11	102110787	G	C		5_prime_UTR_variant	0.0	0	1116796	AC0	
+YAP1	Oncogene	11-102110787-G-A	11	102110787	G	A	rs1942843920	5_prime_UTR_variant	1.7908373597326638e-06	2	1116796	PASS	
+YAP1	Oncogene	11-102110788-C-G	11	102110788	C	G		5_prime_UTR_variant	0.0	0	1115986	AC0	
+YAP1	Oncogene	11-102110788-C-A	11	102110788	C	A		5_prime_UTR_variant	8.960685886740514e-07	1	1115986	PASS	
+YAP1	Oncogene	11-102110788-C-T	11	102110788	C	T		5_prime_UTR_variant	8.960685886740514e-07	1	1115986	PASS	
+YAP1	Oncogene	11-102110789-G-T	11	102110789	G	T		5_prime_UTR_variant	0.0	0	1120944	AC0	
+YAP1	Oncogene	11-102110789-G-A	11	102110789	G	A	rs1042145779	5_prime_UTR_variant	1.336122948461808e-05	17	1272338	PASS	
+YAP1	Oncogene	11-102110790-T-C	11	102110790	T	C		5_prime_UTR_variant	0.0	0	1122270	AC0	
+YAP1	Oncogene	11-102110791-C-T	11	102110791	C	T	rs2135083216	5_prime_UTR_variant	0.0	0	1125612	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110791-C-A	11	102110791	C	A		5_prime_UTR_variant	0.0	0	1125612	AC0	
+YAP1	Oncogene	11-102110792-C-A	11	102110792	C	A		5_prime_UTR_variant	0.0	0	1125980	AC0	
+YAP1	Oncogene	11-102110792-C-G	11	102110792	C	G		5_prime_UTR_variant	0.0	0	1125980	AC0	
+YAP1	Oncogene	11-102110792-C-T	11	102110792	C	T		5_prime_UTR_variant	1.7762304836675606e-06	2	1125980	PASS	
+YAP1	Oncogene	11-102110793-G-T	11	102110793	G	T		5_prime_UTR_variant	0.0	0	1129858	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110793-G-A	11	102110793	G	A	rs2135083234	5_prime_UTR_variant	1.5607855745954054e-06	2	1281406	PASS	
+YAP1	Oncogene	11-102110794-G-A	11	102110794	G	A		5_prime_UTR_variant	0.0	0	1145196	AC0	
+YAP1	Oncogene	11-102110794-G-T	11	102110794	G	T		5_prime_UTR_variant	0.0	0	1145196	AC0	
+YAP1	Oncogene	11-102110795-G-A	11	102110795	G	A	rs2135083256	5_prime_UTR_variant	0.0	0	1146302	AC0	
+YAP1	Oncogene	11-102110795-G-T	11	102110795	G	T		5_prime_UTR_variant	0.0	0	1146302	AC0	
+YAP1	Oncogene	11-102110796-C-A	11	102110796	C	A		5_prime_UTR_variant	8.711575418721872e-07	1	1147898	PASS	
+YAP1	Oncogene	11-102110796-CG-C	11	102110796	CG	C		5_prime_UTR_variant	8.711575418721872e-07	1	1147898	AS_VQSR	
+YAP1	Oncogene	11-102110796-C-T	11	102110796	C	T		5_prime_UTR_variant	8.711575418721872e-07	1	1147898	PASS	
+YAP1	Oncogene	11-102110797-G-A	11	102110797	G	A		5_prime_UTR_variant	3.477323504098895e-06	4	1150310	PASS	
+YAP1	Oncogene	11-102110798-T-C	11	102110798	T	C		5_prime_UTR_variant	0.0	0	1150152	AC0	
+YAP1	Oncogene	11-102110799-A-G	11	102110799	A	G	rs1315435628	5_prime_UTR_variant	9.555030897495367e-06	11	1151226	PASS	
+YAP1	Oncogene	11-102110799-A-T	11	102110799	A	T		5_prime_UTR_variant	0.0	0	1151228	AC0	
+YAP1	Oncogene	11-102110800-G-T	11	102110800	G	T		5_prime_UTR_variant	0.0	0	1156754	AC0	
+YAP1	Oncogene	11-102110800-G-A	11	102110800	G	A		5_prime_UTR_variant	8.644880415369214e-07	1	1156754	PASS	
+YAP1	Oncogene	11-102110801-C-T	11	102110801	C	T		5_prime_UTR_variant	0.0	0	1157728	AC0	
+YAP1	Oncogene	11-102110801-C-A	11	102110801	C	A		5_prime_UTR_variant	1.7275214903673402e-06	2	1157728	PASS	
+YAP1	Oncogene	11-102110802-C-A	11	102110802	C	A		5_prime_UTR_variant	0.0	0	1159454	AC0	
+YAP1	Oncogene	11-102110802-C-T	11	102110802	C	T		5_prime_UTR_variant	1.724949847083196e-06	2	1159454	PASS	
+YAP1	Oncogene	11-102110803-C-A	11	102110803	C	A		5_prime_UTR_variant	0.0	0	1161170	AC0	
+YAP1	Oncogene	11-102110803-C-T	11	102110803	C	T		5_prime_UTR_variant	0.0	0	1161170	AC0	
+YAP1	Oncogene	11-102110804-T-C	11	102110804	T	C		5_prime_UTR_variant	0.0	0	1161942	AC0,AS_VQSR	
+YAP1	Oncogene	11-102110804-T-A	11	102110804	T	A		5_prime_UTR_variant	3.4425126211118973e-06	4	1161942	AS_VQSR	
+YAP1	Oncogene	11-102110805-C-T	11	102110805	C	T	rs902415336	5_prime_UTR_variant	4.298294780494682e-06	5	1163252	PASS	
+YAP1	Oncogene	11-102110805-C-A	11	102110805	C	A	rs902415336	5_prime_UTR_variant	1.521278117022798e-06	2	1314684	PASS	
+YAP1	Oncogene	11-102110805-C-G	11	102110805	C	G		5_prime_UTR_variant	0.0	0	1163252	AC0	
+YAP1	Oncogene	11-102110805-CG-C	11	102110805	CG	C		5_prime_UTR_variant	0.0	0	1163250	AC0	
+YAP1	Oncogene	11-102110806-G-C	11	102110806	G	C		5_prime_UTR_variant	0.0	0	1164196	AC0	
+YAP1	Oncogene	11-102110806-G-A	11	102110806	G	A		5_prime_UTR_variant	3.4358534745927223e-06	4	1164194	PASS	
+YAP1	Oncogene	11-102110806-G-T	11	102110806	G	T		5_prime_UTR_variant	8.589618930145783e-07	1	1164196	PASS	
+YAP1	Oncogene	11-102110807-C-T	11	102110807	C	T		5_prime_UTR_variant	0.0	0	1166782	AC0	
+YAP1	Oncogene	11-102110807-C-A	11	102110807	C	A		5_prime_UTR_variant	0.0	0	1166782	AC0	
+YAP1	Oncogene	11-102110807-C-G	11	102110807	C	G		5_prime_UTR_variant	8.570581308247814e-07	1	1166782	PASS	
+YAP1	Oncogene	11-102110808-T-C	11	102110808	T	C		5_prime_UTR_variant	0.0	0	1167478	AC0	
+YAP1	Oncogene	11-102110808-T-A	11	102110808	T	A		5_prime_UTR_variant	0.0	0	1167478	AC0	
+YAP1	Oncogene	11-102110809-C-T	11	102110809	C	T	rs1211887164	5_prime_UTR_variant	7.5664600014224945e-06	10	1321622	PASS	
+YAP1	Oncogene	11-102110809-C-G	11	102110809	C	G	rs1211887164	5_prime_UTR_variant	0.0	0	1170144	AC0	
+YAP1	Oncogene	11-102110809-C-A	11	102110809	C	A		5_prime_UTR_variant	0.0	0	1170144	AC0	
+YAP1	Oncogene	11-102110810-G-T	11	102110810	G	T		5_prime_UTR_variant	0.0	0	1171354	AC0	
+YAP1	Oncogene	11-102110810-G-A	11	102110810	G	A		5_prime_UTR_variant	0.0	0	1171354	AC0	
+YAP1	Oncogene	11-102110811-C-A	11	102110811	C	A		5_prime_UTR_variant	0.0	0	1173480	AC0	
+YAP1	Oncogene	11-102110811-C-G	11	102110811	C	G		5_prime_UTR_variant	0.0	0	1173478	AC0	
+YAP1	Oncogene	11-102110811-C-T	11	102110811	C	T		5_prime_UTR_variant	2.5564986194907453e-05	30	1173480	PASS	
+YAP1	Oncogene	11-102110812-C-G	11	102110812	C	G		5_prime_UTR_variant	2.553934847419419e-06	3	1174658	PASS	
+YAP1	Oncogene	11-102110812-C-A	11	102110812	C	A		5_prime_UTR_variant	0.0	0	1174658	AC0	
+YAP1	Oncogene	11-102110812-C-T	11	102110812	C	T	rs148537129	5_prime_UTR_variant	0.0023035011709778455	3055	1326242	PASS	
+YAP1	Oncogene	11-102110813-T-C	11	102110813	T	C		5_prime_UTR_variant	0.0	0	1174876	AC0	
+YAP1	Oncogene	11-102110813-TG-T	11	102110813	TG	T		5_prime_UTR_variant	0.0	0	1174872	AC0	
+YAP1	Oncogene	11-102110813-T-A	11	102110813	T	A		5_prime_UTR_variant	0.0	0	1174876	AC0	
+YAP1	Oncogene	11-102110814-G-C	11	102110814	G	C		5_prime_UTR_variant	0.0	0	1184544	AC0	
+YAP1	Oncogene	11-102110814-G-T	11	102110814	G	T		5_prime_UTR_variant	0.0	0	1184544	AC0	
+YAP1	Oncogene	11-102110814-G-A	11	102110814	G	A		5_prime_UTR_variant	8.442067158332658e-07	1	1184544	PASS	
+YAP1	Oncogene	11-102110815-G-A	11	102110815	G	A		5_prime_UTR_variant	0.0	0	1206348	AC0	
+YAP1	Oncogene	11-102110815-G-T	11	102110815	G	T		5_prime_UTR_variant	8.2894819736925e-07	1	1206348	PASS	
+YAP1	Oncogene	11-102110816-G-A	11	102110816	G	A		5_prime_UTR_variant	0.0	0	1211574	AC0	
+YAP1	Oncogene	11-102110816-G-C	11	102110816	G	C		5_prime_UTR_variant	0.0	0	1211574	AC0	
+YAP1	Oncogene	11-102110816-G-T	11	102110816	G	T		5_prime_UTR_variant	8.253726144668011e-07	1	1211574	PASS	
+YAP1	Oncogene	11-102110817-T-C	11	102110817	T	C		5_prime_UTR_variant	0.0	0	1211314	AC0	
+YAP1	Oncogene	11-102110817-TC-T	11	102110817	TC	T		5_prime_UTR_variant	0.0	0	1211310	AC0	
+YAP1	Oncogene	11-102110818-C-A	11	102110818	C	A		5_prime_UTR_variant	8.223413703496595e-07	1	1216040	PASS	
+YAP1	Oncogene	11-102110818-CAG-C	11	102110818	CAG	C	rs1491253397	5_prime_UTR_variant	2.4670200535836756e-06	3	1216042	PASS	
+YAP1	Oncogene	11-102110818-CA-C	11	102110818	CA	C	rs1437017788	5_prime_UTR_variant	1.4624907680270269e-06	2	1367530	PASS	
+YAP1	Oncogene	11-102110818-C-T	11	102110818	C	T		5_prime_UTR_variant	0.0	0	1216042	AC0	
+YAP1	Oncogene	11-102110819-A-T	11	102110819	A	T		5_prime_UTR_variant	0.0	0	1216834	AC0	
+YAP1	Oncogene	11-102110819-A-AG	11	102110819	A	AG	rs1461305696	5_prime_UTR_variant	0.0	0	1216826	AC0	
+YAP1	Oncogene	11-102110819-A-G	11	102110819	A	G		5_prime_UTR_variant	0.0	0	1216834	AC0	
+YAP1	Oncogene	11-102110819-AG-A	11	102110819	AG	A	rs1461305696	5_prime_UTR_variant	5.752926595944022e-06	7	1216772	PASS	
+YAP1	Oncogene	11-102110820-G-A	11	102110820	G	A		5_prime_UTR_variant	0.0	0	1219982	AC0	
+YAP1	Oncogene	11-102110820-G-C	11	102110820	G	C	rs1942845198	5_prime_UTR_variant	1.3199577613516367e-05	2	151520	PASS	
+YAP1	Oncogene	11-102110820-G-T	11	102110820	G	T		5_prime_UTR_variant	0.0	0	1219984	AC0	
+YAP1	Oncogene	11-102110821-G-C	11	102110821	G	C		5_prime_UTR_variant	4.911631562144419e-06	6	1221590	PASS	
+YAP1	Oncogene	11-102110821-G-T	11	102110821	G	T		5_prime_UTR_variant	0.0	0	1221590	AC0	
+YAP1	Oncogene	11-102110821-G-A	11	102110821	G	A		5_prime_UTR_variant	0.0	0	1221590	AC0	
+YAP1	Oncogene	11-102110822-G-T	11	102110822	G	T		5_prime_UTR_variant	8.180641656808994e-07	1	1222398	PASS	
+YAP1	Oncogene	11-102110822-G-A	11	102110822	G	A		5_prime_UTR_variant	0.0	0	1222398	AC0	
+YAP1	Oncogene	11-102110823-G-A	11	102110823	G	A	rs1181184697	5_prime_UTR_variant	2.0440233574637104e-05	25	1223078	PASS	
+YAP1	Oncogene	11-102110823-G-T	11	102110823	G	T		5_prime_UTR_variant	0.0	0	1223078	AC0	
+YAP1	Oncogene	11-102110824-G-C	11	102110824	G	C		5_prime_UTR_variant	0.0	0	1224944	AC0	
+YAP1	Oncogene	11-102110824-G-T	11	102110824	G	T	rs1229661476	5_prime_UTR_variant	1.4530152973450505e-06	2	1376448	PASS	
+YAP1	Oncogene	11-102110824-G-A	11	102110824	G	A	rs1229661476	5_prime_UTR_variant	8.163638501025353e-07	1	1224944	PASS	
+YAP1	Oncogene	11-102110825-T-C	11	102110825	T	C		5_prime_UTR_variant	0.0	0	1224148	AC0	
+YAP1	Oncogene	11-102110825-T-A	11	102110825	T	A		5_prime_UTR_variant	0.0	0	1224150	AC0	
+YAP1	Oncogene	11-102110825-T-G	11	102110825	T	G		5_prime_UTR_variant	1.6337867091451212e-06	2	1224150	PASS	
+YAP1	Oncogene	11-102110826-G-T	11	102110826	G	T		5_prime_UTR_variant	0.0	0	1227498	AC0	
+YAP1	Oncogene	11-102110826-G-C	11	102110826	G	C		5_prime_UTR_variant	8.146652784770322e-07	1	1227498	PASS	
+YAP1	Oncogene	11-102110826-G-A	11	102110826	G	A		5_prime_UTR_variant	0.0	0	1227496	AC0	
+YAP1	Oncogene	11-102110827-C-A	11	102110827	C	A		5_prime_UTR_variant	8.156234299248973e-07	1	1226056	PASS	
+YAP1	Oncogene	11-102110827-C-T	11	102110827	C	T	rs1238665178	5_prime_UTR_variant	8.156247604102266e-07	1	1226054	PASS	
+YAP1	Oncogene	11-102110828-G-T	11	102110828	G	T		5_prime_UTR_variant	0.0	0	1228340	AC0	
+YAP1	Oncogene	11-102110828-G-A	11	102110828	G	A		5_prime_UTR_variant	0.0	0	1228340	AC0	
+YAP1	Oncogene	11-102110829-C-G	11	102110829	C	G	rs1942845806	5_prime_UTR_variant	0.0	0	1230810	AC0	
+YAP1	Oncogene	11-102110829-C-A	11	102110829	C	A		5_prime_UTR_variant	0.0	0	1230810	AC0	
+YAP1	Oncogene	11-102110829-C-T	11	102110829	C	T		5_prime_UTR_variant	0.0	0	1230808	AC0	
+YAP1	Oncogene	11-102110830-G-C	11	102110830	G	C		5_prime_UTR_variant	8.107867063411628e-07	1	1233370	PASS	
+YAP1	Oncogene	11-102110830-G-T	11	102110830	G	T		5_prime_UTR_variant	0.0	0	1233370	AC0	
+YAP1	Oncogene	11-102110830-G-A	11	102110830	G	A	rs1472855687	5_prime_UTR_variant	2.4323601190234883e-06	3	1233370	PASS	
+YAP1	Oncogene	11-102110831-T-C	11	102110831	T	C		5_prime_UTR_variant	2.4313350460737992e-06	3	1233890	PASS	
+YAP1	Oncogene	11-102110832-C-T	11	102110832	C	T		5_prime_UTR_variant	0.0	0	1234740	AC0	
+YAP1	Oncogene	11-102110832-CG-C	11	102110832	CG	C	rs1157569154	5_prime_UTR_variant	8.099041559421858e-06	10	1234714	PASS	
+YAP1	Oncogene	11-102110832-CGG-C	11	102110832	CGG	C		5_prime_UTR_variant	0.0	0	1234738	AC0	
+YAP1	Oncogene	11-102110832-C-CG	11	102110832	C	CG		5_prime_UTR_variant	0.0	0	1234734	AC0	
+YAP1	Oncogene	11-102110832-C-A	11	102110832	C	A		5_prime_UTR_variant	0.0	0	1234736	AC0	
+YAP1	Oncogene	11-102110832-C-G	11	102110832	C	G		5_prime_UTR_variant	0.0	0	1234740	AC0	
+YAP1	Oncogene	11-102110833-G-A	11	102110833	G	A	rs757181870	5_prime_UTR_variant	0.00014766026901540132	205	1388322	PASS	
+YAP1	Oncogene	11-102110833-G-C	11	102110833	G	C	rs757181870	5_prime_UTR_variant	6.59926616160283e-06	1	151532	PASS	
+YAP1	Oncogene	11-102110833-G-T	11	102110833	G	T		5_prime_UTR_variant	8.086153109691902e-07	1	1236682	PASS	
+YAP1	Oncogene	11-102110834-G-A	11	102110834	G	A	rs111626988	5_prime_UTR_variant	1.612546904958098e-06	2	1240274	PASS	
+YAP1	Oncogene	11-102110834-G-T	11	102110834	G	T	rs111626988	5_prime_UTR_variant	1.5088461494246267e-05	21	1391792	PASS	
+YAP1	Oncogene	11-102110834-G-C	11	102110834	G	C	rs111626988	5_prime_UTR_variant	0.0015173525646275804	2112	1391898	PASS	
+YAP1	Oncogene	11-102110835-G-C	11	102110835	G	C	rs1413848813	5_prime_UTR_variant	5.744105829405801e-06	8	1392732	PASS	
+YAP1	Oncogene	11-102110835-G-T	11	102110835	G	T		5_prime_UTR_variant	0.0	0	1241092	AC0	
+YAP1	Oncogene	11-102110835-G-A	11	102110835	G	A		5_prime_UTR_variant	2.417222224908025e-06	3	1241094	PASS	
+YAP1	Oncogene	11-102110836-G-A	11	102110836	G	A	rs745740006	5_prime_UTR_variant	4.027035908273787e-06	5	1241608	PASS	
+YAP1	Oncogene	11-102110836-G-T	11	102110836	G	T		5_prime_UTR_variant	0.0	0	1241612	AC0	
+YAP1	Oncogene	11-102110837-G-A	11	102110837	G	A	rs975454052	5_prime_UTR_variant	8.047758618747092e-07	1	1242582	PASS	
+YAP1	Oncogene	11-102110837-G-T	11	102110837	G	T		5_prime_UTR_variant	0.0	0	1242582	AC0	
+YAP1	Oncogene	11-102110838-A-T	11	102110838	A	T		5_prime_UTR_variant	0.0	0	1242752	AC0	
+YAP1	Oncogene	11-102110838-A-AG	11	102110838	A	AG	rs1942847219	5_prime_UTR_variant	8.046657740241013e-07	1	1242752	PASS	
+YAP1	Oncogene	11-102110838-AG-A	11	102110838	AG	A		5_prime_UTR_variant	0.0	0	1242750	AC0	
+YAP1	Oncogene	11-102110838-A-G	11	102110838	A	G		5_prime_UTR_variant	2.4140012070006034e-06	3	1242750	PASS	
+YAP1	Oncogene	11-102110839-G-C	11	102110839	G	C	rs771905609	5_prime_UTR_variant	7.861713882214373e-06	11	1399186	PASS	
+YAP1	Oncogene	11-102110839-G-T	11	102110839	G	T		5_prime_UTR_variant	0.0	0	1247628	AC0	
+YAP1	Oncogene	11-102110839-G-A	11	102110839	G	A	rs771905609	5_prime_UTR_variant	4.7881288707019396e-05	67	1399294	PASS	
+YAP1	Oncogene	11-102110840-G-C	11	102110840	G	C		5_prime_UTR_variant	0.0	0	1247236	AC0	
+YAP1	Oncogene	11-102110840-G-T	11	102110840	G	T		5_prime_UTR_variant	0.0	0	1247236	AC0	
+YAP1	Oncogene	11-102110840-G-A	11	102110840	G	A		5_prime_UTR_variant	8.017754515599343e-07	1	1247232	PASS	
+YAP1	Oncogene	11-102110841-C-T	11	102110841	C	T	rs1450408756	5_prime_UTR_variant	3.929138347104368e-05	55	1399798	PASS	
+YAP1	Oncogene	11-102110841-C-A	11	102110841	C	A		5_prime_UTR_variant	1.6022251703165357e-06	2	1248264	PASS	
+YAP1	Oncogene	11-102110841-C-G	11	102110841	C	G	rs1450408756	5_prime_UTR_variant	8.011100180409976e-07	1	1248268	PASS	
+YAP1	Oncogene	11-102110842-A-G	11	102110842	A	G		5_prime_UTR_variant	8.005648785783249e-07	1	1249118	PASS	
+YAP1	Oncogene	11-102110842-A-T	11	102110842	A	T		5_prime_UTR_variant	0.0	0	1249118	AC0	
+YAP1	Oncogene	11-102110843-G-A	11	102110843	G	A		5_prime_UTR_variant	8.000256008192262e-07	1	1249960	PASS	
+YAP1	Oncogene	11-102110843-G-T	11	102110843	G	T		5_prime_UTR_variant	0.0	0	1249962	AC0	
+YAP1	Oncogene	11-102110843-G-C	11	102110843	G	C	rs921812761	5_prime_UTR_variant	8.000243207393505e-07	1	1249962	PASS	
+YAP1	Oncogene	11-102110844-A-G	11	102110844	A	G		5_prime_UTR_variant	0.0	0	1250544	AC0	
+YAP1	Oncogene	11-102110844-A-T	11	102110844	A	T		5_prime_UTR_variant	0.0	0	1250542	AC0	
+YAP1	Oncogene	11-102110845-A-G	11	102110845	A	G		5_prime_UTR_variant	0.0	0	1251186	AC0	
+YAP1	Oncogene	11-102110845-A-T	11	102110845	A	T		5_prime_UTR_variant	0.0	0	1251186	AC0	
+YAP1	Oncogene	11-102110845-A-C	11	102110845	A	C		5_prime_UTR_variant	0.0	0	1251186	AC0	
+YAP1	Oncogene	11-102110846-G-C	11	102110846	G	C		5_prime_UTR_variant	0.0	0	1254090	AC0	
+YAP1	Oncogene	11-102110846-G-A	11	102110846	G	A	rs1338655472	5_prime_UTR_variant	3.7705781078812196e-05	53	1405620	PASS	
+YAP1	Oncogene	11-102110846-G-T	11	102110846	G	T		5_prime_UTR_variant	0.0	0	1254090	AC0	
+YAP1	Oncogene	11-102110847-C-A	11	102110847	C	A	rs962813997	5_prime_UTR_variant	1.8490703443253453e-05	26	1406112	PASS	
+YAP1	Oncogene	11-102110847-C-T	11	102110847	C	T	rs962813997	5_prime_UTR_variant	4.782454132279493e-06	6	1254586	PASS	
+YAP1	Oncogene	11-102110848-C-A	11	102110848	C	A		5_prime_UTR_variant	3.1860273584169266e-06	4	1255482	PASS	
+YAP1	Oncogene	11-102110848-C-T	11	102110848	C	T	rs1186957062	5_prime_UTR_variant	0.0	0	1255482	AC0	

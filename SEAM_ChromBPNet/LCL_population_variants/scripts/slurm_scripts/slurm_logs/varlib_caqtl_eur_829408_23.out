@@ -1,0 +1,16 @@
+==============================================
+Variant Library: caQTL European
+Job ID:    829446
+Array:     23/34
+Locus:     NOTCH1
+Node:      bam33
+Start:     Sat Mar  7 09:35:05 EST 2026
+==============================================
+Source: caqtl_eur
+Processing 1 loci
+Output: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/caqtl_eur
+NOTCH1: no variants found, skipping
+
+Done.
+
+Done: Sat Mar  7 09:35:06 EST 2026

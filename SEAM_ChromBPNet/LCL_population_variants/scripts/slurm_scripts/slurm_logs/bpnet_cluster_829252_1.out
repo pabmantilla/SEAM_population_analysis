@@ -1,0 +1,23 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829254
+Array:     1/34
+Locus:     EH38E3485200
+Args:      
+Node:      bam32
+Start:     Fri Mar  6 22:57:29 EST 2026
+==============================================
+Processing 1 loci: ['EH38E3485200']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+
+==================================================
+EH38E3485200: clustering (k=100)
+==================================================
+  Clustering 25000 maps into 100 clusters...
+  Saved cluster results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/EH38E3485200/k100
+  WT cluster=26, sizes: min=8, max=1343
+
+Pipeline complete.
+
+Done: Sat Mar  7 02:15:01 EST 2026

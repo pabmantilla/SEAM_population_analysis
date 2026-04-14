@@ -1,0 +1,28 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    830255
+Array:     13/34
+Locus:     HLA-B
+Node:      bam25
+Start:     Sun Mar  8 14:20:46 EDT 2026
+==============================================
+Processing 1 loci: ['HLA-B']
+
+>>> Variant Injection: gnomad (k=100) <<<
+HLA-B: injected cluster results exist (gnomad, k=100), skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+HLA-B: injected cluster results exist (caqtl_eur, k=100), skipping
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+HLA-B: injected cluster results exist (caqtl_afr, k=100), skipping
+
+>>> Variant Injection Final Plots <<<
+  Saved GnomAD plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/gnomad_mech_diversity_vs_AF_k100.png
+  Saved GnomAD causality plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/gnomad_mech_causality_vs_AF_k100.png
+  Saved caqtl_eur plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/caqtl_eur_pred_vs_actual_k100.png
+  Saved caqtl_afr plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/caqtl_afr_pred_vs_actual_k100.png
+
+Pipeline complete.
+
+Done: Sun Mar  8 14:20:58 EDT 2026

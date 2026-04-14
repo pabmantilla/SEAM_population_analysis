@@ -1,0 +1,17 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829270
+Array:     17/34
+Locus:     TNF
+Args:      
+Node:      bam21
+Start:     Fri Mar  6 22:57:38 EST 2026
+==============================================
+Processing 1 loci: ['TNF']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+TNF: attribution maps not found, skipping
+
+Pipeline complete.
+
+Done: Fri Mar  6 22:58:11 EST 2026

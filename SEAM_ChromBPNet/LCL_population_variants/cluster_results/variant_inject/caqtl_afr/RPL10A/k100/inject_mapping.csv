@@ -1,0 +1,3 @@
+seq_idx,source,variant_id,offset,ref,alt,pos,injected_idx
+1,variant,chr6_35468418_G_A_hg38,1393,G,A,35468418.0,2232
+2,variant,chr6_35468794_C_T_hg38,1769,C,T,35468794.0,19349

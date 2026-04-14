@@ -1,0 +1,17 @@
+==============================================
+SEAM Mutagenesis Library (ChromBPNet 2114bp)
+Job ID:    828714
+Array:     13/34
+Locus:     HLA-B
+Args:      --num-sim 25000
+Node:      bam07
+Start:     Fri Mar  6 15:17:44 EST 2026
+==============================================
+Processing 1 loci, 25000 seqs each, mut_rate=0.01
+Extracting 2114bp sequences from GRCh38.p13.genome.fa...
+Saved 1 reference sequences to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/Mutagenisis_lib/x_onehot_ref_2114bp.npz
+HLA-B: generating 25000 mutants... saved (25000, 2114, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/Mutagenisis_lib/x_mut_HLA-B_25000.npy
+
+Done.
+
+Done: Fri Mar  6 15:17:56 EST 2026

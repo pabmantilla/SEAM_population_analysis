@@ -1,0 +1,34 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829933
+Array:     7/34
+Locus:     PDCD1LG2
+Node:      bam20
+Start:     Sat Mar  7 15:38:15 EST 2026
+==============================================
+Processing 1 loci: ['PDCD1LG2']
+
+>>> Variant Injection: gnomad (k=100) <<<
+PDCD1LG2: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+PDCD1LG2: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+
+==================================================
+PDCD1LG2: variant injection (caqtl_afr, k=100)
+==================================================
+  Injected 3 variants at indices (first 5): [ 2232 16364 19348]
+  Clustering 25000 maps into 100 clusters...
+  WT cluster=52, variants span 3 clusters
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/variant_inject/caqtl_afr/PDCD1LG2/k100
+
+>>> Variant Injection Final Plots <<<
+GnomAD: no variant injection results found
+caqtl_eur: no variant injection results found
+caqtl_afr: no variants matched coefficient data
+
+Pipeline complete.
+
+Done: Sat Mar  7 15:51:42 EST 2026

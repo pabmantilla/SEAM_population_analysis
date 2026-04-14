@@ -1,0 +1,23 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829268
+Array:     15/34
+Locus:     HLA-DRB1
+Args:      
+Node:      bam31
+Start:     Fri Mar  6 22:57:46 EST 2026
+==============================================
+Processing 1 loci: ['HLA-DRB1']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+
+==================================================
+HLA-DRB1: clustering (k=100)
+==================================================
+  Clustering 25000 maps into 100 clusters...
+  Saved cluster results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/HLA-DRB1/k100
+  WT cluster=57, sizes: min=1, max=1427
+
+Pipeline complete.
+
+Done: Sat Mar  7 03:02:32 EST 2026

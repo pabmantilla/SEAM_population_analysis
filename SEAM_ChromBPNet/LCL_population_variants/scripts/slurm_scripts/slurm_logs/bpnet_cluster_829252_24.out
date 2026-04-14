@@ -1,0 +1,17 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829280
+Array:     24/34
+Locus:     ABL1
+Args:      
+Node:      bam18
+Start:     Fri Mar  6 22:59:20 EST 2026
+==============================================
+Processing 1 loci: ['ABL1']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+ABL1: attribution maps not found, skipping
+
+Pipeline complete.
+
+Done: Fri Mar  6 22:59:25 EST 2026

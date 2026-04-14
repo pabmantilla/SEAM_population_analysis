@@ -1,0 +1,31 @@
+==============================================
+Variant Attributions: gnomAD
+Job ID:    829526
+Array:     29/34
+Locus:     HOXA1
+Node:      bamgpu17
+GPU:       0
+Start:     Sat Mar  7 10:38:17 EST 2026
+==============================================
+Processing 1 loci: ['HOXA1']
+
+>>> Step 1: DeepSHAP Attribution Maps <<<
+Loading ChromBPNet model from /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/models/ENCFF673TIN.tar.gz (fold_0)...
+Model loaded: ./fold_0/model.chrombpnet_nobias.fold_0.ENCSR000EMT.h5
+
+==================================================
+HOXA1: DeepLIFT/SHAP attributions (gnomad)
+==================================================
+  Computing predictions for 363 sequences...
+  Saved predictions (363,) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad/preds_HOXA1.npy
+  Chunk [0:256] pre-computing 50 dinuc shuffles...
+  Chunk [0:256] running DeepLIFT/SHAP (batch_size=8)...
+    256/363 sequences attributed
+  Chunk [256:363] pre-computing 50 dinuc shuffles...
+  Chunk [256:363] running DeepLIFT/SHAP (batch_size=8)...
+    363/363 sequences attributed
+  Saved attribution maps (363, 2114, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad/maps_HOXA1.npy
+
+Pipeline complete.
+
+Done: Sat Mar  7 10:40:08 EST 2026

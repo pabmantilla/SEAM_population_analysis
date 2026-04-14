@@ -1,0 +1,17 @@
+==============================================
+SEAM Mutagenesis Library (ChromBPNet 2114bp)
+Job ID:    828702
+Array:     1/34
+Locus:     EH38E3485200
+Args:      --num-sim 25000
+Node:      bam34
+Start:     Fri Mar  6 15:17:50 EST 2026
+==============================================
+Processing 1 loci, 25000 seqs each, mut_rate=0.01
+Extracting 2114bp sequences from GRCh38.p13.genome.fa...
+Saved 1 reference sequences to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/Mutagenisis_lib/x_onehot_ref_2114bp.npz
+EH38E3485200: generating 25000 mutants... saved (25000, 2114, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/Mutagenisis_lib/x_mut_EH38E3485200_25000.npy
+
+Done.
+
+Done: Fri Mar  6 15:18:03 EST 2026

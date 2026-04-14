@@ -1,0 +1,16 @@
+file_accession,experiment_accession,cell_type,assay,model_type,size_MB,download_url
+ENCFF984RAF,ENCSR467RSV,K562,ATAC-seq,ChromBPNet,727,https://www.encodeproject.org/files/ENCFF984RAF/@@download/ENCFF984RAF.tar.gz
+ENCFF574YLK,ENCSR296UHQ,K562,DNase-seq,ChromBPNet,726,https://www.encodeproject.org/files/ENCFF574YLK/@@download/ENCFF574YLK.tar.gz
+ENCFF142IOR,ENCSR389HIH,GM12878 (LCL),ATAC-seq,ChromBPNet,718,https://www.encodeproject.org/files/ENCFF142IOR/@@download/ENCFF142IOR.tar.gz
+ENCFF673TIN,ENCSR003WJE,GM12878 (LCL),DNase-seq,ChromBPNet,725,https://www.encodeproject.org/files/ENCFF673TIN/@@download/ENCFF673TIN.tar.gz
+ENCFF137WCM,ENCSR380YGX,HepG2,ATAC-seq,ChromBPNet,722,https://www.encodeproject.org/files/ENCFF137WCM/@@download/ENCFF137WCM.tar.gz
+ENCFF615AKY,ENCSR006CUK,HepG2,DNase-seq,ChromBPNet,723,https://www.encodeproject.org/files/ENCFF615AKY/@@download/ENCFF615AKY.tar.gz
+ENCFF113GSV,ENCSR978WIX,IMR-90,ATAC-seq,ChromBPNet,727,https://www.encodeproject.org/files/ENCFF113GSV/@@download/ENCFF113GSV.tar.gz
+ENCFF515HBV,ENCSR137OLC,IMR-90,DNase-seq,ChromBPNet,718,https://www.encodeproject.org/files/ENCFF515HBV/@@download/ENCFF515HBV.tar.gz
+ENCFF138PJQ,ENCSR085MTT,H1 (hESC),DNase-seq,ChromBPNet,718,https://www.encodeproject.org/files/ENCFF138PJQ/@@download/ENCFF138PJQ.tar.gz
+ENCFF976FHE,ENCSR740IPL,K562,PRO-cap,BPNet,167,https://www.encodeproject.org/files/ENCFF976FHE/@@download/ENCFF976FHE.tar.gz
+ENCFF568EGA,ENCSR860TYZ,MCF 10A,PRO-cap,BPNet,167,https://www.encodeproject.org/files/ENCFF568EGA/@@download/ENCFF568EGA.tar.gz
+ENCFF180BYW,ENCSR797DEF,Calu3,PRO-cap,BPNet,167,https://www.encodeproject.org/files/ENCFF180BYW/@@download/ENCFF180BYW.tar.gz
+ENCFF575XTL,ENCSR182QNJ,Caco-2,PRO-cap,BPNet,167,https://www.encodeproject.org/files/ENCFF575XTL/@@download/ENCFF575XTL.tar.gz
+ENCFF508EUP,ENCSR072YCM,A673,PRO-cap,BPNet,167,https://www.encodeproject.org/files/ENCFF508EUP/@@download/ENCFF508EUP.tar.gz
+ENCFF822XKO,ENCSR801ECP,HUVEC,PRO-cap,BPNet,167,https://www.encodeproject.org/files/ENCFF822XKO/@@download/ENCFF822XKO.tar.gz

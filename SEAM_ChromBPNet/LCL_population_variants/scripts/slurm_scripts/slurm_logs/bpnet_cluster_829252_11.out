@@ -1,0 +1,23 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829264
+Array:     11/34
+Locus:     PIK3R3
+Args:      
+Node:      bam28
+Start:     Fri Mar  6 22:57:37 EST 2026
+==============================================
+Processing 1 loci: ['PIK3R3']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+
+==================================================
+PIK3R3: clustering (k=100)
+==================================================
+  Clustering 25000 maps into 100 clusters...
+  Saved cluster results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/PIK3R3/k100
+  WT cluster=87, sizes: min=3, max=1557
+
+Pipeline complete.
+
+Done: Sat Mar  7 03:10:23 EST 2026

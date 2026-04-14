@@ -1,0 +1,17 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829271
+Array:     18/34
+Locus:     HLA-G
+Args:      
+Node:      bam18
+Start:     Fri Mar  6 22:57:38 EST 2026
+==============================================
+Processing 1 loci: ['HLA-G']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+HLA-G: attribution maps not found, skipping
+
+Pipeline complete.
+
+Done: Fri Mar  6 22:58:11 EST 2026

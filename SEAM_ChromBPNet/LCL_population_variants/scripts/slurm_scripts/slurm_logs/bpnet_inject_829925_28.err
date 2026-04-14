@@ -1,0 +1,2 @@
+slurmstepd: error: Unable to create TMPDIR [/tmp/slurm_tmp/829914]: Permission denied
+slurmstepd: error: Setting TMPDIR to /tmp

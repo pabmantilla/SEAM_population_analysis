@@ -1,0 +1,40 @@
+==============================================
+Variant Attributions: gnomAD
+Job ID:    829510
+Array:     13/34
+Locus:     HLA-B
+Node:      bamgpu19
+GPU:       0
+Start:     Sat Mar  7 10:31:43 EST 2026
+==============================================
+Processing 1 loci: ['HLA-B']
+
+>>> Step 1: DeepSHAP Attribution Maps <<<
+Loading ChromBPNet model from /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/models/ENCFF673TIN.tar.gz (fold_0)...
+Model loaded: ./fold_0/model.chrombpnet_nobias.fold_0.ENCSR000EMT.h5
+
+==================================================
+HLA-B: DeepLIFT/SHAP attributions (gnomad)
+==================================================
+  Computing predictions for 1242 sequences...
+  Saved predictions (1242,) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad/preds_HLA-B.npy
+  Chunk [0:256] pre-computing 50 dinuc shuffles...
+  Chunk [0:256] running DeepLIFT/SHAP (batch_size=8)...
+    256/1242 sequences attributed
+  Chunk [256:512] pre-computing 50 dinuc shuffles...
+  Chunk [256:512] running DeepLIFT/SHAP (batch_size=8)...
+    512/1242 sequences attributed
+  Chunk [512:768] pre-computing 50 dinuc shuffles...
+  Chunk [512:768] running DeepLIFT/SHAP (batch_size=8)...
+    768/1242 sequences attributed
+  Chunk [768:1024] pre-computing 50 dinuc shuffles...
+  Chunk [768:1024] running DeepLIFT/SHAP (batch_size=8)...
+    1024/1242 sequences attributed
+  Chunk [1024:1242] pre-computing 50 dinuc shuffles...
+  Chunk [1024:1242] running DeepLIFT/SHAP (batch_size=8)...
+    1242/1242 sequences attributed
+  Saved attribution maps (1242, 2114, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad/maps_HLA-B.npy
+
+Pipeline complete.
+
+Done: Sat Mar  7 10:43:59 EST 2026

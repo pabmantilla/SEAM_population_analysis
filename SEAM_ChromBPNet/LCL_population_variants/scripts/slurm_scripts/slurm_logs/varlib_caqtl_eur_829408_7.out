@@ -1,0 +1,16 @@
+==============================================
+Variant Library: caQTL European
+Job ID:    829430
+Array:     7/34
+Locus:     PDCD1LG2
+Node:      bam28
+Start:     Sat Mar  7 09:34:57 EST 2026
+==============================================
+Source: caqtl_eur
+Processing 1 loci
+Output: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/caqtl_eur
+PDCD1LG2: no variants found, skipping
+
+Done.
+
+Done: Sat Mar  7 09:34:58 EST 2026

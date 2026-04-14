@@ -1,0 +1,3 @@
+slurmstepd: error: Unable to create TMPDIR [/tmp/slurm_tmp/822244]: Permission denied
+slurmstepd: error: Setting TMPDIR to /tmp
+slurmstepd: error: *** JOB 828804 ON bamgpu17 CANCELLED AT 2026-03-06T15:39:21 ***

@@ -1,0 +1,91 @@
+==============================================
+SEAM eQTL LCL Pipeline
+Env: SEAM .venv (CLIPNET + SEAM + DeepSHAP)
+Job ID: 806443
+Args: --step cluster --k 100
+Start time: Thu Mar  5 07:56:43 EST 2026
+==============================================
+
+>>> Step 4: Cluster + CSM (k=100) <<<
+
+==================================================
+HLA-A (k=100)
+==================================================
+Clustering 24999 maps into 100 clusters...
+matrix too large for GPU: bytes 39,998,400,000, k=100 n=24,999 d=4000 numsize=4, max_mem=96,267,403,264
+automated slicing started
+set 'verbose' to 1 to see more details
+fraction matrix too large for GPU: bytes 19,998,400,000, k=100 n=12,499 d=4000 numsize=4, max_mem=39,998,399,999
+fraction matrix too large for GPU: bytes 13,332,800,000, k=100 n=8,333 d=4000 numsize=4, max_mem=17,998,560,000
+fraction matrix too large for GPU: bytes 9,998,400,000, k=100 n=6,249 d=4000 numsize=4, max_mem=11,999,520,000
+fraction matrix too large for GPU: bytes 7,998,400,000, k=100 n=4,999 d=4000 numsize=4, max_mem=8,998,560,000
+fraction matrix too large for GPU: bytes 6,665,600,000, k=100 n=4,166 d=4000 numsize=4, max_mem=7,198,560,000
+fraction matrix too large for GPU: bytes 5,713,600,000, k=100 n=3,571 d=4000 numsize=4, max_mem=5,999,040,000
+fraction matrix too large for GPU: bytes 4,998,400,000, k=100 n=3,124 d=4000 numsize=4, max_mem=5,142,240,000
+fraction matrix too large for GPU: bytes 4,443,200,000, k=100 n=2,777 d=4000 numsize=4, max_mem=4,498,560,000
+fraction matrix too large for GPU: bytes 3,635,200,000, k=100 n=2,272 d=4000 numsize=4, max_mem=3,998,880,000
+fraction matrix too large for GPU: bytes 3,076,800,000, k=100 n=1,923 d=4000 numsize=4, max_mem=3,271,680,000
+fraction matrix too large for GPU: bytes 2,665,600,000, k=100 n=1,666 d=4000 numsize=4, max_mem=2,769,120,000
+fraction matrix too large for GPU: bytes 2,352,000,000, k=100 n=1,470 d=4000 numsize=4, max_mem=2,399,040,000
+fraction matrix too large for GPU: bytes 2,104,000,000, k=100 n=1,315 d=4000 numsize=4, max_mem=2,116,800,000
+fraction matrix too large for GPU: bytes 1,817,600,000, k=100 n=1,136 d=4000 numsize=4, max_mem=1,893,600,000
+fraction matrix too large for GPU: bytes 1,598,400,000, k=100 n=999 d=4000 numsize=4, max_mem=1,635,840,000
+fraction matrix too large for GPU: bytes 1,427,200,000, k=100 n=892 d=4000 numsize=4, max_mem=1,438,560,000
+fraction matrix too large for GPU: bytes 1,249,600,000, k=100 n=781 d=4000 numsize=4, max_mem=1,284,480,000
+fraction matrix too large for GPU: bytes 1,110,400,000, k=100 n=694 d=4000 numsize=4, max_mem=1,124,640,000
+fraction matrix too large for GPU: bytes 974,400,000, k=100 n=609 d=4000 numsize=4, max_mem=999,360,000
+fraction matrix too large for GPU: bytes 868,800,000, k=100 n=543 d=4000 numsize=4, max_mem=876,960,000
+fraction matrix too large for GPU: bytes 768,000,000, k=100 n=480 d=4000 numsize=4, max_mem=781,920,000
+fraction matrix too large for GPU: bytes 689,600,000, k=100 n=431 d=4000 numsize=4, max_mem=691,200,000
+fraction matrix too large for GPU: bytes 614,400,000, k=100 n=384 d=4000 numsize=4, max_mem=620,640,000
+fraction matrix too large for GPU: bytes 547,200,000, k=100 n=342 d=4000 numsize=4, max_mem=552,960,000
+fraction matrix too large for GPU: bytes 486,400,000, k=100 n=304 d=4000 numsize=4, max_mem=492,480,000
+fraction matrix too large for GPU: bytes 433,600,000, k=100 n=271 d=4000 numsize=4, max_mem=437,760,000
+fraction matrix too large for GPU: bytes 387,200,000, k=100 n=242 d=4000 numsize=4, max_mem=390,240,000
+fraction matrix too large for GPU: bytes 347,200,000, k=100 n=217 d=4000 numsize=4, max_mem=348,480,000
+fraction matrix too large for GPU: bytes 308,800,000, k=100 n=193 d=4000 numsize=4, max_mem=312,480,000
+fraction matrix too large for GPU: bytes 276,800,000, k=100 n=173 d=4000 numsize=4, max_mem=277,920,000
+fraction matrix too large for GPU: bytes 248,000,000, k=100 n=155 d=4000 numsize=4, max_mem=249,120,000
+fraction matrix too large for GPU: bytes 220,800,000, k=100 n=138 d=4000 numsize=4, max_mem=223,200,000
+fraction matrix too large for GPU: bytes 196,800,000, k=100 n=123 d=4000 numsize=4, max_mem=198,720,000
+fraction matrix too large for GPU: bytes 176,000,000, k=100 n=110 d=4000 numsize=4, max_mem=177,120,000
+fraction matrix too large for GPU: bytes 156,800,000, k=100 n=98 d=4000 numsize=4, max_mem=158,400,000
+fraction matrix too large for GPU: bytes 140,800,000, k=100 n=88 d=4000 numsize=4, max_mem=141,120,000
+fraction matrix too large for GPU: bytes 126,400,000, k=100 n=79 d=4000 numsize=4, max_mem=126,720,000
+fraction matrix too large for GPU: bytes 113,600,000, k=100 n=71 d=4000 numsize=4, max_mem=113,760,000
+fraction matrix too large for GPU: bytes 100,800,000, k=100 n=63 d=4000 numsize=4, max_mem=102,240,000
+fraction matrix too large for GPU: bytes 89,600,000, k=100 n=56 d=4000 numsize=4, max_mem=90,720,000
+fraction matrix too large for GPU: bytes 80,000,000, k=100 n=50 d=4000 numsize=4, max_mem=80,640,000
+fraction matrix too large for GPU: bytes 70,400,000, k=100 n=44 d=4000 numsize=4, max_mem=72,000,000
+fraction matrix too large for GPU: bytes 62,400,000, k=100 n=39 d=4000 numsize=4, max_mem=63,360,000
+fraction matrix too large for GPU: bytes 56,000,000, k=100 n=35 d=4000 numsize=4, max_mem=56,160,000
+fraction matrix too large for GPU: bytes 49,600,000, k=100 n=31 d=4000 numsize=4, max_mem=50,400,000
+fraction matrix too large for GPU: bytes 43,200,000, k=100 n=27 d=4000 numsize=4, max_mem=44,640,000
+fraction matrix too large for GPU: bytes 38,400,000, k=100 n=24 d=4000 numsize=4, max_mem=38,880,000
+fraction matrix too large for GPU: bytes 33,600,000, k=100 n=21 d=4000 numsize=4, max_mem=34,560,000
+fraction matrix too large for GPU: bytes 28,800,000, k=100 n=18 d=4000 numsize=4, max_mem=30,240,000
+fraction matrix too large for GPU: bytes 25,600,000, k=100 n=16 d=4000 numsize=4, max_mem=25,920,000
+fraction matrix too large for GPU: bytes 22,400,000, k=100 n=14 d=4000 numsize=4, max_mem=23,040,000
+fraction matrix too large for GPU: bytes 19,200,000, k=100 n=12 d=4000 numsize=4, max_mem=20,160,000
+fraction matrix too large for GPU: bytes 16,000,000, k=100 n=10 d=4000 numsize=4, max_mem=17,280,000
+fraction matrix too large for GPU: bytes 12,800,000, k=100 n=8 d=4000 numsize=4, max_mem=14,400,000
+fraction matrix too large for GPU: bytes 11,200,000, k=100 n=7 d=4000 numsize=4, max_mem=11,520,000
+fraction matrix too large for GPU: bytes 9,600,000, k=100 n=6 d=4000 numsize=4, max_mem=10,080,000
+fraction matrix too large for GPU: bytes 8,000,000, k=100 n=5 d=4000 numsize=4, max_mem=8,640,000
+fraction matrix too large for GPU: bytes 6,400,000, k=100 n=4 d=4000 numsize=4, max_mem=7,200,000
+fraction matrix too large for GPU: bytes 4,800,000, k=100 n=3 d=4000 numsize=4, max_mem=5,760,000
+fraction matrix too large for GPU: bytes 3,200,000, k=100 n=2 d=4000 numsize=4, max_mem=4,320,000
+fraction matrix too large for GPU: bytes 1,600,000, k=100 n=1 d=4000 numsize=4, max_mem=2,880,000
+Saved results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/HLA-A/k100
+
+==================================================
+HLA-C (k=100)
+==================================================
+Clustering 24999 maps into 100 clusters...
+Saved results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/HLA-C/k100
+
+Pipeline complete.
+==============================================
+Pipeline Complete
+End time: Thu Mar  5 08:07:06 EST 2026
+==============================================

@@ -1,0 +1,16 @@
+==============================================
+Variant Library: gnomAD
+Job ID:    829395
+Array:     7/34
+Locus:     PDCD1LG2
+Node:      bam31
+Start:     Sat Mar  7 09:34:48 EST 2026
+==============================================
+Source: gnomad
+Processing 1 loci
+Output: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/gnomad
+PDCD1LG2: no variants found, skipping
+
+Done.
+
+Done: Sat Mar  7 09:34:49 EST 2026

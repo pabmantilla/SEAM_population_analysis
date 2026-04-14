@@ -1,0 +1,23 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829260
+Array:     7/34
+Locus:     PDCD1LG2
+Args:      
+Node:      bam30
+Start:     Fri Mar  6 22:57:33 EST 2026
+==============================================
+Processing 1 loci: ['PDCD1LG2']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+
+==================================================
+PDCD1LG2: clustering (k=100)
+==================================================
+  Clustering 25000 maps into 100 clusters...
+  Saved cluster results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/PDCD1LG2/k100
+  WT cluster=43, sizes: min=1, max=938
+
+Pipeline complete.
+
+Done: Sat Mar  7 02:44:38 EST 2026

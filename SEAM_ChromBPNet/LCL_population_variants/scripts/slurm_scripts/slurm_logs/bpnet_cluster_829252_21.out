@@ -1,0 +1,17 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829277
+Array:     21/34
+Locus:     MYC
+Args:      
+Node:      bam20
+Start:     Fri Mar  6 22:58:33 EST 2026
+==============================================
+Processing 1 loci: ['MYC']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+MYC: attribution maps not found, skipping
+
+Pipeline complete.
+
+Done: Fri Mar  6 22:59:13 EST 2026

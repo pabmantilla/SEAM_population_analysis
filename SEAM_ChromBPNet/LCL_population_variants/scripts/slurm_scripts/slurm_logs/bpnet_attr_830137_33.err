@@ -1,0 +1,4 @@
+slurmstepd: error: Unable to create TMPDIR [/tmp/slurm_tmp/830135]: Permission denied
+slurmstepd: error: Setting TMPDIR to /tmp
+/grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/scripts/run_seam_pipeline.py:169: DeprecationWarning: __array_wrap__ must accept context and return_scalar arguments (positionally) in the future. (Deprecated NumPy 2.0)
+  projected = (attrs * chunk.numpy()).numpy()  # (chunk, 4, 2114)

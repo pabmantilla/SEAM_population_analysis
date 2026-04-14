@@ -1,31 +1,18 @@
-# Data files - too large for git
-*.npy
-*.npz
-*.feather
-*.tsv
-*.csv
-*.h5
+# Virtual environments
+chrombpnet_venv/
+chrombpnet_torch_env/
+.venv*/
 
-# Variant data directories
-variant_data/
-
-# Pipeline output
-SEAM_CLIPNET/LCL_variants_analysis/data/
-SEAM_CLIPNET/LCL_variants_analysis/DeepSHAP_maps/
-SEAM_CLIPNET/LCL_variants_analysis/SEAM_results/
-
-# Slurm logs
-slurm_logs/
-*.out
-*.err
+# Jupyter checkpoints
+.ipynb_checkpoints/
 
 # Python
 __pycache__/
 *.pyc
-.venv/
 
-# Jupyter
-.ipynb_checkpoints/
+# Cloned repos (re-clone from source)
+SEAM_ChromBPNet/chrombpnet/
+SEAM_ChromBPNet/bpnet-lite/
 
-# Git repo clones
-alphagenome_research/
+# Large model files
+SEAM_ChromBPNet/models/

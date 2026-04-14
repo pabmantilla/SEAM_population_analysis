@@ -1,0 +1,121 @@
+==============================================
+SEAM eQTL LCL Pipeline
+Env: SEAM .venv (CLIPNET + SEAM + DeepSHAP)
+Job ID: 806256
+Args: --step all
+Start time: Thu Mar  5 00:54:10 EST 2026
+==============================================
+
+>>> Step 1: Extract sequences <<<
+All 25 loci already extracted in /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_twohot_25loci.npz
+
+>>> Step 2: Generate mutagenesis libraries <<<
+IRF7: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+IRF7: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_IRF7_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_IRF7_25000_metadata.csv
+HLA-A: 4 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+HLA-A: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HLA-A_25000.npy
+  4 eQTL LCL + 24994 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HLA-A_25000_metadata.csv
+HLA-B: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+HLA-B: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HLA-B_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HLA-B_25000_metadata.csv
+HLA-C: 6 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+HLA-C: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HLA-C_25000.npy
+  6 eQTL LCL + 24992 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HLA-C_25000_metadata.csv
+HLA-G: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+HLA-G: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HLA-G_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HLA-G_25000_metadata.csv
+HOXA1: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+HOXA1: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HOXA1_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HOXA1_25000_metadata.csv
+HOXA13: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+HOXA13: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HOXA13_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HOXA13_25000_metadata.csv
+HOXC13: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+HOXC13: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HOXC13_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_HOXC13_25000_metadata.csv
+B-ACTIN: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+B-ACTIN: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_B-ACTIN_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_B-ACTIN_25000_metadata.csv
+TBP: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+TBP: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_TBP_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_TBP_25000_metadata.csv
+GAPDH: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+GAPDH: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_GAPDH_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_GAPDH_25000_metadata.csv
+YAP1: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+YAP1: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_YAP1_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_YAP1_25000_metadata.csv
+TAZ: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+TAZ: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_TAZ_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_TAZ_25000_metadata.csv
+PIK3R3: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+PIK3R3: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_PIK3R3_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_PIK3R3_25000_metadata.csv
+MYC: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+MYC: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_MYC_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_MYC_25000_metadata.csv
+TNF: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+TNF: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_TNF_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_TNF_25000_metadata.csv
+BCL2: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+BCL2: saved (24999, 1000, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_BCL2_25000.npy
+  0 eQTL LCL + 24998 random + 1 WT = 24999 total
+  Metadata: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/LCL_variants_analysis/data/x_mut_BCL2_25000_metadata.csv
+KRAS: 0 eQTL LCL SNVs injected
+
+Building in silico MAVE...
+==============================================
+Pipeline Complete
+End time: Thu Mar  5 00:56:19 EST 2026
+==============================================

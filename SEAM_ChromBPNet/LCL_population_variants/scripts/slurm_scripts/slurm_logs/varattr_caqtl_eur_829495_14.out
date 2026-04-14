@@ -1,0 +1,28 @@
+==============================================
+Variant Attributions: caQTL European
+Job ID:    829544
+Array:     14/34
+Locus:     HLA-C
+Node:      bamgpu20
+GPU:       0
+Start:     Sat Mar  7 10:43:01 EST 2026
+==============================================
+Processing 1 loci: ['HLA-C']
+
+>>> Step 1: DeepSHAP Attribution Maps <<<
+Loading ChromBPNet model from /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/models/ENCFF673TIN.tar.gz (fold_0)...
+Model loaded: ./fold_0/model.chrombpnet_nobias.fold_0.ENCSR000EMT.h5
+
+==================================================
+HLA-C: DeepLIFT/SHAP attributions (caqtl_eur)
+==================================================
+  Computing predictions for 12 sequences...
+  Saved predictions (12,) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/caqtl_eur/preds_HLA-C.npy
+  Chunk [0:12] pre-computing 50 dinuc shuffles...
+  Chunk [0:12] running DeepLIFT/SHAP (batch_size=8)...
+    12/12 sequences attributed
+  Saved attribution maps (12, 2114, 4) to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/caqtl_eur/maps_HLA-C.npy
+
+Pipeline complete.
+
+Done: Sat Mar  7 10:43:20 EST 2026

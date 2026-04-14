@@ -1,0 +1,27 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829943
+Array:     17/34
+Locus:     TNF
+Node:      bam33
+Start:     Sat Mar  7 15:38:15 EST 2026
+==============================================
+Processing 1 loci: ['TNF']
+
+>>> Variant Injection: gnomad (k=100) <<<
+TNF: missing 25k maps, 25k preds, skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+TNF: missing 25k maps, 25k preds, skipping
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+TNF: missing 25k maps, 25k preds, variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection Final Plots <<<
+GnomAD: no variant injection results found
+caqtl_eur: no variant injection results found
+caqtl_afr: no variant injection results found
+
+Pipeline complete.
+
+Done: Sat Mar  7 15:38:47 EST 2026

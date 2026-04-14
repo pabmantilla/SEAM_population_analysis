@@ -1,0 +1,7 @@
+slurmstepd: error: Unable to create TMPDIR [/tmp/slurm_tmp/822244]: Permission denied
+slurmstepd: error: Setting TMPDIR to /tmp
+Traceback (most recent call last):
+  File "/grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/scripts/run_seam_pipeline.py", line 101, in <module>
+    class CountWrapper(torch.nn.Module):
+                       ^^^^^
+NameError: name 'torch' is not defined

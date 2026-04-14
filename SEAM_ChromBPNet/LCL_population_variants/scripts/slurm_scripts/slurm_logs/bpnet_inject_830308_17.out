@@ -1,0 +1,42 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    830326
+Array:     17/34
+Locus:     TNF
+Node:      bam24
+Start:     Sun Mar  8 15:53:36 EDT 2026
+==============================================
+Processing 1 loci: ['TNF']
+
+>>> Variant Injection: gnomad (k=100) <<<
+
+==================================================
+TNF: variant injection (gnomad, k=100)
+==================================================
+  Injected 416 variants at indices (first 5): [133 182 247 349 449]
+  Clustering 25000 maps into 100 clusters...
+  WT cluster=60, variants span 21 clusters
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/variant_inject/gnomad/TNF/k100
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+
+==================================================
+TNF: variant injection (caqtl_eur, k=100)
+==================================================
+  Injected 2 variants at indices (first 5): [ 2232 19349]
+  Clustering 25000 maps into 100 clusters...
+  WT cluster=9, variants span 2 clusters
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/variant_inject/caqtl_eur/TNF/k100
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+TNF: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection Final Plots <<<
+  Saved GnomAD plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/gnomad_mech_diversity_vs_AF_k100.png
+  Saved GnomAD causality plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/gnomad_mech_causality_vs_AF_k100.png
+  Saved caqtl_eur plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/caqtl_eur_pred_vs_actual_k100.png
+  Saved caqtl_afr plot to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/results/results_final/variant_inject/caqtl_afr_pred_vs_actual_k100.png
+
+Pipeline complete.
+
+Done: Sun Mar  8 16:16:48 EDT 2026

@@ -1,0 +1,17 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829287
+Array:     31/34
+Locus:     HOXC13
+Args:      
+Node:      bam18
+Start:     Fri Mar  6 22:59:30 EST 2026
+==============================================
+Processing 1 loci: ['HOXC13']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+HOXC13: attribution maps not found, skipping
+
+Pipeline complete.
+
+Done: Fri Mar  6 22:59:34 EST 2026

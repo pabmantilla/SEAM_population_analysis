@@ -1,0 +1,23 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829258
+Array:     5/34
+Locus:     CD40
+Args:      
+Node:      bam30
+Start:     Fri Mar  6 22:57:33 EST 2026
+==============================================
+Processing 1 loci: ['CD40']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+
+==================================================
+CD40: clustering (k=100)
+==================================================
+  Clustering 25000 maps into 100 clusters...
+  Saved cluster results to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/CD40/k100
+  WT cluster=87, sizes: min=1, max=1224
+
+Pipeline complete.
+
+Done: Sat Mar  7 02:42:10 EST 2026

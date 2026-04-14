@@ -1,0 +1,16 @@
+==============================================
+Variant Library: caQTL European
+Job ID:    829435
+Array:     12/34
+Locus:     HLA-DQB1
+Node:      bam32
+Start:     Sat Mar  7 09:34:57 EST 2026
+==============================================
+Source: caqtl_eur
+Processing 1 loci
+Output: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/variant_libs/caqtl_eur
+HLA-DQB1: 20 variants -> (21, 2114, 4) saved
+
+Done.
+
+Done: Sat Mar  7 09:34:58 EST 2026

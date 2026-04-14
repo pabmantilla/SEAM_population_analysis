@@ -1,0 +1,34 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829928
+Array:     2/34
+Locus:     RPL10A
+Node:      bam21
+Start:     Sat Mar  7 15:38:15 EST 2026
+==============================================
+Processing 1 loci: ['RPL10A']
+
+>>> Variant Injection: gnomad (k=100) <<<
+RPL10A: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+RPL10A: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+
+==================================================
+RPL10A: variant injection (caqtl_afr, k=100)
+==================================================
+  Injected 2 variants at indices (first 5): [ 2232 19349]
+  Clustering 25000 maps into 100 clusters...
+  WT cluster=5, variants span 2 clusters
+  Saved to /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_ChromBPNet/LCL_population_variants/cluster_results/variant_inject/caqtl_afr/RPL10A/k100
+
+>>> Variant Injection Final Plots <<<
+GnomAD: no variant injection results found
+caqtl_eur: no variant injection results found
+caqtl_afr: no variants matched coefficient data
+
+Pipeline complete.
+
+Done: Sat Mar  7 15:51:14 EST 2026

@@ -1,0 +1,17 @@
+==============================================
+ChromBPNet Clustering + CSM
+Job ID:    829282
+Array:     26/34
+Locus:     GAPDH
+Args:      
+Node:      bam18
+Start:     Fri Mar  6 22:59:20 EST 2026
+==============================================
+Processing 1 loci: ['GAPDH']
+
+>>> Step 2: K-means Clustering + CSM (k=100) <<<
+GAPDH: attribution maps not found, skipping
+
+Pipeline complete.
+
+Done: Fri Mar  6 22:59:25 EST 2026

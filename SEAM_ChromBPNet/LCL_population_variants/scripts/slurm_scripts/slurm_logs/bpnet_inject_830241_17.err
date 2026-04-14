@@ -1,0 +1,3 @@
+slurmstepd: error: Unable to create TMPDIR [/tmp/slurm_tmp/830135]: Permission denied
+slurmstepd: error: Setting TMPDIR to /tmp
+slurmstepd: error: *** JOB 830259 ON bam23 CANCELLED AT 2026-03-08T15:52:56 ***

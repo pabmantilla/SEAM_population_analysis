@@ -1,0 +1,45 @@
+==============================================
+Unified Volcano: gnomAD + eQTL + Causal
+Job ID: 809472
+Start time: Thu Mar  5 15:59:45 EST 2026
+==============================================
+Step 1: Computing gnomAD variant cosine distances...
+Loading cached gnomAD data from /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/expression_results/all_variants/gnomad_variant_data.csv
+  gnomAD data: 33227 rows
+
+Step 2: Loading eQTL data...
+  HLA-A: 24999 sequences loaded from volcano CSV
+  HLA-C: 24999 sequences loaded from volcano CSV
+  eQTL data: 49998 rows
+
+Step 3: Plotting unified volcano...
+Saved unified volcano: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/expression_results/all_variants/unified_volcano_k100.png
+
+======================================================================
+SUMMARY STATISTICS
+======================================================================
+
+gnomAD (n=20,702):
+  Activity:  mean=27.63  median=25.06  std=12.13
+  Cos dist:  mean=0.0033  median=0.0003  std=0.0156
+
+eQTL causal (n=10):
+  Activity:  mean=43.52  median=44.57  std=2.01
+  Cos dist:  mean=0.0004  median=0.0001  std=0.0005
+
+Random mutagenesis (n=12,500):
+  Activity:  mean=25.89  median=24.52  std=11.78
+  Cos dist:  mean=0.0287  median=0.0141  std=0.0473
+
+gnomAD by category:
+  HLA (n=4,588): cos_dist mean=0.0034  activity mean=39.77
+  Oncogene (n=12,536): cos_dist mean=0.0034  activity mean=23.83
+  Hox (n=1,382): cos_dist mean=0.0027  activity mean=7.40
+  Housekeeping (n=2,196): cos_dist mean=0.0024  activity mean=36.68
+======================================================================
+
+Saved combined variant data: /grid/wsbs/home_norepl/pmantill/Human_nc_variants/SEAM_population_analysis/SEAM_CLIPNET/expression_results/all_variants/all_variants_data.csv
+==============================================
+Done
+End time: Thu Mar  5 16:01:20 EST 2026
+==============================================

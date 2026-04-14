@@ -1,0 +1,27 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    829941
+Array:     15/34
+Locus:     HLA-DRB1
+Node:      bam32
+Start:     Sat Mar  7 15:38:16 EST 2026
+==============================================
+Processing 1 loci: ['HLA-DRB1']
+
+>>> Variant Injection: gnomad (k=100) <<<
+HLA-DRB1: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_eur (k=100) <<<
+HLA-DRB1: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection: caqtl_afr (k=100) <<<
+HLA-DRB1: missing variant maps, variant preds, variant metadata, skipping
+
+>>> Variant Injection Final Plots <<<
+GnomAD: no variant injection results found
+caqtl_eur: no variant injection results found
+caqtl_afr: no variant injection results found
+
+Pipeline complete.
+
+Done: Sat Mar  7 15:38:22 EST 2026

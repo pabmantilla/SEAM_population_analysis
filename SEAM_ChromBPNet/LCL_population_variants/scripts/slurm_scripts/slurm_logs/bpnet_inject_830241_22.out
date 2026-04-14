@@ -1,0 +1,17 @@
+==============================================
+Variant Injection + Clustering
+Job ID:    830264
+Array:     22/34
+Locus:     BCL2
+Node:      bam23
+Start:     Sun Mar  8 14:21:18 EDT 2026
+==============================================
+Processing 1 loci: ['BCL2']
+
+>>> Variant Injection: gnomad (k=100) <<<
+
+==================================================
+BCL2: variant injection (gnomad, k=100)
+==================================================
+  Injected 1021 variants at indices (first 5): [106 119 131 132 133]
+  Clustering 25000 maps into 100 clusters...

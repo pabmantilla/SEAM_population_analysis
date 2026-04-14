@@ -1,0 +1,2 @@
+seq_idx,source,variant_id,offset,ref,alt,pos,injected_idx
+1,variant,chr16_80231939_C_T_hg38,1056,T,C,80231939.0,2232
